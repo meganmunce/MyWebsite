@@ -1,34 +1,11 @@
 //HTML CONTENT
 
-aboutMeHTML = `
-<div class="AboutMeHeader">
-<h2>About Me!</h2>
-</div>
-
-<div class="AboutMeContent sticky">
-  <h2>Hi, I'm Megan!</h2>
-  <img src="images/HeadshotCircle.png" class="headshot">
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-  <p>x</p>
-</div>
-
-<div class="rightArrow blue">
-    <button class="goRight"><i class="fas fa-arrow-circle-right fa-3x"></i></button>
-</div>
-`
 
 educationHTML = `
+<div class="leftArrow blue">
+    <button class="goLeft"><i class="fas fa-arrow-circle-left fa-3x"></i></button>
+</div>
+
 <div class="EducationHeader blue">
   <h2>Education</h2>
 </div>

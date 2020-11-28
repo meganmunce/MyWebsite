@@ -4,7 +4,7 @@
 
 #introcontainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 2fr 0.5fr;
   height: 100vh;
   grid-template-areas:
@@ -18,10 +18,10 @@
 
 .contentcontainer {
   display: grid;
-  grid-template-columns: 0.6fr 1fr 0.1fr;
+  grid-template-columns: 0.1fr 0.6fr 1fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas:
-   "l m o";
+   "k l m o";
   height: 100vh;
   overflow-x: scroll;
 }
@@ -32,13 +32,18 @@
   grid-area: l;
   text-align: center;
   justify-content: center;
-  text-align: center;
+}
+
+.AboutMeHeader a {
+  text-decoration: none;
+
 }
 
 .AboutMeContent {
   grid-area: m;
   padding-left: 10px;
   text-align: center;
+
 }
 
 .educationHeader {
@@ -53,10 +58,18 @@
 
 /* ARROWS */
 
+.leftArrow {
+  grid-area: k;
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
 .rightArrow {
   grid-area: o;
   text-align: center;
   justify-content: center;
+  padding-top: 20px;
 }
 
 /*
@@ -131,9 +144,18 @@ h3 {
 }
 
 .name h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'DM Serif Text', serif;
+  color: #091540;
+  background-color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+}
+
+.downarrow p {
   color: white;
-  font-size: 15px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
 }
 
 h4 {
@@ -154,7 +176,8 @@ h6 {
 
 p {
   font-family: 'Roboto', sans-serif;
-  line-height: 50%;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 ul {
@@ -188,7 +211,8 @@ a {
 
 .name h1 {
   color: white;
-  line-height: 20%;
+  font-size: 70px;
+  line-height: 25%;
 }
 
 .contact {
@@ -214,7 +238,6 @@ a {
 
 .downarrow {
   grid-area: d;
-  background-color: #091540;
   text-align: center;
 
 }
@@ -328,13 +351,18 @@ footer a:hover {
   font-style: italic;
 }
 
+.bottomfeeder {
+  bottom: -95vh;
+  position: absolute;
+}
+
 .indent{
   text-indent: 25px;
   line-height: 0;
 }
 
 .headshot {
-  height: 300px;
+  height: 200px;
   width: auto;
 }
 
