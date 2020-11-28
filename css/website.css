@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto&display=swap');
+
+/* CONTAINERS */
+
+#introcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 0.5fr;
+  height: 100vh;
+  grid-template-areas:
+   "a b c"
+   "d d d";
+   background-image: url(images/bluemeg.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.contentcontainer {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr 0.1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+   "l m o";
+  height: 100vh;
+  overflow-x: scroll;
+}
+
+/* FILLER CONTENT */
+
+.AboutMeHeader {
+  grid-area: l;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.AboutMeContent {
+  grid-area: m;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.educationHeader {
+  grid-area: l;
+  text-align: center;
+}
+
+.educationContent {
+  grid-area: m;
+  padding-left: 10px;
+}
+
+/* ARROWS */
+
+.rightArrow {
+  grid-area: o;
+  text-align: center;
+  justify-content: center;
+}
+
+/*
+
+.EducationHeader {
+  grid-area: n;
+  background-color: #091540;
+  text-align: center;
+  color: white;
+  width: 40vh;
+}
+
+.EducationContent {
+  grid-area: o;
+  background-color: #DCE2F9;
+  padding-left: 10px;
+  color: #091540;
+  width: 60vh;
+}
+
+/*
+
+#AboutMe {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+   "x y y";
+}
+
+#Education {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+   "t u u";
+}
+
+#Work {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+   "h i i";
+}
+
+#Skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+   "r s s";
+}
+
+*/
+
+h1 {
+  font-size: 45px;
+  font-family: 'DM Serif Text', serif;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: 'DM Serif Text', serif;
+}
+
+h3 {
+  font-family: 'DM Serif Text', serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.name h3 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 15px;
+}
+
+h4 {
+  font-family: 'DM Serif Text', serif;
+  font-size: 20px;
+}
+
+h5 {
+  font-family: 'DM Serif Text', serif;
+  font-style: italic;
+  font-size: 15px;
+}
+
+h6 {
+  font-family: 'DM Serif Text', serif;
+  font-size: 13px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 50%;
+}
+
+ul {
+  font-family: 'Roboto', sans-serif;
+  line-height: 115%;
+}
+
+
+a {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+/* DIVS */
+
+.readme {
+  grid-area: a;
+  /*background-color: #091540;*/
+  text-align: center;
+  padding-left: 20px;
+}
+
+.name {
+  grid-area: b;
+  /*background-color: #091540;*/
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.name h1 {
+  color: white;
+  line-height: 20%;
+}
+
+.contact {
+  grid-area: c;
+  /*background-color: #091540;*/
+  text-align: right;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact ul{
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact a {
+  text-decoration: none;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.downarrow {
+  grid-area: d;
+  background-color: #091540;
+  text-align: center;
+
+}
+
+/*
+
+.headers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AboutMeHeader {
+  text-align: center;
+  justify-content: center;
+  color: white;
+  grid-area: x;
+  background-color: #9883e5;
+  text-align: center;
+  color: white;
+  float: left;
+}
+
+.AboutMeContent {
+  grid-area: y;
+  background-color: #091540;
+  padding-left: 10px;
+  color: white;
+  text-align: center;
+}
+
+.EducationHeader {
+  grid-area: t;
+  background-color: #091540;
+  text-align: center;
+  color: white;
+}
+
+.EducationContent {
+  grid-area: u;
+  background-color: #DCE2F9;
+  padding-left: 10px;
+  color: #091540;
+}
+
+.EducationContent a {
+  padding-left: 20px;
+  color: #091540;
+}
+
+.WorkHeader {
+  grid-area: h;
+  background-color: #DCE2F9;
+  text-align: center;
+  color: #091540;
+}
+
+.WorkContent {
+  grid-area: i;
+  background-color: #9883e5;
+  padding-left: 10px;
+  color: white;
+}
+
+.SkillsHeader {
+  grid-area: r;
+  background-color: #9883e5;
+  text-align: center;
+  color: white;
+}
+
+.SkillsContent {
+  grid-area: s;
+  background-color: #DCE2F9;
+  padding-left: 10px;
+}
+
+/* FOOTER STUFF */
+
+/*
+
+footer {
+  background-color: #091540;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+footer h2 {
+  color: white;
+}
+
+footer p {
+  color: white;
+  line-height: 20%;
+}
+
+footer a {
+  color: white;
+  line-height: 20%;
+}
+
+footer a:hover {
+  animation: whiteToPurple 700ms;
+  color: #9883e5;
+}
+
+/* STYLES */
+
+.italic{
+  font-style: italic;
+}
+
+.indent{
+  text-indent: 25px;
+  line-height: 0;
+}
+
+.headshot {
+  height: 300px;
+  width: auto;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+button:hover {
+  animation: whiteToPurple 600ms;
+  color: #9883e5;
+}
+
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  left: 0;
+}
+
+.blue {
+  background-color: #091540;
+  color: white;
+}
+
+.purple {
+  background-color: #9883e5;
+  color: white;
+}
+
+.white {
+  background-color: #9883e5;
+  color: #091540;
+}
+
+/* SOCIAL LINKS */
+
+
+.iconimg {
+  height: 70px;
+  width: auto;
+}
+
+.icon:hover {
+  animation: whiteToPurple 600ms;
+  color: #9883e5;
+}
+
+@keyframes whiteToPurple{
+  0%{color: white;}
+  100%{color: #9883e5;}
+}
+
+@keyframes fade {
+  0%{opacity:1;}
+  100%{opacity: 0.8;}
+}
+
+@keyframes fadeIn {
+  0%{opacity:0%;}
+  100%{opacity:100%;}
+}
+
+@media (max-width: 1024px) {
+    .viewer {
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1fr 1fr;
+       grid-template-areas:
+          "d e"
+          "f g";
+}
+
+@media (max-width: 700px) {
+  .intro h1 {
+    font-size:30px;
+  }
+  #container {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 0.2fr 0.3fr;
+     grid-template-areas:
+      "a b"
+      "c c";
+  }
+    .viewer {
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr 1fr 1fr;
+       grid-template-areas:
+          "d"
+          "e"
+          "f"
+          "g";
+  }
+
+  */

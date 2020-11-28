@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto&display=swap');
+
+article  {
+  background-image: linear-gradient(
+    to right,
+    transparent 50px,
+    #F5A623 50px,
+    #F5A623 calc(100% - 50px),
+    transparent 0
+  );
+}
+
+.title,
+.image  {
+  position: sticky;
+  position: -webkit-sticky;
+  z-index: -1;
+  width: 50px;
+}
+
+.title  {
+  left: 20px;
+  margin-right: 52px;
+}
+
+.image  {
+  left: 150px;
+}
