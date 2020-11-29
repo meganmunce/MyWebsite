@@ -2,6 +2,10 @@
 
 /* CONTAINERS */
 
+.thewholedamnthing {
+  background-color: #091540;
+}
+
 #introcontainer {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -18,41 +22,54 @@
 
 .contentcontainer {
   display: grid;
-  grid-template-columns: 0.1fr 0.6fr 1fr 0.1fr;
+  grid-template-columns: 0.1fr 2fr 0.1fr;
   grid-template-rows: 1fr;
   grid-template-areas:
-   "k l m o";
+   "k l o";
   height: 100vh;
   overflow-x: scroll;
+}
+
+.middlecontainer {
+  grid-area: l;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+   "x y";
+
 }
 
 /* FILLER CONTENT */
 
 .AboutMeHeader {
-  grid-area: l;
+/*  grid-area: l; */
+  grid-area: x;
   text-align: center;
   justify-content: center;
 }
 
 .AboutMeHeader a {
   text-decoration: none;
-
+  text-align: center;
+  justify-content: center;
 }
 
 .AboutMeContent {
-  grid-area: m;
+/*  grid-area: m; */
+  grid-area: y;
   padding-left: 10px;
   text-align: center;
 
 }
 
 .educationHeader {
-  grid-area: l;
+  grid-area: x;
   text-align: center;
 }
 
 .educationContent {
-  grid-area: m;
+  grid-area: y;
   padding-left: 10px;
 }
 
@@ -353,7 +370,7 @@ footer a:hover {
 
 .bottomfeeder {
   bottom: -95vh;
-  position: absolute;
+  position: fixed;
 }
 
 .indent{
@@ -409,6 +426,16 @@ button:hover {
 .icon:hover {
   animation: whiteToPurple 600ms;
   color: #9883e5;
+}
+
+/* ANIMATIONS */
+
+.animated__fadeOutUp {
+  animation: fadeOutUp;
+}
+
+.animate__fadeInUp {
+  animation: fadeInUp;
 }
 
 @keyframes whiteToPurple{
