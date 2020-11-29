@@ -33,7 +33,7 @@
 .middlecontainer {
   grid-area: l;
   display: grid;
-  grid-template-columns: 0.4fr 1fr;
+  grid-template-columns: 0.3fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas:
    "x y";
@@ -66,34 +66,11 @@
 .educationHeader {
   grid-area: x;
   text-align: center;
-  justify-content: center;
 }
 
 .educationContent {
   grid-area: y;
-  padding: 10px;
-}
-
-.workHeader {
-  grid-area: x;
-  text-align: center;
-  justify-content: center;
-}
-
-.WorkContent {
-  grid-area: y;
-  padding: 10px;
-}
-
-.skillsHeader {
-  grid-area: x;
-  text-align: center;
-  justify-content: center;
-}
-
-.skillsContent {
-  grid-area: y;
-  padding: 10px;
+  padding-left: 10px;
 }
 
 /* ARROWS */
@@ -112,7 +89,59 @@
   padding-top: 20px;
 }
 
-/* TEXT */
+/*
+
+.EducationHeader {
+  grid-area: n;
+  background-color: #091540;
+  text-align: center;
+  color: white;
+  width: 40vh;
+}
+
+.EducationContent {
+  grid-area: o;
+  background-color: #DCE2F9;
+  padding-left: 10px;
+  color: #091540;
+  width: 60vh;
+}
+
+/*
+
+#AboutMe {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+   "x y y";
+}
+
+#Education {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+   "t u u";
+}
+
+#Work {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+   "h i i";
+}
+
+#Skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+   "r s s";
+}
+
+*/
 
 h1 {
   font-size: 45px;
@@ -129,13 +158,6 @@ h3 {
   font-size: 20px;
   color: white;
   text-align: center;
-}
-
-.aboutMeHeader h6 {
-  color: white;
-  font-size: 10px;
-  position: sticky;
-  bottom: 0;
 }
 
 .name h3 {
@@ -237,18 +259,113 @@ a {
 
 }
 
+/*
+
+.headers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AboutMeHeader {
+  text-align: center;
+  justify-content: center;
+  color: white;
+  grid-area: x;
+  background-color: #9883e5;
+  text-align: center;
+  color: white;
+  float: left;
+}
+
+.AboutMeContent {
+  grid-area: y;
+  background-color: #091540;
+  padding-left: 10px;
+  color: white;
+  text-align: center;
+}
+
+.EducationHeader {
+  grid-area: t;
+  background-color: #091540;
+  text-align: center;
+  color: white;
+}
+
+.EducationContent {
+  grid-area: u;
+  background-color: #DCE2F9;
+  padding-left: 10px;
+  color: #091540;
+}
+
+.EducationContent a {
+  padding-left: 20px;
+  color: #091540;
+}
+
+.WorkHeader {
+  grid-area: h;
+  background-color: #DCE2F9;
+  text-align: center;
+  color: #091540;
+}
+
+.WorkContent {
+  grid-area: i;
+  background-color: #9883e5;
+  padding-left: 10px;
+  color: white;
+}
+
+.SkillsHeader {
+  grid-area: r;
+  background-color: #9883e5;
+  text-align: center;
+  color: white;
+}
+
+.SkillsContent {
+  grid-area: s;
+  background-color: #DCE2F9;
+  padding-left: 10px;
+}
+
+/* FOOTER STUFF */
+
+/*
+
+footer {
+  background-color: #091540;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+footer h2 {
+  color: white;
+}
+
+footer p {
+  color: white;
+  line-height: 20%;
+}
+
+footer a {
+  color: white;
+  line-height: 20%;
+}
+
+footer a:hover {
+  animation: whiteToPurple 700ms;
+  color: #9883e5;
+}
+
 /* STYLES */
 
 .italic{
   font-style: italic;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.placeholder {
-  display: none;
 }
 
 .bottomfeeder {
@@ -294,7 +411,7 @@ button:hover {
 }
 
 .white {
-  background-color: white;
+  background-color: #9883e5;
   color: #091540;
 }
 
@@ -335,8 +452,6 @@ button:hover {
   0%{opacity:0%;}
   100%{opacity:100%;}
 }
-
-/* RESIZING */
 
 @media (max-width: 1024px) {
     .viewer {

@@ -12,12 +12,11 @@ ogCONTENT = `
 
 <div class="AboutMeHeader purple">
 <h2>About Me!</h2>
-<span class="bottomfeeder">
-  <a href="#" class="gotoAboutMe">About Me</a>
-  <a href="#"> / </a>
-  <a href="#" class="gotoEducation">Education</a>
-  <a href="#"> / </a>
-</span>
+<br>
+<br>
+<br>
+<br>
+<h6><span class="underline">About Me</span> / Education / Work / Skills</h6>
 </div>
 
 <div class="AboutMeContent sticky blue">
@@ -43,12 +42,6 @@ ogCONTENT = `
 aboutmeHTML = `
 <div class="AboutMeHeader purple">
 <h2>About Me!</h2>
-<span class="bottomfeeder">
-  <a href="#" class="gotoAboutMe">About Me</a>
-  <a href="#"> / </a>
-  <a href="#" class="gotoEducation">Education</a>
-  <a href="#"> / </a>
-</span>
 </div>
 
 <div class="AboutMeContent sticky blue">
@@ -65,11 +58,16 @@ aboutmeHTML = `
 
 educationHTML = `
 
-<div class="EducationHeader blue">
+<div class="educationHeader blue">
   <h2>Education</h2>
-</div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h6>About Me / <span class="underline">Education</span> / Work / Skills</h6>
+  </div>
 
-<div class="EducationContent sticky white">
+<div class="educationContent purple">
   <h4>Northwestern University Medill School of Journalism — <span class="italic">Evanston, IL</span></h4>
   <h5>Bachelors of Science, journalism and political science, GPA: 3.85</h5>
   <p>Relevant Courses:</p>
@@ -113,6 +111,68 @@ educationHTML = `
 </div>
 `
 
+workHTML = `
+
+<div class="WorkHeader purple">
+  <h2>Work Experience</h2>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h6>About Me / Education / <span class="underline">Work</span> / Skills</h6>
+</div>
+
+<div class="WorkContent white">
+  <h4>The Daily Northwestern - <span class="italic">Evanston, IL</span></h4>
+  <h5>Web Editor, September 2020 - present</h5>
+  <h5>Development & Recruitment Editor, July 2020 - September 2020</h5>
+  <h5>Assistant Campus Editor, March 2020 - June 2020</h5>
+  <h5>Social Media Editor, January 2019 - March 2020</h5>
+  <h5>Copy Editor, September 2019 - December 2019</h5>
+  <br>
+  <h4>New Enterprise Associates - <span class="italic">Remote</span></h4>
+  <h5>Business Development & Marketing Intern</h5>
+
+</div>
+`
+skillsHTML = `
+
+<div class="skillsHeader white">
+  <h2>Skills</h2>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h6>About Me / Education / Work / <span class="underline">Skills</span></h6>
+</div>
+
+<div class="skillsContent blue">
+  <h4>Languages</h4>
+  <ul>
+  <li>Native fluency in English</li>
+  <li>Professional fluency in Spanish (speaking, reading, writing)</li>
+  </ul>
+  <h4>Data Analysis & Visualization</h4>
+  <ul>
+  <li>Proficient Tableau</li>
+  <li>Proficient in Python</li>
+  <li>Proficient in data scraping and Google Sheets</li>
+  </ul>
+  <h4>Web Development & Design</h4>
+  <ul>
+  <li>Proficient in HTML, CSS, and Javascript</li>
+  <li>Proficient in Adobe Illustrator, InDesign, Photoshop and AfterEffects</li>
+  <li>Proficient in Procreate</li>
+  </ul>
+  <h4>Multimedia Journalism</h4>
+  <ul>
+  <li>Proficient in Adobe Audition</li>
+  <li>Novice in Adobe Premiere</li>
+</ul>
+</div>
+
+`
+
 // FIRST PAGE
 
 const moveDown = () => {
@@ -134,15 +194,17 @@ const replacethewholedamnthing = () => {
 
 aboutMeShown = "true"
 educationShown = "false"
+workShown = "false"
 
 const moveRight = () => {
   console.log("right click");
   if (aboutMeShown == "true") {
-    showEducation();
+    showEducation();}
+  else if (educationShown == "true"){
+    showWork();}
+  else if (workShown == "true"){
+    showSkills();
   }
-//  else if (educationShown == "true") {
-
-  //}
 };
 
 const moveLeft = () => {
@@ -150,37 +212,71 @@ const moveLeft = () => {
   if (educationShown == "true") {
     showAboutMe();
   }
+  else if (workShown == "true") {
+    showEducation();  }
+  else if (skillsShown =="true") {
+    showWork();
+  }
 };
 
 const showAboutMe = () => {
   document.querySelector('.middlecontainer').innerHTML = aboutmeHTML;
-  document.querySelector('.leftArrow').classList.remove('blue');
-  document.querySelector('.leftArrow').classList.add('purple');
-  document.querySelector('.rightArrow').classList.remove('purple');
-  document.querySelector('.rightArrow').classList.add('blue');
   aboutMeShown = "true";
   educationShown = "false";
+  workShown = "false";
+  skillsShown = "false";
   return aboutMeShown;
   return educationShown;
+  return workShown;
+  return skillsShown;
 }
 
 const showEducation = () => {
   document.querySelector('.middlecontainer').innerHTML = educationHTML;
-  document.querySelector('.leftArrow').classList.remove('purple');
-  document.querySelector('.leftArrow').classList.add('blue');
-  document.querySelector('.rightArrow').classList.remove('blue');
-  document.querySelector('.rightArrow').classList.add('purple');
   aboutMeShown = "false";
   educationShown = "true";
+  workShown = "false";
+  skillsShown = "false";
   return aboutMeShown;
   return educationShown;
+  return workShown;
+  return skillsShown;
+}
+
+const showWork = () => {
+  document.querySelector('.middlecontainer').innerHTML = workHTML;
+  aboutMeShown = "false";
+  educationShown = "false";
+  workShown = "true";
+  skillsShown = "false";
+  return aboutMeShown;
+  return educationShown;
+  return workShown;
+  return skillsShown;
+}
+
+const showSkills = () => {
+  document.querySelector('.middlecontainer').innerHTML = skillsHTML;
+  aboutMeShown = "false";
+  educationShown = "false";
+  workShown = "false";
+  skillsShown = "true";
+  return aboutMeShown;
+  return educationShown;
+  return workShown;
+  return skillsShown;
 }
 
 // EVENT LISTENERS
 
 document.querySelector('.goDown').onclick = moveDown;
-// document.querySelector('.goRight').onclick = moveRight;
-// document.querySelector('.goLeft').onclick = moveLeft;
+
 
 // document.querySelector('.gotoAboutMe').onclick = showAboutMe;
 // document.querySelector('.gotoEducation').onclick = showEducation;
+
+
+// EVENT DELEGATION
+
+$(document).on('click','.goLeft', moveLeft);
+$(document).on('click','.goRight', moveRight);
