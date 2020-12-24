@@ -23,8 +23,9 @@
 .contentcontainer {
   display: grid;
   grid-template-columns: 0.1fr 2fr 0.1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 0.2fr 1fr;
   grid-template-areas:
+   "u u u"
    "k l o";
   height: 100vh;
   overflow-x: scroll;
@@ -92,6 +93,17 @@
 }
 
 .skillsContent {
+  grid-area: y;
+  padding: 10px;
+}
+
+.clopsHeader {
+  grid-area: x;
+  text-align: center;
+  justify-content: center;
+}
+
+.clipsContent {
   grid-area: y;
   padding: 10px;
 }
@@ -234,7 +246,15 @@ a {
 .downarrow {
   grid-area: d;
   text-align: center;
+}
 
+.upArrow {
+  background-color: #091540;
+  grid-area: u;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  height: 40px;
 }
 
 /* STYLES */

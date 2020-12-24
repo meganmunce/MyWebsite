@@ -1,8 +1,58 @@
 //HTML CONTENT
 
+introCONTENT = `
+<div id="introcontainer">
+
+    <div class="readme">
+      <h3>READ ME!</h3>
+      <a href="https://dailynorthwestern.com/staff_profile/megan-munce/" target="_blank">
+        <img src="css/images/Daily.png" class="iconimg">
+      </a>
+
+    </div>
+
+    <div class="name">
+      <h1>Megan Munce</h1>
+      <h3>Digital Student Journalist @ Northwestern University</h3>
+    </div>
+
+    <div class="contact">
+      <ul><li><h3>CONTACT ME!</h3></li>
+      <li>
+      <a href="https://www.linkedin.com/in/meganmunce/" target="_blank">
+          <i class="fab fa-linkedin fa-2x icon"></i>
+      </a>
+      <a href="https://twitter.com/meganmuncie?lang=en" target="_blank">
+      <i class="fab fa-twitter-square fa-2x icon"></i>
+    </a>
+    <a href="https://medium.com/@meganmunce" target="_blank">
+      <i class="fab fa-medium icon fa-2x"></i>
+  </a>
+  <a href="https://github.com/meganmunce" target="_blank"> <i class="fab fa-github-square fa-2x icon"></i></a>
+  <a href="mailto:meganmunce2022@u.northwestern.edu">
+  <i class="fas fa-envelope-square fa-2x icon"></i></a>
+</li>
+</ul>
+</div>
+
+<div class="downarrow">
+  <p><span class="italic">(Pictured: Emerald Bay in Lake Tahoe, California!)</span></p>
+
+<button class="goLeft placeholder"><i class="fas fa-arrow-circle-left fa-3x"></i></button>
+
+  <button class="goDown"><i class="fas fa-arrow-circle-down fa-3x"></i></button>
+
+  <button class="goRight placeholder"><i class="fas fa-arrow-circle-right fa-3x"></i></button>
+</div>
+`
+
 ogCONTENT = `
 
 <div class="contentcontainer animate__animated animate__fadeInUp">
+
+<div class="upArrow">
+  <button class="goUp"><i class="fas fa-arrow-circle-up fa-3x"></i></button>
+</div>
 
 <div class="leftArrow purple">
     <button class="goLeft"><i class="fas fa-arrow-circle-left fa-3x"></i></button>
@@ -16,7 +66,7 @@ ogCONTENT = `
 <br>
 <br>
 <br>
-<h6><span class="underline">About Me</span> / Education / Work / Skills</h6>
+<h6><span class="AboutMeSpan"><span class="underline">About Me</span></span> / <span class="EducationSpan"> Education </span>/ <span class="WorkSpan"> Work </span>/ <span class="SkillsSpan">Skills</span> / <span class="ClipsSpan">Clips</span></h6>
 </div>
 
 <div class="AboutMeContent sticky blue">
@@ -38,12 +88,17 @@ ogCONTENT = `
 </div>
 
 `
-
 aboutmeHTML = `
+
+
 <div class="AboutMeHeader purple">
 <h2>About Me!</h2>
+<br>
+<br>
+<br>
+<br>
+<h6><span class="AboutMeSpan"><span class="underline">About Me</span></span> / <span class="EducationSpan"> Education </span>/ <span class="WorkSpan"> Work </span>/ <span class="SkillsSpan">Skills</span> / <span class="ClipsSpan">Clips</span></h6>
 </div>
-
 <div class="AboutMeContent sticky blue">
   <h2>Hi, I'm Megan!</h2>
   <img src="css/images/HeadshotCircle.png" class="headshot">
@@ -52,7 +107,6 @@ aboutmeHTML = `
   <p>I'm passionate about the intersection of journalism and technology! As a second-generation immigrant and a digital native, finding new accessible means of storytelling is close to home. I'm interested in digital communication, social media engagement and multimedia reporting.</p>
   <p>Use the arrows to the left and right to click through my interactive resume and learn more about me!</p>
 </div>
-
 
 `
 
@@ -64,7 +118,7 @@ educationHTML = `
   <br>
   <br>
   <br>
-  <h6>About Me / <span class="underline">Education</span> / Work / Skills</h6>
+  <h6><span class="AboutMeSpan">About Me</span> / <span class="EducationSpan"><span class="underline"> Education </span></span>/ <span class="WorkSpan"> Work </span>/ <span class="SkillsSpan">Skills</span> / <span class="ClipsSpan">Clips</span></h6>
   </div>
 
 <div class="educationContent purple">
@@ -119,7 +173,7 @@ workHTML = `
   <br>
   <br>
   <br>
-  <h6>About Me / Education / <span class="underline">Work</span> / Skills</h6>
+  <h6><span class="AboutMeSpan">About Me</span> / <span class="EducationSpan">Education</span> / <span class="underline"><span class="WorkSpan"> Work </span></span>/ <span class="SkillsSpan">Skills</span> / <span class="ClipsSpan">Clips</span></h6>
 </div>
 
 <div class="WorkContent white">
@@ -138,12 +192,12 @@ workHTML = `
 skillsHTML = `
 
 <div class="skillsHeader white">
-  <h2>Skills</h2>
-  <br>
-  <br>
-  <br>
-  <br>
-  <h6>About Me / Education / Work / <span class="underline">Skills</span></h6>
+<h2>Skills</h2>
+<br>
+<br>
+<br>
+<br>
+<h6><span class="AboutMeSpan">About Me</span> / <span class="EducationSpan">Education</span> / <span class="WorkSpan"> Work </span>/ <span class="underline"><span class="SkillsSpan">Skills</span></span> / <span class="ClipsSpan">Clips</span></h6>
 </div>
 
 <div class="skillsContent blue">
@@ -157,6 +211,7 @@ skillsHTML = `
   <li>Proficient Tableau</li>
   <li>Proficient in Python</li>
   <li>Proficient in data scraping and Google Sheets</li>
+  <li>Novice in R</li>
   </ul>
   <h4>Web Development & Design</h4>
   <ul>
@@ -169,6 +224,20 @@ skillsHTML = `
   <li>Proficient in Adobe Audition</li>
   <li>Novice in Adobe Premiere</li>
 </ul>
+</div>
+`
+
+clipsHTML = `
+<div class="clipsHeader blue">
+<h2>Clips</h2>
+<br>
+<br>
+<br>
+<br>
+<h6><span class="AboutMeSpan">About Me</span> / <span class="EducationSpan">Education</span> / <span class="WorkSpan"> Work </span>/ <span class="SkillsSpan">Skills</span> / <span class="underline"><span class="ClipsSpan">Clips</span></span></h6>
+</div>
+
+<div class="clipsContent purple">
 </div>
 
 `
@@ -184,13 +253,24 @@ const moveDown = () => {
   setTimeout(replacethewholedamnthing, 500);
 };
 
+const moveUp = () => {
+  document.querySelector('.contentcontainer').classList.add('animate__animated');
+  document.querySelector('.contentcontainer').classList.add('animated__fadeOutDown');
+  console.log("class added");
+  setTimeout(replacethewholedamnthingagain, 500);
+};
+
 const replacethewholedamnthing = () => {
   document.querySelector('.thewholedamnthing').innerHTML = ogCONTENT;
   console.log("replaced");
 };
 
-// CONTENT FUNCTIONS
+const replacethewholedamnthingagain = () => {
+  document.querySelector('.thewholedamnthing').innerHTML = introCONTENT;
+  console.log("replaced");
+};
 
+// CONTENT FUNCTIONS
 
 aboutMeShown = "true"
 educationShown = "false"
@@ -205,6 +285,12 @@ const moveRight = () => {
   else if (workShown == "true"){
     showSkills();
   }
+  else if (skillsShown == "true"){
+    showClips();
+  }
+  else if (clipsShown == "true"){
+    showAboutMe();
+  }
 };
 
 const moveLeft = () => {
@@ -217,14 +303,24 @@ const moveLeft = () => {
   else if (skillsShown =="true") {
     showWork();
   }
+  else if (aboutMeShown == "true") {
+    showClips();
+  }
+  else if (clipsShown =="true"){
+    showSkills();
+  }
 };
 
 const showAboutMe = () => {
   document.querySelector('.middlecontainer').innerHTML = aboutmeHTML;
+  document.querySelector('.leftArrow').className = 'leftArrow purple';
+  document.querySelector('.rightArrow').className = 'rightArrow blue';
   aboutMeShown = "true";
   educationShown = "false";
   workShown = "false";
   skillsShown = "false";
+  clipsShown = "false";
+  return clipsShown;
   return aboutMeShown;
   return educationShown;
   return workShown;
@@ -233,10 +329,14 @@ const showAboutMe = () => {
 
 const showEducation = () => {
   document.querySelector('.middlecontainer').innerHTML = educationHTML;
+  document.querySelector('.leftArrow').className = 'leftArrow blue';
+  document.querySelector('.rightArrow').className = 'rightArrow purple';
   aboutMeShown = "false";
   educationShown = "true";
   workShown = "false";
   skillsShown = "false";
+  clipsShown = "false";
+  return clipsShown;
   return aboutMeShown;
   return educationShown;
   return workShown;
@@ -245,10 +345,14 @@ const showEducation = () => {
 
 const showWork = () => {
   document.querySelector('.middlecontainer').innerHTML = workHTML;
+  document.querySelector('.leftArrow').className = 'leftArrow purple';
+  document.querySelector('.rightArrow').className = 'rightArrow white';
   aboutMeShown = "false";
   educationShown = "false";
   workShown = "true";
   skillsShown = "false";
+  clipsShown = "false";
+  return clipsShown;
   return aboutMeShown;
   return educationShown;
   return workShown;
@@ -257,26 +361,45 @@ const showWork = () => {
 
 const showSkills = () => {
   document.querySelector('.middlecontainer').innerHTML = skillsHTML;
+  document.querySelector('.leftArrow').className = 'leftArrow white';
+  document.querySelector('.rightArrow').className = 'rightArrow blue';
   aboutMeShown = "false";
   educationShown = "false";
   workShown = "false";
   skillsShown = "true";
+  clipsShown = "false";
+  return clipsShown;
   return aboutMeShown;
   return educationShown;
   return workShown;
   return skillsShown;
 }
 
+const showClips = () => {
+  document.querySelector('.middlecontainer').innerHTML = clipsHTML;
+  document.querySelector('.leftArrow').className = 'leftArrow blue';
+  document.querySelector('.rightArrow').className = 'rightArrow purple';
+  aboutMeShown = "false";
+  educationShown = "false";
+  workShown = "false";
+  skillsShown = "false";
+  clipsShown = "true";
+  return aboutMeShown;
+  return educationShown;
+  return workShown;
+  return skillsShown;
+  return clipsShown;
+};
+
 // EVENT LISTENERS
 
-document.querySelector('.goDown').onclick = moveDown;
-
-
-// document.querySelector('.gotoAboutMe').onclick = showAboutMe;
-// document.querySelector('.gotoEducation').onclick = showEducation;
-
-
-// EVENT DELEGATION
-
+$(document).on('click', '.goDown', moveDown);
+$(document).on('click','.goUp', moveUp);
 $(document).on('click','.goLeft', moveLeft);
 $(document).on('click','.goRight', moveRight);
+
+$(document).on('click','.AboutMeSpan', showAboutMe);
+$(document).on('click','.EducationSpan', showEducation);
+$(document).on('click','.WorkSpan', showWork);
+$(document).on('click','.SkillsSpan', showSkills);
+$(document).on('click','.ClipsSpan', showClips);
