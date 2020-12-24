@@ -22,10 +22,9 @@
 
 .contentcontainer {
   display: grid;
-  grid-template-columns: 0.1fr 2fr 0.1fr;
-  grid-template-rows: 0.2fr 1fr;
+  grid-template-columns: 0.05fr 2fr 0.05fr;
+  grid-template-rows: 1fr;
   grid-template-areas:
-   "u u u"
    "k l o";
   height: 100vh;
   overflow-x: scroll;
@@ -35,8 +34,9 @@
   grid-area: l;
   display: grid;
   grid-template-columns: 0.4fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 0.06fr 1fr;
   grid-template-areas:
+   "t k"
    "x y";
 
 }
@@ -44,7 +44,6 @@
 /* FILLER CONTENT */
 
 .AboutMeHeader {
-/*  grid-area: l; */
   grid-area: x;
   text-align: center;
   justify-content: center;
@@ -57,7 +56,6 @@
 }
 
 .AboutMeContent {
-/*  grid-area: m; */
   grid-area: y;
   padding-left: 10px;
   text-align: center;
@@ -81,9 +79,9 @@
   justify-content: center;
 }
 
-.WorkContent {
+.workContent {
   grid-area: y;
-  padding: 10px;
+  padding: 20px;
 }
 
 .skillsHeader {
@@ -97,10 +95,11 @@
   padding: 10px;
 }
 
-.clopsHeader {
+.clipsHeader {
   grid-area: x;
   text-align: center;
   justify-content: center;
+  padding: 10px;
 }
 
 .clipsContent {
@@ -114,14 +113,16 @@
   grid-area: k;
   text-align: center;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 40vh;
+  padding-left: 5px;
 }
 
 .rightArrow {
   grid-area: o;
   text-align: center;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 40vh;
+  padding-right: 5px;
 }
 
 /* TEXT */
@@ -138,7 +139,7 @@ h2 {
 
 h3 {
   font-family: 'DM Serif Text', serif;
-  font-size: 20px;
+  font-size: 30px;
   color: white;
   text-align: center;
 }
@@ -198,6 +199,10 @@ a {
   color: white;
 }
 
+.readme a {
+  text-decoration: none;
+}
+
 /* DIVS */
 
 .readme {
@@ -225,7 +230,7 @@ a {
 .contact {
   grid-area: c;
   /*background-color: #091540;*/
-  text-align: right;
+  text-align: center;
   padding-right: 20px;
   display: flex;
   justify-content: center;
@@ -248,13 +253,16 @@ a {
   text-align: center;
 }
 
+.blankcontainer {
+  grid-area: t;
+}
+
 .upArrow {
-  background-color: #091540;
-  grid-area: u;
-  text-align: center;
-  justify-content: center;
+  grid-area: k;
+  text-align: left;
+  justify-content: left;
   padding: 5px;
-  height: 40px;
+  padding-left: 20vw;
 }
 
 /* STYLES */
@@ -320,6 +328,13 @@ button:hover {
 
 /* SOCIAL LINKS */
 
+.whiteicon {
+  color: white;
+}
+
+.blueicon {
+  color: #091540;
+}
 
 .iconimg {
   height: 70px;

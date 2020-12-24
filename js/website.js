@@ -6,8 +6,19 @@ introCONTENT = `
     <div class="readme">
       <h3>READ ME!</h3>
       <a href="https://dailynorthwestern.com/staff_profile/megan-munce/" target="_blank">
-        <img src="css/images/Daily.png" class="iconimg">
+        <img src="css/images/dailylogo.png" class="iconimg">
+        <p>The Daily Northwestern</p>
       </a>
+      <br>
+      <a href="http://theowp.org/author/meganmunce/" target="_blank">
+        <img src="css/images/owplogo.png" class="iconimg">
+        <p>The Organization for World Peace</p>
+      </a>
+      <br>
+      <a href="https://medium.com/@meganmunce" target="_blank">
+        <i class="fab fa-medium icon fa-5x"></i>
+        <p>Medium</p>
+    </a>
 
     </div>
 
@@ -20,17 +31,20 @@ introCONTENT = `
       <ul><li><h3>CONTACT ME!</h3></li>
       <li>
       <a href="https://www.linkedin.com/in/meganmunce/" target="_blank">
-          <i class="fab fa-linkedin fa-2x icon"></i>
+          <i class="fab fa-linkedin fa-4x icon"></i>
+          <p>LinkedIn</p>
       </a>
       <a href="https://twitter.com/meganmuncie?lang=en" target="_blank">
-      <i class="fab fa-twitter-square fa-2x icon"></i>
+      <i class="fab fa-twitter-square fa-4x icon"></i>
+      <p>Twitter</p>
     </a>
-    <a href="https://medium.com/@meganmunce" target="_blank">
-      <i class="fab fa-medium icon fa-2x"></i>
-  </a>
-  <a href="https://github.com/meganmunce" target="_blank"> <i class="fab fa-github-square fa-2x icon"></i></a>
+  <a href="https://github.com/meganmunce" target="_blank">
+    <i class="fab fa-github-square fa-4x icon"></i>    <p>GitHub</p></a>
+
   <a href="mailto:meganmunce2022@u.northwestern.edu">
-  <i class="fas fa-envelope-square fa-2x icon"></i></a>
+  <i class="fas fa-envelope-square fa-4x icon"></i>
+  <p>Email</p></a>
+
 </li>
 </ul>
 </div>
@@ -38,11 +52,10 @@ introCONTENT = `
 <div class="downarrow">
   <p><span class="italic">(Pictured: Emerald Bay in Lake Tahoe, California!)</span></p>
 
-<button class="goLeft placeholder"><i class="fas fa-arrow-circle-left fa-3x"></i></button>
+  <button class="goDown"><i class="fas fa-chevron-down fa-3x"></i></i></button>
 
-  <button class="goDown"><i class="fas fa-arrow-circle-down fa-3x"></i></button>
+</div>
 
-  <button class="goRight placeholder"><i class="fas fa-arrow-circle-right fa-3x"></i></button>
 </div>
 `
 
@@ -50,15 +63,17 @@ ogCONTENT = `
 
 <div class="contentcontainer animate__animated animate__fadeInUp">
 
-<div class="upArrow">
-  <button class="goUp"><i class="fas fa-arrow-circle-up fa-3x"></i></button>
-</div>
-
 <div class="leftArrow purple">
-    <button class="goLeft"><i class="fas fa-arrow-circle-left fa-3x"></i></button>
+    <button class="goLeft"><i class="fas fa-chevron-left fa-3x"></i></button>
 </div>
 
 <div class="middlecontainer">
+
+<div class="blankcontainer purple"></div>
+<div class="upArrow blue">
+  <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
+</div>
+
 
 <div class="AboutMeHeader purple">
 <h2>About Me!</h2>
@@ -82,7 +97,7 @@ ogCONTENT = `
 
 
 <div class="rightArrow blue">
-    <button class="goRight"><i class="fas fa-arrow-circle-right fa-3x"></i></button>
+    <button class="goRight"><i class="fas fa-chevron-right fa-3x"></i></i></button>
 </div>
 
 </div>
@@ -90,7 +105,10 @@ ogCONTENT = `
 `
 aboutmeHTML = `
 
-
+<div class="blankcontainer purple"></div>
+<div class="upArrow blue">
+  <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
+</div>
 <div class="AboutMeHeader purple">
 <h2>About Me!</h2>
 <br>
@@ -112,6 +130,10 @@ aboutmeHTML = `
 
 educationHTML = `
 
+<div class="blankcontainer blue"></div>
+<div class="upArrow purple">
+  <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
+</div>
 <div class="educationHeader blue">
   <h2>Education</h2>
   <br>
@@ -167,7 +189,11 @@ educationHTML = `
 
 workHTML = `
 
-<div class="WorkHeader purple">
+<div class="blankcontainer purple"></div>
+<div class="upArrow white">
+  <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
+</div>
+<div class="workHeader purple">
   <h2>Work Experience</h2>
   <br>
   <br>
@@ -176,7 +202,7 @@ workHTML = `
   <h6><span class="AboutMeSpan">About Me</span> / <span class="EducationSpan">Education</span> / <span class="underline"><span class="WorkSpan"> Work </span></span>/ <span class="SkillsSpan">Skills</span> / <span class="ClipsSpan">Clips</span></h6>
 </div>
 
-<div class="WorkContent white">
+<div class="workContent white">
   <h4>The Daily Northwestern - <span class="italic">Evanston, IL</span></h4>
   <h5>Web Editor, September 2020 - present</h5>
   <h5>Development & Recruitment Editor, July 2020 - September 2020</h5>
@@ -191,6 +217,10 @@ workHTML = `
 `
 skillsHTML = `
 
+<div class="blankcontainer white"></div>
+<div class="upArrow blue">
+  <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
+</div>
 <div class="skillsHeader white">
 <h2>Skills</h2>
 <br>
@@ -228,6 +258,11 @@ skillsHTML = `
 `
 
 clipsHTML = `
+
+<div class="blankcontainer blue"></div>
+<div class="upArrow purple">
+  <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
+</div>
 <div class="clipsHeader blue">
 <h2>Clips</h2>
 <br>
@@ -300,7 +335,7 @@ const moveLeft = () => {
   }
   else if (workShown == "true") {
     showEducation();  }
-  else if (skillsShown =="true") {
+  else if (skillsShown == "true") {
     showWork();
   }
   else if (aboutMeShown == "true") {
@@ -315,6 +350,8 @@ const showAboutMe = () => {
   document.querySelector('.middlecontainer').innerHTML = aboutmeHTML;
   document.querySelector('.leftArrow').className = 'leftArrow purple';
   document.querySelector('.rightArrow').className = 'rightArrow blue';
+  document.querySelector('.goLeft').className = 'goLeft whiteicon';
+  document.querySelector('.goRight').className = 'goRight whiteicon';
   aboutMeShown = "true";
   educationShown = "false";
   workShown = "false";
@@ -331,6 +368,8 @@ const showEducation = () => {
   document.querySelector('.middlecontainer').innerHTML = educationHTML;
   document.querySelector('.leftArrow').className = 'leftArrow blue';
   document.querySelector('.rightArrow').className = 'rightArrow purple';
+  document.querySelector('.goLeft').className = 'goLeft whiteicon';
+  document.querySelector('.goRight').className = 'goRight whiteicon';
   aboutMeShown = "false";
   educationShown = "true";
   workShown = "false";
@@ -347,6 +386,9 @@ const showWork = () => {
   document.querySelector('.middlecontainer').innerHTML = workHTML;
   document.querySelector('.leftArrow').className = 'leftArrow purple';
   document.querySelector('.rightArrow').className = 'rightArrow white';
+  document.querySelector('.goUp').className = 'goUp blueicon';
+  document.querySelector('.goRight').className = 'goRight blueicon';
+  document.querySelector('.goLeft').className = 'goLeft whiteicon';
   aboutMeShown = "false";
   educationShown = "false";
   workShown = "true";
@@ -363,6 +405,8 @@ const showSkills = () => {
   document.querySelector('.middlecontainer').innerHTML = skillsHTML;
   document.querySelector('.leftArrow').className = 'leftArrow white';
   document.querySelector('.rightArrow').className = 'rightArrow blue';
+  document.querySelector('.goLeft').className = 'goLeft blueicon';
+  document.querySelector('.goRight').className = 'goRight whiteicon';
   aboutMeShown = "false";
   educationShown = "false";
   workShown = "false";
@@ -379,6 +423,8 @@ const showClips = () => {
   document.querySelector('.middlecontainer').innerHTML = clipsHTML;
   document.querySelector('.leftArrow').className = 'leftArrow blue';
   document.querySelector('.rightArrow').className = 'rightArrow purple';
+  document.querySelector('.goLeft').className = 'goLeft whiteicon';
+  document.querySelector('.goRight').className = 'goRight whiteicon';
   aboutMeShown = "false";
   educationShown = "false";
   workShown = "false";
