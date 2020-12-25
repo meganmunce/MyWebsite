@@ -103,6 +103,128 @@ ogCONTENT = `
 </div>
 
 `
+
+educationOGCONTENT = `
+
+<div class="contentcontainer animate__animated animate__fadeInUp">
+
+<div class="leftArrow purple">
+    <button class="goLeft"><i class="fas fa-chevron-left fa-3x"></i></button>
+</div>
+
+<div class="middlecontainer">
+
+<div class="blankcontainer blue"></div>
+<div class="upArrow white">
+  <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
+</div>
+<div class="educationHeader blue">
+  <h2>Education</h2>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h6><span class="AboutMeSpan">About Me</span> / <span class="EducationSpan"><span class="underline"> Education </span></span>/ <span class="WorkSpan"> Work </span>/ <span class="SkillsSpan">Skills</span> / <span class="ClipsSpan">Clips</span></h6>
+  </div>
+
+<div class="educationContent white">
+  <h4>Northwestern University Medill School of Journalism — <span class="italic">Evanston, IL</span></h4>
+  <h5>Bachelors of Science, journalism and political science, GPA: 3.87</h5>
+  <p>Relevant Courses:</p>
+  <ul>
+    <li>Media Law & Ethics</li>
+    <li>Tools of the World Wide Web (HTML, CSS, Javascript)</li>
+    <li>Introduction to Computer Programming (Python)</li>
+    <li>Data Analysis & Visualization</li>
+  </ul>
+  <a href="#" class="viewmoreclasses">Click here to view more classes ↓</a>
+  <br>
+  <p>Awards and honors:</p>
+  <ul>
+    <li>Dean's List 6/6 quarters eligible</li>
+    <li>Accepted to the Fall 2020 Election Medill on the Hill cohort, unable to attend due to COVID-19</li>
+  </ul>
+  <p>Extracurriculars:</p>
+  <ul>
+    <li>Public Relations Chair & Team Captain, Northwestern Mock Trial</li>
+    <li>Student Advisory Board Member, American Mock Trial Association</li>
+    <li>Student Member, Asian American Journalists Association</li>
+  </ul>
+
+  <h4>Presentation High School — <span class="italic">San Jose, CA</span></h4>
+  <h5>High School Degree, GPA: 4.43</h5>
+  <p>Awards and honors:</p>
+  <ul>
+    <li>Honors in Language Study (Spanish)</li>
+    <li>Honors in Social Studies</li>
+    <li>Distinguished Student in Social Studies</li>
+    <li>Distinguished Competitor in Speech & Debate</li>
+  </ul>
+  <p>Extracurriculars:</p>
+  <ul>
+    <li>Vice President, Speech and Debate</li>
+    <li>Class Representative, Student Council</li>
+    <li>Club Officer, Students for Political Action</li>
+  <ul>
+</div>
+
+</div>
+
+
+<div class="rightArrow blue">
+    <button class="goRight"><i class="fas fa-chevron-right fa-3x"></i></i></button>
+</div>
+
+</div>
+
+`
+
+workOGCONTENT = `
+
+<div class="contentcontainer animate__animated animate__fadeInUp">
+
+<div class="leftArrow white">
+    <button class="goLeft blueicon"><i class="fas fa-chevron-left fa-3x"></i></button>
+</div>
+
+<div class="middlecontainer">
+
+<div class="blankcontainer white"></div>
+
+<div class="upArrow purple">
+  <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
+</div>
+<div class="workHeader white">
+  <h2>Work Experience</h2>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h6><span class="AboutMeSpan">About Me</span> / <span class="EducationSpan">Education</span> / <span class="underline"><span class="WorkSpan"> Work </span></span>/ <span class="SkillsSpan">Skills</span> / <span class="ClipsSpan">Clips</span></h6>
+</div>
+
+<div class="workContent purple">
+  <h4>The Daily Northwestern - <span class="italic">Evanston, IL</span></h4>
+  <h5>Campus Editor, January 2021 - present</h5>
+  <h5>Web Editor, September 2020 - December 2020</h5>
+  <a href="#" class="viewmoredaily">Click here to view more history at The Daily Northwestern ↓</a>
+  <br>
+  <h4>New Enterprise Associates - <span class="italic">Remote</span></h4>
+  <h5>Business Development & Marketing Intern</h5>
+
+</div>
+
+</div>
+
+
+<div class="rightArrow purple">
+    <button class="goRight"><i class="fas fa-chevron-right fa-3x"></i></i></button>
+</div>
+
+</div>
+
+`
+
 aboutmeHTML = `
 
 <div class="blankcontainer purple"></div>
@@ -131,7 +253,7 @@ aboutmeHTML = `
 educationHTML = `
 
 <div class="blankcontainer blue"></div>
-<div class="upArrow purple">
+<div class="upArrow white">
   <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
 </div>
 <div class="educationHeader blue">
@@ -143,30 +265,28 @@ educationHTML = `
   <h6><span class="AboutMeSpan">About Me</span> / <span class="EducationSpan"><span class="underline"> Education </span></span>/ <span class="WorkSpan"> Work </span>/ <span class="SkillsSpan">Skills</span> / <span class="ClipsSpan">Clips</span></h6>
   </div>
 
-<div class="educationContent purple">
+<div class="educationContent white">
   <h4>Northwestern University Medill School of Journalism — <span class="italic">Evanston, IL</span></h4>
-  <h5>Bachelors of Science, journalism and political science, GPA: 3.85</h5>
+  <h5>Bachelors of Science, journalism and political science, GPA: 3.87</h5>
   <p>Relevant Courses:</p>
   <ul>
-    <li>Constitutional Law I & II</li>
     <li>Media Law & Ethics</li>
-    <li>Law in the Political Arena</li>
     <li>Tools of the World Wide Web (HTML, CSS, Javascript)</li>
     <li>Introduction to Computer Programming (Python)</li>
     <li>Data Analysis & Visualization</li>
-    <li>Political Reporting</li>
   </ul>
-  <a href="#">View More ↓</a>
+  <a href="#" class="viewmoreclasses">Click here to view more classes ↓</a>
+  <br>
   <p>Awards and honors:</p>
   <ul>
-    <li>Dean's List 5/5 quarters eligible</li>
+    <li>Dean's List 6/6 quarters eligible</li>
     <li>Accepted to the Fall 2020 Election Medill on the Hill cohort, unable to attend due to COVID-19</li>
   </ul>
   <p>Extracurriculars:</p>
   <ul>
-    <li>Public Relations Chair & Team Captain, <span class="italics">Northwestern Mock Trial</span></li>
-    <li>Student Advisory Board Member, <span class="italics">American Mock Trial Association</span></li>
-    <li>Student Member, <span class="italics">Asian American Journalists Association</span></li>
+    <li>Public Relations Chair & Team Captain, Northwestern Mock Trial</li>
+    <li>Student Advisory Board Member, American Mock Trial Association</li>
+    <li>Student Member, Asian American Journalists Association</li>
   </ul>
 
   <h4>Presentation High School — <span class="italic">San Jose, CA</span></h4>
@@ -189,11 +309,11 @@ educationHTML = `
 
 workHTML = `
 
-<div class="blankcontainer purple"></div>
-<div class="upArrow white">
+<div class="blankcontainer white"></div>
+<div class="upArrow purple">
   <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
 </div>
-<div class="workHeader purple">
+<div class="workHeader white">
   <h2>Work Experience</h2>
   <br>
   <br>
@@ -202,13 +322,11 @@ workHTML = `
   <h6><span class="AboutMeSpan">About Me</span> / <span class="EducationSpan">Education</span> / <span class="underline"><span class="WorkSpan"> Work </span></span>/ <span class="SkillsSpan">Skills</span> / <span class="ClipsSpan">Clips</span></h6>
 </div>
 
-<div class="workContent white">
+<div class="workContent purple">
   <h4>The Daily Northwestern - <span class="italic">Evanston, IL</span></h4>
-  <h5>Web Editor, September 2020 - present</h5>
-  <h5>Development & Recruitment Editor, July 2020 - September 2020</h5>
-  <h5>Assistant Campus Editor, March 2020 - June 2020</h5>
-  <h5>Social Media Editor, January 2019 - March 2020</h5>
-  <h5>Copy Editor, September 2019 - December 2019</h5>
+  <h5>Campus Editor, January 2021 - present</h5>
+  <h5>Web Editor, September 2020 - December 2020</h5>
+  <a href="#" class="viewmoredaily">Click here to view more history at The Daily Northwestern ↓</a>
   <br>
   <h4>New Enterprise Associates - <span class="italic">Remote</span></h4>
   <h5>Business Development & Marketing Intern</h5>
@@ -217,11 +335,11 @@ workHTML = `
 `
 skillsHTML = `
 
-<div class="blankcontainer white"></div>
+<div class="blankcontainer purple"></div>
 <div class="upArrow blue">
   <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
 </div>
-<div class="skillsHeader white">
+<div class="skillsHeader purple">
 <h2>Skills</h2>
 <br>
 <br>
@@ -260,7 +378,7 @@ skillsHTML = `
 clipsHTML = `
 
 <div class="blankcontainer blue"></div>
-<div class="upArrow purple">
+<div class="upArrow white">
   <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
 </div>
 <div class="clipsHeader blue">
@@ -272,9 +390,113 @@ clipsHTML = `
 <h6><span class="AboutMeSpan">About Me</span> / <span class="EducationSpan">Education</span> / <span class="WorkSpan"> Work </span>/ <span class="SkillsSpan">Skills</span> / <span class="underline"><span class="ClipsSpan">Clips</span></span></h6>
 </div>
 
-<div class="clipsContent purple">
+<div class="clipsContent white">
+</div>
+`
+
+classesContent = `
+<div class="expandedContainer animate__animated animate__fadeInUp">
+
+<div class="anotherBlankContainer blue">
 </div>
 
+<div class="upClassesContainer white">
+<button class="classesGoUp"><i class="fas fa-chevron-up fa-3x"></i></button>
+</div>
+
+<div class="classesHeader blue">
+<h2>Classes</h2>
+</div>
+
+<div class="classesContent white">
+<h4>Journalism Classes</h4>
+<ul>
+  <li>Storytelling: Interactive News (JOUR 320)</li>
+  <li>Strategic Communications (IMC 306)</li>
+  <li>Politics, Protests, Pandemic & the Presidential Election (Political Reporting) (JOUR 390)</li>
+  <li>Data Analysis & Visualization (JOUR 377)</li>
+  <li>Journey of the International Student (Personal Narrative Journalism) (JOUR 301-1)</li>
+  <li>Media Law & Ethics (JOUR 370)</li>
+  <li>Media History (JOUR 302)</li>
+  <li>Philosophy of Modern Journalism (JOUR 302)</li>
+  <li>Multimedia Storytelling (JOUR 201-2)</li>
+  <li>Reporting & Writing (JOUR 201-2)</li>
+</ul>
+<h4>Political Science Classes</h4>
+<ul>
+  <li>Political Research Seminar: Political Polarization (POLI_SCI 395)</li>
+  <li>Political Sociology of Gender (POLI_SCI 390)</li>
+  <li>Drugs & Politics (POLI_SCI 377)</li>
+  <li>Congress & the Legislative Process (POLI_SCI 325)</li>
+  <li>Constitutional Law I & II (POLI_SCI 332 & 333)</li>
+  <li>American & the World (POLI_SCI 378)</li>
+  <li>U.S. Foreign Policy (POLI_SCI 344)</li>
+  <li>Introduction to International Relations (POLI_SCI 240)</li>
+  <li>Introduction to Law in the Political Arena (POLI_SCI 230)</li>
+</ul>
+<h4>Computer Science</h4>
+<ul>
+  <li>Introduction to Computer Programming (Python) (EECS 110)</li>
+  <li>Tools of the World Wide Web (HTML, CSS, Javascript)(EECS 130)</li>
+  <li>Introduction to Empirical Methods (R) (POLI_SCI 210-0)</li>
+  </ul>
+  <h4>Miscellaneous</h4>
+  <ul>
+    <li>Introduction to Macroeconomics (ECON 201)</li>
+    <li>Conversation on Human Rights: Latin America (SPANISH 201)</li>
+    <li>Individual and Society through Written Expression (SPANISH 203)</li>
+    <li>Reading and Writing the Art of Protest (SPANISH 204)</li>
+    </ul>
+</div>
+
+</div>
+`
+
+dailyContent = `
+<div class="expandedContainer animate__animated animate__fadeInUp">
+
+<div class="yetanotherBlankContainer white">
+</div>
+
+<div class="upDailyContainer purple">
+<button class="dailyGoUp"><i class="fas fa-chevron-up fa-3x"></i></button>
+</div>
+
+<div class="dailyHeader white">
+<h2>Classes</h2>
+</div>
+
+<div class="dailyContent purple">
+<h4>Journalism Classes</h4>
+<ul>
+  <li>Storytelling: Interactive News (JOUR 320)</li>
+  <li>Strategic Communications (IMC 306)</li>
+  <li>Politics, Protests, Pandemic & the Presidential Election (Political Reporting) (JOUR 390)</li>
+  <li>Data Analysis & Visualization (JOUR 377)</li>
+  <li>Journey of the International Student (Personal Narrative Journalism) (JOUR 301-1)</li>
+  <li>Media Law & Ethics (JOUR 370)</li>
+  <li>Media History (JOUR 302)</li>
+  <li>Philosophy of Modern Journalism (JOUR 302)</li>
+  <li>Multimedia Storytelling (JOUR 201-2)</li>
+  <li>Reporting & Writing (JOUR 201-2)</li>
+</ul>
+<h4>Political Science Classes</h4>
+<ul>
+  <li>Research Seminar: Political Polarization (POLI_SCI 395)</li>
+  <li>Drugs & Politics (POLI_SCI 377)</li>
+  <li>Gender, Politics, and Policy (POLI_SCI 390)</li>
+  <li>Congress & the Legislative Process</li>
+  <li>Constitutional Law I & II (POLI_SCI 332 & 333)</li>
+</ul>
+<h4>Computer Science</h4>
+<ul>
+  <li>Introduction to Computer Programming (Python) (EECS 110)</li>
+  <li>Tools of the World Wide Web (HTML, CSS, Javascript)(EECS 130)</li>
+  <li>Introduction to Empirical Methods (R) (POLI_SCI 210-0)</li>
+  </ul>
+</div>
+
+</div>
 `
 
 // FIRST PAGE
@@ -305,7 +527,7 @@ const replacethewholedamnthingagain = () => {
   console.log("replaced");
 };
 
-// CONTENT FUNCTIONS
+// ARROW FUNCTIONS
 
 aboutMeShown = "true"
 educationShown = "false"
@@ -346,6 +568,8 @@ const moveLeft = () => {
   }
 };
 
+// SHOW SECTIONS
+
 const showAboutMe = () => {
   document.querySelector('.middlecontainer').innerHTML = aboutmeHTML;
   document.querySelector('.leftArrow').className = 'leftArrow purple';
@@ -367,9 +591,9 @@ const showAboutMe = () => {
 const showEducation = () => {
   document.querySelector('.middlecontainer').innerHTML = educationHTML;
   document.querySelector('.leftArrow').className = 'leftArrow blue';
-  document.querySelector('.rightArrow').className = 'rightArrow purple';
+  document.querySelector('.rightArrow').className = 'rightArrow white';
   document.querySelector('.goLeft').className = 'goLeft whiteicon';
-  document.querySelector('.goRight').className = 'goRight whiteicon';
+  document.querySelector('.goRight').className = 'goRight blueicon';
   aboutMeShown = "false";
   educationShown = "true";
   workShown = "false";
@@ -384,11 +608,11 @@ const showEducation = () => {
 
 const showWork = () => {
   document.querySelector('.middlecontainer').innerHTML = workHTML;
-  document.querySelector('.leftArrow').className = 'leftArrow purple';
-  document.querySelector('.rightArrow').className = 'rightArrow white';
-  document.querySelector('.goUp').className = 'goUp blueicon';
-  document.querySelector('.goRight').className = 'goRight blueicon';
-  document.querySelector('.goLeft').className = 'goLeft whiteicon';
+  document.querySelector('.leftArrow').className = 'leftArrow white';
+  document.querySelector('.rightArrow').className = 'rightArrow purple';
+  document.querySelector('.goUp').className = 'goUp whiteicon';
+  document.querySelector('.goRight').className = 'goRight whiteicon';
+  document.querySelector('.goLeft').className = 'goLeft blueicon';
   aboutMeShown = "false";
   educationShown = "false";
   workShown = "true";
@@ -403,9 +627,9 @@ const showWork = () => {
 
 const showSkills = () => {
   document.querySelector('.middlecontainer').innerHTML = skillsHTML;
-  document.querySelector('.leftArrow').className = 'leftArrow white';
+  document.querySelector('.leftArrow').className = 'leftArrow purple';
   document.querySelector('.rightArrow').className = 'rightArrow blue';
-  document.querySelector('.goLeft').className = 'goLeft blueicon';
+  document.querySelector('.goLeft').className = 'goLeft whiteicon';
   document.querySelector('.goRight').className = 'goRight whiteicon';
   aboutMeShown = "false";
   educationShown = "false";
@@ -422,9 +646,9 @@ const showSkills = () => {
 const showClips = () => {
   document.querySelector('.middlecontainer').innerHTML = clipsHTML;
   document.querySelector('.leftArrow').className = 'leftArrow blue';
-  document.querySelector('.rightArrow').className = 'rightArrow purple';
+  document.querySelector('.rightArrow').className = 'rightArrow white';
   document.querySelector('.goLeft').className = 'goLeft whiteicon';
-  document.querySelector('.goRight').className = 'goRight whiteicon';
+  document.querySelector('.goRight').className = 'goRight blueicon';
   aboutMeShown = "false";
   educationShown = "false";
   workShown = "false";
@@ -437,7 +661,34 @@ const showClips = () => {
   return clipsShown;
 };
 
-// EVENT LISTENERS
+// SHOW MORE FUNCTIONS
+
+const showMoreClasses = () => {
+  document.querySelector('.contentcontainer').classList.add('animate__animated');
+  document.querySelector('.contentcontainer').classList.add('animated__fadeOutUp');
+  console.log("class added");
+  setTimeout(showTheClasses, 500);
+};
+
+const showTheClasses = () => {
+  document.querySelector('.thewholedamnthing').innerHTML = classesContent;
+  console.log("replaced");
+};
+
+const backUpToClasses = () => {
+  document.querySelector('.thewholedamnthing').innerHTML = educationOGCONTENT;
+};
+
+const showMoreDaily = () => {
+  document.querySelector('.thewholedamnthing').innerHTML = dailyContent;
+  console.log("replaced");
+};
+
+const backUpToWork = () => {
+  document.querySelector('.thewholedamnthing').innerHTML = workOGCONTENT;
+};
+
+// ARROW EVENT LISTENERS
 
 $(document).on('click', '.goDown', moveDown);
 $(document).on('click','.goUp', moveUp);
@@ -449,3 +700,11 @@ $(document).on('click','.EducationSpan', showEducation);
 $(document).on('click','.WorkSpan', showWork);
 $(document).on('click','.SkillsSpan', showSkills);
 $(document).on('click','.ClipsSpan', showClips);
+
+// VIEW MORE EVENT LISTENERS
+
+$(document).on('click','.viewmoreclasses', showMoreClasses);
+$(document).on('click','.classesGoUp', backUpToClasses);
+
+$(document).on('click','.viewmoredaily', showMoreDaily);
+$(document).on('click','.dailyGoUp', backUpToWork);

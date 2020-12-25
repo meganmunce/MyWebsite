@@ -41,6 +41,15 @@
 
 }
 
+.expandedContainer {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  grid-template-rows: 0.1fr 1fr;
+  grid-template-areas:
+  "h p"
+  "m n";
+}
+
 /* FILLER CONTENT */
 
 .AboutMeHeader {
@@ -71,6 +80,8 @@
 .educationContent {
   grid-area: y;
   padding: 10px;
+  text-align: left;
+  justify-content: left;
 }
 
 .workHeader {
@@ -125,6 +136,62 @@
   padding-right: 5px;
 }
 
+.anotherBlankContainer {
+  grid-area: h;
+}
+
+.upClassesContainer {
+  grid-area: p;
+}
+
+.classesHeader {
+  grid-area: m;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.classesContent {
+  grid-area: n;
+  justify-content: left;
+  text-align: left;
+  padding-left: 15px;
+  height: 100%;
+}
+
+.classesGoUp {
+  color: #091540;
+  padding-left: 20vw;
+}
+
+.yetanotherBlankContainer {
+  grid-area: h;
+}
+
+.upDailyContainer {
+  grid-area: p;
+}
+
+.dailyHeader {
+  grid-area: m;
+  text-align: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.dailyContent {
+  grid-area: n;
+  justify-content: left;
+  text-align: left;
+  padding-left: 15px;
+  height: 90vh;
+}
+
+.dailyGoUp {
+  color: white;
+  padding-left: 20vw;
+}
+
 /* TEXT */
 
 h1 {
@@ -166,6 +233,14 @@ h3 {
   font-family: 'Roboto', sans-serif;
 }
 
+.educationContent, .workContent h4 {
+  line-height: 35%;
+}
+
+.educationContent, .workContent h5 {
+  line-height: 35%;
+}
+
 h4 {
   font-family: 'DM Serif Text', serif;
   font-size: 20px;
@@ -184,8 +259,10 @@ h6 {
 
 p {
   font-family: 'Roboto', sans-serif;
-  padding-left: 100px;
-  padding-right: 100px;
+}
+
+.name p {
+  color: white;
 }
 
 ul {
@@ -197,6 +274,10 @@ ul {
 a {
   font-family: 'Roboto', sans-serif;
   color: white;
+}
+
+.educationContent a {
+  color: #091540;
 }
 
 .readme a {
