@@ -381,11 +381,6 @@ button {
   color: white;
 }
 
-button:hover {
-  animation: whiteToPurple 600ms;
-  color: #9883e5;
-}
-
 .sticky {
   position: sticky;
   position: -webkit-sticky;
@@ -422,12 +417,59 @@ button:hover {
   width: auto;
 }
 
-.icon:hover {
-  animation: whiteToPurple 600ms;
-  color: #9883e5;
+/* ANIMATIONS */
+
+.goUp:hover, .dailyGoUp:hover, .classesGoUp:hover {
+  animation-name: bobbleup;
+  animation-duration: 850ms;
+  animation-iteration-count: infinite;
 }
 
-/* ANIMATIONS */
+.goDown:hover {
+  animation-name: bobbledown;
+  animation-duration: 850ms;
+  animation-iteration-count: infinite;
+}
+
+.goLeft:hover {
+  animation-name: bobbleleft;
+  animation-duration: 850ms;
+  animation-iteration-count: infinite;
+}
+
+.goRight:hover {
+  animation-name: bobbleright;
+  animation-duration: 850ms;
+  animation-iteration-count: infinite;
+}
+
+.goUp, .goDown, .goLeft, .goRight, .classesGoUp, .dailyGoUp {
+  position: relative;
+}
+
+@keyframes bobbledown {
+  0%{top: 0px;}
+  50%{top: 10px;}
+  100%{top: 0px;}
+}
+
+@keyframes bobbleup{
+  0%{bottom: 0px;}
+  50%{bottom: 10px;}
+  100%{bottom: 0px;}
+}
+
+@keyframes bobbleleft {
+  0%{right: 0px;}
+  50%{right: 10px;}
+  100%{right: 0px;}
+}
+
+@keyframes bobbleright {
+  0%{left: 0px;}
+  50%{left: 10px;}
+  100%{left: 0px;}
+}
 
 .animated__fadeOutUp {
   animation: fadeOutUp;
@@ -435,11 +477,6 @@ button:hover {
 
 .animate__fadeInUp {
   animation: fadeInUp;
-}
-
-@keyframes whiteToPurple{
-  0%{color: white;}
-  100%{color: #9883e5;}
 }
 
 @keyframes fade {
@@ -484,5 +521,3 @@ button:hover {
           "f"
           "g";
   }
-
-  */

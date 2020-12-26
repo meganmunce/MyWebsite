@@ -49,10 +49,10 @@ introCONTENT = `
 </ul>
 </div>
 
-<div class="downarrow">
+<div class="downArrow">
   <p><span class="italic">(Pictured: Emerald Bay in Lake Tahoe, California!)</span></p>
 
-  <button class="goDown"><i class="fas fa-chevron-down fa-3x"></i></i></button>
+  <button class="goDown"><i class="fas fa-chevron-down fa-3x"></i></button>
 
 </div>
 
@@ -96,7 +96,7 @@ ogCONTENT = `
 </div>
 
 
-<div class="rightArrow blue">
+<div class="rightArrow  blue">
     <button class="goRight"><i class="fas fa-chevron-right fa-3x"></i></i></button>
 </div>
 
@@ -108,7 +108,7 @@ educationOGCONTENT = `
 
 <div class="contentcontainer animate__animated animate__fadeInUp">
 
-<div class="leftArrow purple">
+<div class="leftArrow  blue">
     <button class="goLeft"><i class="fas fa-chevron-left fa-3x"></i></button>
 </div>
 
@@ -116,7 +116,7 @@ educationOGCONTENT = `
 
 <div class="blankcontainer blue"></div>
 <div class="upArrow white">
-  <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
+  <button class="goUp blueicon"><i class="fas fa-chevron-up fa-3x"></i></i></button>
 </div>
 <div class="educationHeader blue">
   <h2>Education</h2>
@@ -171,8 +171,8 @@ educationOGCONTENT = `
 </div>
 
 
-<div class="rightArrow blue">
-    <button class="goRight"><i class="fas fa-chevron-right fa-3x"></i></i></button>
+<div class="rightArrow white">
+    <button class="goRight blueicon"><i class="fas fa-chevron-right fa-3x"></i></i></button>
 </div>
 
 </div>
@@ -192,7 +192,7 @@ workOGCONTENT = `
 <div class="blankcontainer white"></div>
 
 <div class="upArrow purple">
-  <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
+  <button class="goUp"><i class="fas   fa-chevron-up fa-3x"></i></i></button>
 </div>
 <div class="workHeader white">
   <h2>Work Experience</h2>
@@ -229,7 +229,7 @@ aboutmeHTML = `
 
 <div class="blankcontainer purple"></div>
 <div class="upArrow blue">
-  <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
+  <button class="goUp"><i class="fas   fa-chevron-up fa-3x"></i></i></button>
 </div>
 <div class="AboutMeHeader purple">
 <h2>About Me!</h2>
@@ -311,7 +311,7 @@ workHTML = `
 
 <div class="blankcontainer white"></div>
 <div class="upArrow purple">
-  <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
+  <button class="goUp"><i class="fas   fa-chevron-up fa-3x"></i></i></button>
 </div>
 <div class="workHeader white">
   <h2>Work Experience</h2>
@@ -337,7 +337,7 @@ skillsHTML = `
 
 <div class="blankcontainer purple"></div>
 <div class="upArrow blue">
-  <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
+  <button class="goUp"><i class="fas   fa-chevron-up fa-3x"></i></i></button>
 </div>
 <div class="skillsHeader purple">
 <h2>Skills</h2>
@@ -379,7 +379,7 @@ clipsHTML = `
 
 <div class="blankcontainer blue"></div>
 <div class="upArrow white">
-  <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
+  <button class="goUp"><i class="fas   fa-chevron-up fa-3x"></i></i></button>
 </div>
 <div class="clipsHeader blue">
 <h2>Clips</h2>
@@ -527,7 +527,7 @@ const replacethewholedamnthingagain = () => {
   console.log("replaced");
 };
 
-// ARROW FUNCTIONS
+//   FUNCTIONS
 
 aboutMeShown = "true"
 educationShown = "false"
@@ -594,6 +594,7 @@ const showEducation = () => {
   document.querySelector('.rightArrow').className = 'rightArrow white';
   document.querySelector('.goLeft').className = 'goLeft whiteicon';
   document.querySelector('.goRight').className = 'goRight blueicon';
+  document.querySelector('.goUp').className = 'goUp blueicon';
   aboutMeShown = "false";
   educationShown = "true";
   workShown = "false";
@@ -613,6 +614,7 @@ const showWork = () => {
   document.querySelector('.goUp').className = 'goUp whiteicon';
   document.querySelector('.goRight').className = 'goRight whiteicon';
   document.querySelector('.goLeft').className = 'goLeft blueicon';
+  document.querySelector('.goUp').className = 'goUp whiteicon';
   aboutMeShown = "false";
   educationShown = "false";
   workShown = "true";
@@ -631,6 +633,7 @@ const showSkills = () => {
   document.querySelector('.rightArrow').className = 'rightArrow blue';
   document.querySelector('.goLeft').className = 'goLeft whiteicon';
   document.querySelector('.goRight').className = 'goRight whiteicon';
+  document.querySelector('.goUp').className = 'goUp whiteicon';
   aboutMeShown = "false";
   educationShown = "false";
   workShown = "false";
@@ -649,6 +652,7 @@ const showClips = () => {
   document.querySelector('.rightArrow').className = 'rightArrow white';
   document.querySelector('.goLeft').className = 'goLeft whiteicon';
   document.querySelector('.goRight').className = 'goRight blueicon';
+  document.querySelector('.goUp').className = 'goUp blueicon';
   aboutMeShown = "false";
   educationShown = "false";
   workShown = "false";
@@ -688,7 +692,7 @@ const backUpToWork = () => {
   document.querySelector('.thewholedamnthing').innerHTML = workOGCONTENT;
 };
 
-// ARROW EVENT LISTENERS
+//   EVENT LISTENERS
 
 $(document).on('click', '.goDown', moveDown);
 $(document).on('click','.goUp', moveUp);
