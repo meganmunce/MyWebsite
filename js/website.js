@@ -25,6 +25,9 @@ introCONTENT = `
     <div class="name">
       <h1>Megan Munce</h1>
       <h3>Digital Student Journalist @ Northwestern University</h3>
+      <br>
+      <br>
+      <p><span class="italic">Thank you for visiting my website! Click the down arrow to view an interactive version of my resume and clips!</p></span>
     </div>
 
     <div class="contact">
@@ -49,10 +52,10 @@ introCONTENT = `
 </ul>
 </div>
 
-<div class="downArrow">
+<div class="downarrow">
   <p><span class="italic">(Pictured: Emerald Bay in Lake Tahoe, California!)</span></p>
 
-  <button class="goDown"><i class="fas fa-chevron-down fa-3x"></i></button>
+  <button class="goDown"><i class="fas fa-chevron-down fa-3x"></i></i></button>
 
 </div>
 
@@ -101,7 +104,6 @@ ogCONTENT = `
 </div>
 
 </div>
-
 `
 
 educationOGCONTENT = `
@@ -225,6 +227,52 @@ workOGCONTENT = `
 
 `
 
+clipsOGCONTENT = `
+<div class="contentcontainer animate__animated animate__fadeInUp">
+
+<div class="leftArrow blue">
+    <button class="goLeft"><i class="fas fa-chevron-left fa-3x"></i></button>
+</div>
+
+<div class="middlecontainer">
+
+<div class="blankcontainer blue"></div>
+<div class="upArrow white">
+  <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
+</div>
+<div class="clipsHeader blue">
+<h2>Clips</h2>
+<br>
+<br>
+<br>
+<br>
+<h6><span class="AboutMeSpan">About Me</span> / <span class="EducationSpan">Education</span> / <span class="WorkSpan"> Work </span>/ <span class="SkillsSpan">Skills</span> / <span class="underline"><span class="ClipsSpan">Clips</span></span></h6>
+</div>
+
+<div class="clipsContent white">
+
+<h4>Click the buttons below to view my clips!</h4>
+
+<ul>
+<li><button class="genjour">General Clips</button></li>
+<li><button class="bizjour">Business Journalism Clips</button></li>
+<li><button class="datajour">Data Journalism Clips</button></li>
+<li><button class="polijour">Political Journalism Clips</button></li>
+<li><button class="multijour">Multimedia Journalism Clips</button></li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="rightArrow  white">
+    <button class="goRight"><i class="fas fa-chevron-right fa-3x"></i></i></button>
+</div>
+
+</div>
+`
+
 aboutmeHTML = `
 
 <div class="blankcontainer purple"></div>
@@ -330,7 +378,11 @@ workHTML = `
   <br>
   <h4>New Enterprise Associates - <span class="italic">Remote</span></h4>
   <h5>Business Development & Marketing Intern</h5>
-
+  <h4>Parity.org - <span class="italic">Remote</span></h4>
+  <h5>Content Volunteer</h5>
+  <h4>Organization for World Peace - <span class="italic">Remote</span></h4>
+  <h5>Junior Correspondent Intern</h5>
+  <a href="https://www.linkedin.com/in/meganmunce/" target="_blank">See more experience on my LinkedIn!</a>
 </div>
 `
 skillsHTML = `
@@ -391,6 +443,17 @@ clipsHTML = `
 </div>
 
 <div class="clipsContent white">
+
+<h4>Click the buttons below to view my clips!</h4>
+
+<ul>
+<li><button class="genjour">General Clips</button></li>
+<li><button class="bizjour">Business Journalism Clips</button></li>
+<li><button class="datajour">Data Journalism Clips</button></li>
+<li><button class="polijour">Political Journalism Clips</button></li>
+<li><button class="multijour">Multimedia Journalism Clips</button></li>
+</ul>
+
 </div>
 `
 
@@ -463,39 +526,79 @@ dailyContent = `
 </div>
 
 <div class="dailyHeader white">
-<h2>Classes</h2>
+<h2>The Daily Northwestern</h2>
 </div>
 
 <div class="dailyContent purple">
-<h4>Journalism Classes</h4>
-<ul>
-  <li>Storytelling: Interactive News (JOUR 320)</li>
-  <li>Strategic Communications (IMC 306)</li>
-  <li>Politics, Protests, Pandemic & the Presidential Election (Political Reporting) (JOUR 390)</li>
-  <li>Data Analysis & Visualization (JOUR 377)</li>
-  <li>Journey of the International Student (Personal Narrative Journalism) (JOUR 301-1)</li>
-  <li>Media Law & Ethics (JOUR 370)</li>
-  <li>Media History (JOUR 302)</li>
-  <li>Philosophy of Modern Journalism (JOUR 302)</li>
-  <li>Multimedia Storytelling (JOUR 201-2)</li>
-  <li>Reporting & Writing (JOUR 201-2)</li>
-</ul>
-<h4>Political Science Classes</h4>
-<ul>
-  <li>Research Seminar: Political Polarization (POLI_SCI 395)</li>
-  <li>Drugs & Politics (POLI_SCI 377)</li>
-  <li>Gender, Politics, and Policy (POLI_SCI 390)</li>
-  <li>Congress & the Legislative Process</li>
-  <li>Constitutional Law I & II (POLI_SCI 332 & 333)</li>
-</ul>
-<h4>Computer Science</h4>
-<ul>
-  <li>Introduction to Computer Programming (Python) (EECS 110)</li>
-  <li>Tools of the World Wide Web (HTML, CSS, Javascript)(EECS 130)</li>
-  <li>Introduction to Empirical Methods (R) (POLI_SCI 210-0)</li>
-  </ul>
+  <h4>The Daily Northwestern - <span class="italic">Evanston, IL</span></h4>
+  <h5>Campus Editor, January 2021 - present</h5>
+  <h5>Web Editor, September 2020 - December 2020</h5>
+  <h5>Development & Recruitment Editor, June 2020 - August 2020</h5>
+  <h5>Assistant Campus Editor, March 2020 - June 2020</h5>
+  <h5>Social Media Editor, January 2020 - March 2020</h5>
+  <h5>Copy Editor, September 2019 - December 2019</h5>
+  <h5>Campus Desk Reporter, September 2018 - present</h5>
 </div>
 
+</div>
+`
+
+genJourClips = `
+
+<div class="expandedContainer">
+
+<div class="thethirdblankcontainer blue">
+</div>
+
+<div class="clipsUpArrow white">
+  <button class="clipGoUp"><i class="fas fa-chevron-up fa-3x blueicon"></i></button>
+</div>
+
+<div class="genJourHeader blue">
+<h2>General Journalism Clips</h2>
+<br>
+<br>
+<span class="italic"><p>Click on the photos or the text to the right to be taken to the story.</p></span>
+</div>
+
+<div id="clipscontainer">
+
+<div class="clip1photo">
+<a href="https://dailynorthwestern.com/2020/08/06/campus/your-dues-are-political-nu-greek-life-grapples-with-its-financial-relationship-to-fratpac/" target="_blank">
+<img src="https://dailynorthwestern.com/wp-content/uploads/2020/08/GREEK_JacobFulton-900x600.jpg" class="clipphoto">
+</a>
+</div>
+
+<div class="clip1words">
+<a href="https://dailynorthwestern.com/2020/08/06/campus/your-dues-are-political-nu-greek-life-grapples-with-its-financial-relationship-to-fratpac/" target="_blank">
+<h4>“Your dues are political”: NU Greek Life grapples with its financial relationship to FratPAC, <span class="italic">The Daily Northwestern</span></h4>
+<p>Amid a growing anti-Greek Life movement on campus, students took to social media to decry the financial relationship between Greek Life and the Fraternity & Sorority PAC.</p>
+<p>This story was a feature fact-check on social media rumors that Northwestern Greek Life dues were funding prominent Republicans' re-election campaigns. My reporting entailed using Google Sheets to scrape data from OpenSecrets.org to tally up the PAC's contributions and using Tableau to explore different visualizations before they were finalized in Adobe Illustrator.</p>
+</a>
+</div>
+
+<div class="clip2photo">
+<a href="https://dailynorthwestern.com/2020/09/09/campus/memorial-to-a-memorial-university-plans-to-replace-removed-memorial-to-students-who-died-while-at-northwestern/" target="_blank">
+<img src="https://dailynorthwestern.com/wp-content/uploads/2020/09/Memorial-tree.jpeg" class="clipphoto">
+</a>
+</div>
+
+<div class="clip2words">
+<a href="https://dailynorthwestern.com/2020/09/09/campus/memorial-to-a-memorial-university-plans-to-replace-removed-memorial-to-students-who-died-while-at-northwestern/" target="_blank">
+<h4>Memorial to a memorial: University plans to replace removed memorial to students who died while at Northwestern, <span class="italic">The Daily Northwestern</span></h4>
+<p>Students expressed outrage and grief after a long-standing memorial to deceased students was removed without warning.</p>
+<p>I sourced this story from social media after seeing photos going around of the memorial being removed. I also used social media to fact-check the timeline of events put forth by the administration and to confirm sensitive details, such as the number of names on the tree.
+Interviewing for this story also required me to be empathetic and sensitive to sources recounting traumatic events.</p>
+</a>
+</div>
+
+<div class="clip3photo">
+</div>
+
+<div class="clip3words">
+</div>
+
+</div>
 </div>
 `
 
@@ -692,6 +795,17 @@ const backUpToWork = () => {
   document.querySelector('.thewholedamnthing').innerHTML = workOGCONTENT;
 };
 
+// CLIPS FUNCTIONS
+
+const showGenJour = () => {
+  document.querySelector('.thewholedamnthing').innerHTML = genJourClips;
+  console.log("replaced");
+};
+
+const backToClips = () => {
+  document.querySelector('.thewholedamnthing').innerHTML = clipsOGCONTENT;
+};
+
 //   EVENT LISTENERS
 
 $(document).on('click', '.goDown', moveDown);
@@ -712,3 +826,8 @@ $(document).on('click','.classesGoUp', backUpToClasses);
 
 $(document).on('click','.viewmoredaily', showMoreDaily);
 $(document).on('click','.dailyGoUp', backUpToWork);
+
+// CLIPS BUTTON EVENT LISTENERS
+
+$(document).on('click','.genjour', showGenJour)
+$(document).on('click','.clipsUpArrow', backToClips)

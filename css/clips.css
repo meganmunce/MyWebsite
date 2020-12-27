@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto&display=swap');
+
+/* CONTAINERS */
+
+#clipscontainer {
+  grid-area: n;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "q r"
+  "s t"
+  "u v";
+  background-color: white;
+  color: #091540;
+  height: 100%;
+}
+
+.thethirdblankcontainer {
+  grid-area: h;
+}
+
+.clipsUpArrow {
+  grid-area: p;
+  padding-left: 25vw;
+}
+
+.genJourHeader {
+  grid-area: m;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.clip1photo {
+  grid-area: q;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.clip1words {
+  grid-area: r;
+  padding: 10px;
+}
+
+.clip2photo {
+  grid-area: s;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.clip2words {
+  grid-area: t;
+  padding: 10px;
+}
+
+.clip3photo {
+  grid-area: u;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.clip3words {
+  grid-area: v;
+  padding: 10px;
+}
+
+.clipphoto {
+  height: auto;
+  width: 100%;
+}
+
+.clipphoto:hover {
+  animation: grow 600ms;
+  transform:scale(1.03);
+}
+
+.clip1words:hover, .clip2words:hover {
+  animation: growalittle 600ms;
+  transform:scale(1.02);
+}
+
+.bizjour:hover, .datajour:hover, .polijour:hover, .multijour:hover, .genjour:hover {
+  animation-name: pulse;
+  animation-iteration-count: 1;
+  animation-duration: 500ms;
+}
+
+@keyframes pulse {
+  0%{transform:scale(1);}
+  50%{transform:scale(2);}
+  100%{transform:scale(1.2);}
+}
+
+@keyframes grow {
+  0%{transform:scale(1)}
+  100%{transform:scale(1.03)}
+}
+
+@keyframes growalittle {
+  0%{transform:scale(1)}
+  100%{transform:scale(1.02)}
+}
