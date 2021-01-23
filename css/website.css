@@ -47,6 +47,7 @@
   grid-template-areas:
   "h p"
   "m n";
+  height: 100vh;
 }
 
 /* FILLER CONTENT */
@@ -239,10 +240,6 @@ h3 {
   font-family: 'Roboto', sans-serif;
 }
 
-.educationContent, .workContent h4 {
-  line-height: 35%;
-}
-
 .educationContent, .workContent h5 {
   line-height: 35%;
 }
@@ -269,7 +266,7 @@ h4 {
 
 h5 {
   font-family: 'DM Serif Text', serif;
-  font-style: italic;
+  font-style: ;
   font-size: 15px;
 }
 
@@ -301,6 +298,7 @@ a {
 .readme a {
   text-decoration: none;
 }
+
 
 /* DIVS */
 
@@ -350,6 +348,7 @@ a {
 .downarrow {
   grid-area: d;
   text-align: center;
+  justify-content: center;
 }
 
 .blankcontainer {
@@ -366,10 +365,6 @@ a {
 
 /* STYLES */
 
-.italic{
-  font-style: italic;
-}
-
 .underline {
   text-decoration: underline;
 }
@@ -385,7 +380,6 @@ a {
 
 .indent{
   text-indent: 25px;
-  line-height: 0;
 }
 
 .headshot {
@@ -448,6 +442,12 @@ button {
   width: auto;
 }
 
+.iconimg:hover, .icon:hover {
+  animation: tada;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
 /* ANIMATIONS */
 
 .goUp:hover, .dailyGoUp:hover, .classesGoUp:hover, .clipGoUp:hover {
@@ -476,6 +476,12 @@ button {
 
 .goUp, .goDown, .goLeft, .goRight, .classesGoUp, .clipGoUp {
   position: relative;
+}
+
+.workContent a:hover {
+  animation: bobbledown;
+  animation-duration: 850ms;
+  animation-iteration-count: infinite;
 }
 
 @keyframes bobbledown {

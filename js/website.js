@@ -27,7 +27,7 @@ introCONTENT = `
       <h3>Digital Student Journalist @ Northwestern University</h3>
       <br>
       <br>
-      <p><span class="italic">Thank you for visiting my website! Click the down arrow to view an interactive version of my resume and clips!</p></span>
+      <p><em>Thank you for visiting my website! Click the down arrow to view an interactive version of my resume and clips!</p></em>
     </div>
 
     <div class="contact">
@@ -53,7 +53,7 @@ introCONTENT = `
 </div>
 
 <div class="downarrow">
-  <p><span class="italic">(Pictured: Emerald Bay in Lake Tahoe, California!)</span></p>
+  <p><em>(Pictured: Emerald Bay in Lake Tahoe, California!)</em></p>
 
   <button class="goDown"><i class="fas fa-chevron-down fa-3x"></i></i></button>
 
@@ -130,9 +130,9 @@ educationOGCONTENT = `
   </div>
 
 <div class="educationContent white">
-  <h4>Northwestern University Medill School of Journalism — <span class="italic">Evanston, IL</span></h4>
+  <h4>Northwestern University Medill School of Journalism — <em>Evanston, IL</em></h4>
   <h5>Bachelors of Science, journalism and political science, GPA: 3.87</h5>
-  <p>Relevant Courses:</p>
+  <p style="color: #091540">Relevant Courses:</p>
   <ul>
     <li>Media Law & Ethics</li>
     <li>Tools of the World Wide Web (HTML, CSS, Javascript)</li>
@@ -141,28 +141,28 @@ educationOGCONTENT = `
   </ul>
   <a href="#" class="viewmoreclasses">Click here to view more classes ↓</a>
   <br>
-  <p>Awards and honors:</p>
+  <p style="color: #091540">Awards and honors:</p>
   <ul>
     <li>Dean's List 6/6 quarters eligible</li>
     <li>Accepted to the Fall 2020 Election Medill on the Hill cohort, unable to attend due to COVID-19</li>
   </ul>
-  <p>Extracurriculars:</p>
+  <p style="color: #091540">Extracurriculars:</p>
   <ul>
     <li>Public Relations Chair & Team Captain, Northwestern Mock Trial</li>
     <li>Student Advisory Board Member, American Mock Trial Association</li>
     <li>Student Member, Asian American Journalists Association</li>
   </ul>
 
-  <h4>Presentation High School — <span class="italic">San Jose, CA</span></h4>
+  <h4>Presentation High School — <em>San Jose, CA</em></h4>
   <h5>High School Degree, GPA: 4.43</h5>
-  <p>Awards and honors:</p>
+  <p style="color: #091540">Awards and honors:</p>
   <ul>
     <li>Honors in Language Study (Spanish)</li>
     <li>Honors in Social Studies</li>
     <li>Distinguished Student in Social Studies</li>
     <li>Distinguished Competitor in Speech & Debate</li>
   </ul>
-  <p>Extracurriculars:</p>
+  <p style="color: #091540">Extracurriculars:</p>
   <ul>
     <li>Vice President, Speech and Debate</li>
     <li>Class Representative, Student Council</li>
@@ -206,12 +206,12 @@ workOGCONTENT = `
 </div>
 
 <div class="workContent purple">
-  <h4>The Daily Northwestern - <span class="italic">Evanston, IL</span></h4>
+  <h4>The Daily Northwestern - <em>Evanston, IL</em></h4>
   <h5>Campus Editor, January 2021 - present</h5>
   <h5>Web Editor, September 2020 - December 2020</h5>
   <a href="#" class="viewmoredaily">Click here to view more history at The Daily Northwestern ↓</a>
   <br>
-  <h4>New Enterprise Associates - <span class="italic">Remote</span></h4>
+  <h4>New Enterprise Associates - <em>Remote</em></h4>
   <h5>Business Development & Marketing Intern</h5>
 
 </div>
@@ -238,7 +238,7 @@ clipsOGCONTENT = `
 
 <div class="blankcontainer blue"></div>
 <div class="upArrow white">
-  <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
+  <button class="goUp blueicon"><i class="fas fa-chevron-up fa-3x"></i></i></button>
 </div>
 <div class="clipsHeader blue">
 <h2>Clips</h2>
@@ -314,9 +314,9 @@ educationHTML = `
   </div>
 
 <div class="educationContent white">
-  <h4>Northwestern University Medill School of Journalism — <span class="italic">Evanston, IL</span></h4>
+  <h4>Northwestern University Medill School of Journalism — <em>Evanston, IL</em></h4>
   <h5>Bachelors of Science, journalism and political science, GPA: 3.87</h5>
-  <p>Relevant Courses:</p>
+  <p style="color: #091540">Relevant Courses:</p>
   <ul>
     <li>Media Law & Ethics</li>
     <li>Tools of the World Wide Web (HTML, CSS, Javascript)</li>
@@ -325,28 +325,28 @@ educationHTML = `
   </ul>
   <a href="#" class="viewmoreclasses">Click here to view more classes ↓</a>
   <br>
-  <p>Awards and honors:</p>
+  <p style="color: #091540">Awards and honors:</p>
   <ul>
     <li>Dean's List 6/6 quarters eligible</li>
     <li>Accepted to the Fall 2020 Election Medill on the Hill cohort, unable to attend due to COVID-19</li>
   </ul>
-  <p>Extracurriculars:</p>
+  <p style="color: #091540">Extracurriculars:</p>
   <ul>
     <li>Public Relations Chair & Team Captain, Northwestern Mock Trial</li>
     <li>Student Advisory Board Member, American Mock Trial Association</li>
     <li>Student Member, Asian American Journalists Association</li>
   </ul>
 
-  <h4>Presentation High School — <span class="italic">San Jose, CA</span></h4>
+  <h4>Presentation High School — <em>San Jose, CA</em></h4>
   <h5>High School Degree, GPA: 4.43</h5>
-  <p>Awards and honors:</p>
+  <p style="color: #091540">Awards and honors:</p>
   <ul>
     <li>Honors in Language Study (Spanish)</li>
     <li>Honors in Social Studies</li>
     <li>Distinguished Student in Social Studies</li>
     <li>Distinguished Competitor in Speech & Debate</li>
   </ul>
-  <p>Extracurriculars:</p>
+  <p style="color: #091540">Extracurriculars:</p>
   <ul>
     <li>Vice President, Speech and Debate</li>
     <li>Class Representative, Student Council</li>
@@ -359,7 +359,7 @@ workHTML = `
 
 <div class="blankcontainer white"></div>
 <div class="upArrow purple">
-  <button class="goUp"><i class="fas   fa-chevron-up fa-3x"></i></i></button>
+  <button class="goUp"><i class="fas fa-chevron-up fa-3x"></i></i></button>
 </div>
 <div class="workHeader white">
   <h2>Work Experience</h2>
@@ -371,17 +371,44 @@ workHTML = `
 </div>
 
 <div class="workContent purple">
-  <h4>The Daily Northwestern - <span class="italic">Evanston, IL</span></h4>
+  <h4>The Daily Northwestern - <em>Evanston, IL</em></h4>
   <h5>Campus Editor, January 2021 - present</h5>
+  <ul>
+  <li>Make all editorial decisions related to student and university coverage at Northwestern’s only daily student news publication</li>
+  <li>Manage team of over 50 reporters writing daily stories and breaking news</li>
+  <li>Interview high-profile sources such as administration, union leaders and student activist groups</li>
+  <li>Budget and edit 10+ stories weekly</li>
+  </ul>
   <h5>Web Editor, September 2020 - December 2020</h5>
+  <ul>
+  <li>Publish and promote stories through WordPress, TweetDeck and Facebook</li>
+  <li>Edit all social media posts and SEO headlines </li>
+  <li>Pioneered targeted email newsletters for students and city residents and special editions, such as a 2020 election special edition</li>
+  <li>Increased newsletter subscribers by 5.7% in two months </li>
+  </ul>
   <a href="#" class="viewmoredaily">Click here to view more history at The Daily Northwestern ↓</a>
   <br>
-  <h4>New Enterprise Associates - <span class="italic">Remote</span></h4>
+  <h4>New Enterprise Associates - <em>Remote</em></h4>
   <h5>Business Development & Marketing Intern</h5>
-  <h4>Parity.org - <span class="italic">Remote</span></h4>
+  <ul>
+  <li>Track engagement metrics for internal social media channels</li>
+  <li>Ghostwrite original content to spur organic engagement</li>
+  <li>Create external marketing content for social media</li>
+  <li>Pitched and developed original corporate innovation podcast</li>
+  </ul>
+  <h4>Parity.org - <em>Remote</em></h4>
   <h5>Content Volunteer</h5>
-  <h4>Organization for World Peace - <span class="italic">Remote</span></h4>
+  <ul>
+  <li>Monitored news on women in business leadership</li>
+  <li>Created posts for Facebook, Twitter and Instagram advocating for women’s leadership in business and spreading the nonprofit’s message</li>
+  </ul>
+  <h4>Organization for World Peace - <em>Remote</em></h4>
   <h5>Junior Correspondent Intern</h5>
+  <ul>
+  <li>Researched current events surround military force, peace negotiations and civil conflict</li>
+  <li>Wrote 12 articles summarizing a current event and its historical context and advocated for a peaceful solution</li>
+  <li>Attended remote editing and pitching meetings</li>
+  </ul>
   <a href="https://www.linkedin.com/in/meganmunce/" target="_blank">See more experience on my LinkedIn!</a>
 </div>
 `
@@ -530,14 +557,44 @@ dailyContent = `
 </div>
 
 <div class="dailyContent purple">
-  <h4>The Daily Northwestern - <span class="italic">Evanston, IL</span></h4>
+  <h4>The Daily Northwestern - <em>Evanston, IL</em></h4>
   <h5>Campus Editor, January 2021 - present</h5>
+  <ul>
+  <li>Make all editorial decisions related to student and university coverage at Northwestern’s only daily student news publication</li>
+  <li>Manage team of over 50 reporters writing daily stories and breaking news</li>
+  <li>Interview high-profile sources such as administration, union leaders and student activist groups</li>
+  <li>Budget and edit 10+ stories weekly</li>
+  </ul>
   <h5>Web Editor, September 2020 - December 2020</h5>
+  <ul>
+  <li>Publish and promote stories through WordPress, TweetDeck and Facebook</li>
+  <li>Edit all social media posts and SEO headlines </li>
+  <li>Pioneered targeted email newsletters for students and city residents and special editions, such as a 2020 election special edition</li>
+  <li>Increased newsletter subscribers by 5.7% in two months </li>
+  </ul>
   <h5>Development & Recruitment Editor, June 2020 - August 2020</h5>
+  <ul>
+  <li>Edited all stories from first-quarter writers</li>
+  <li>Taught workshops on pitching, reporting and interviewing</li>
+  </ul>
   <h5>Assistant Campus Editor, March 2020 - June 2020</h5>
+  <ul>
+  <li>Edited all campus stories for grammar, content and style</li>
+  <li>Pitched and wrote weekly stories, including breaking news</li>
+  <li>Covered the Title IX and academics beat</li>
+  </ul>
   <h5>Social Media Editor, January 2020 - March 2020</h5>
+  <ul>
+  <li>Reviewed all reporter-written posts for grammar and content</li>
+  <li>Created social media campaigns to push our largest stories, such as the Monthly magazine and long-form investigative stories</li>
+  <li>Edited original graphics to promote stories via Instagram stories</li>
+  <li>Scheduled posts for peak engagement periods</li>
+  </ul>
   <h5>Copy Editor, September 2019 - December 2019</h5>
-  <h5>Campus Desk Reporter, September 2018 - present</h5>
+  <ul>
+  <li>Fact-checked all stories before publishing</li>
+  <li>Edited all stories for grammar, spelling and AP style</li>
+  </ul>
 </div>
 
 </div>
@@ -558,7 +615,7 @@ genJourClips = `
 <h2>General Journalism Clips</h2>
 <br>
 <br>
-<span class="italic"><p>Click on the photos or the text to the right to be taken to the story.</p></span>
+<em><p>Click on the photos or the text to the right to be taken to the story.</p></em>
 </div>
 
 <div id="clipscontainer">
@@ -571,7 +628,7 @@ genJourClips = `
 
 <div class="clip1words">
 <a href="https://dailynorthwestern.com/2020/08/06/campus/your-dues-are-political-nu-greek-life-grapples-with-its-financial-relationship-to-fratpac/" target="_blank">
-<h4>“Your dues are political”: NU Greek Life grapples with its financial relationship to FratPAC, <span class="italic">The Daily Northwestern</span></h4>
+<h4>“Your dues are political”: NU Greek Life grapples with its financial relationship to FratPAC, <em>The Daily Northwestern</em></h4>
 <p>Amid a growing anti-Greek Life movement on campus, students took to social media to decry the financial relationship between Greek Life and the Fraternity & Sorority PAC.</p>
 <p>This story was a feature fact-check on social media rumors that Northwestern Greek Life dues were funding prominent Republicans' re-election campaigns. My reporting entailed using Google Sheets to scrape data from OpenSecrets.org to tally up the PAC's contributions and using Tableau to explore different visualizations before they were finalized in Adobe Illustrator.</p>
 </a>
@@ -585,7 +642,7 @@ genJourClips = `
 
 <div class="clip2words">
 <a href="https://dailynorthwestern.com/2020/09/09/campus/memorial-to-a-memorial-university-plans-to-replace-removed-memorial-to-students-who-died-while-at-northwestern/" target="_blank">
-<h4>Memorial to a memorial: University plans to replace removed memorial to students who died while at Northwestern, <span class="italic">The Daily Northwestern</span></h4>
+<h4>Memorial to a memorial: University plans to replace removed memorial to students who died while at Northwestern, <em>The Daily Northwestern</em></h4>
 <p>Students expressed outrage and grief after a long-standing memorial to deceased students was removed without warning.</p>
 <p>I sourced this story from social media after seeing photos going around of the memorial being removed. I also used social media to fact-check the timeline of events put forth by the administration and to confirm sensitive details, such as the number of names on the tree.
 Interviewing for this story also required me to be empathetic and sensitive to sources recounting traumatic events.</p>
@@ -802,6 +859,26 @@ const showGenJour = () => {
   console.log("replaced");
 };
 
+const showBizJour = () => {
+  document.querySelector('.thewholedamnthing').innerHTML = bizJourClips;
+  console.log("replaced");
+};
+
+const showDataJour = () => {
+  document.querySelector('.thewholedamnthing').innerHTML = dataJourClips;
+  console.log("replaced");
+};
+
+const showPoliJour = () => {
+  document.querySelector('.thewholedamnthing').innerHTML = poliJourClips;
+  console.log("replaced");
+};
+
+const showMultiJour = () => {
+  document.querySelector('.thewholedamnthing').innerHTML = multiJourClips;
+  console.log("replaced");
+};
+
 const backToClips = () => {
   document.querySelector('.thewholedamnthing').innerHTML = clipsOGCONTENT;
 };
@@ -830,4 +907,8 @@ $(document).on('click','.dailyGoUp', backUpToWork);
 // CLIPS BUTTON EVENT LISTENERS
 
 $(document).on('click','.genjour', showGenJour)
+$(document).on('click','.bizjour', showBizJour)
+$(document).on('click','.datajour', showDataJour)
+$(document).on('click','.polijour', showPoliJour)
+$(document).on('click','.multijour', showMultiJour)
 $(document).on('click','.clipsUpArrow', backToClips)
