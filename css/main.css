@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto&display=swap');
+
+body {
+}
+
+header {
+  padding: 10px;
+  background-image: url(images/blue60percent.png);
+  height: 10vh;
+  grid-area: m;
+  justify-content: center;
+}
+
+#introcontainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  height: 98vh;
+  grid-template-areas:
+   "m m m"
+   "a b c"
+   "d d d";
+  background-image: url(images/bluemeg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* TEXT STYLING */
+
+header h1 {
+  font-family: 'DM Serif Text', serif;
+  color: #FFFFFF;
+  font-size: 30px;
+  margin: none;
+  padding-left: 20px;
+}
+
+.name h1 {
+  color: white;
+  font-size: 70px;
+  line-height: 25%;
+}
+
+.name h3 {
+  font-family: 'DM Serif Text', serif;
+  color: #091540;
+  background-color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+}
+
+/* NAVIGATION BAR */
+
+.navigation ul {
+  margin-top: 15px;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  font-size: 18px;
+}
+
+.navigation li {
+  margin: 10px;
+  color: #FFFFFF;
+  font-size: 'Roboto' sans-serif;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  border-bottom: solid 2px #FFFFFF;
+}
+
+/* INTRO STYLING */
+
+.name {
+  grid-area: b;
+  justify-content: center;
+  text-align: center;
+  padding-top: 30%
+}
+
+.downarrow {
+  grid-area: d;
+  margin-bottom: 30px;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ABOUT ME SECTION STYLING */
+
+#aboutme {
+  color: #FFFFFF;
+  background-color: #091540;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  height: 98vh;
+  grid-template-areas:
+   "p o p"
+   "q w e";
+}
+
+.aboutmeheader {
+  grid-area: o;
+}
+
+.whoiam {
+  grid-area: q;
+}
+
+.whereivebeen {
+  grid-area: w;
+}
+
+.whereimgoing {
+  grid-area: e;
+}
+
+/* TEXT */
+
+h1 {
+  font-size: 45px;
+  font-family: 'DM Serif Text', serif;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: 'DM Serif Text', serif;
+}
+
+h3 {
+  font-family: 'DM Serif Text', serif;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+h4 { /*TEXT USED FOR SECTION HEADERS*/
+  color: #091540;
+  background-color: #FFFFFF;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+
+.downarrow p {
+  color: white;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+/* SOCIAL LINKS */
+
+.whiteicon {
+  color: white;
+}
+
+.blueicon {
+  color: #091540;
+}
+
+.iconimg {
+  height: 70px;
+  width: auto;
+}
+
+.iconimg:hover, .icon:hover {
+  animation: tada;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+/* ANIMATIONS */
+
+.goDown:hover {
+  animation-name: bobbledown;
+  animation-duration: 850ms;
+  animation-iteration-count: infinite;
+}
+
+.goUp, .goDown, .goLeft, .goRight, .classesGoUp, .clipGoUp {
+  position: relative;
+}
+
+@keyframes bobbledown {
+  0%{top: 0px;}
+  50%{top: 10px;}
+  100%{top: 0px;}
+}
+
+@keyframes bobbleup{
+  0%{bottom: 0px;}
+  50%{bottom: 10px;}
+  100%{bottom: 0px;}
+}
+
+@keyframes bobbleleft {
+  0%{right: 0px;}
+  50%{right: 10px;}
+  100%{right: 0px;}
+}
+
+@keyframes bobbleright {
+  0%{left: 0px;}
+  50%{left: 10px;}
+  100%{left: 0px;}
+}
+
+.animated__fadeOutUp {
+  animation: fadeOutUp;
+}
+
+.animate__fadeInUp {
+  animation: fadeInUp;
+}
+
+@keyframes fade {
+  0%{opacity:1;}
+  100%{opacity: 0.8;}
+}
+
+@keyframes fadeIn {
+  0%{opacity:0%;}
+  100%{opacity:100%;}
+}
+
+/* RESIZING */
+
+@media (max-width: 1024px) {
+    .viewer {
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1fr 1fr;
+       grid-template-areas:
+          "d e"
+          "f g";
+}
+
+@media (max-width: 700px) {
+  .intro h1 {
+    font-size:30px;
+  }
+  #container {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 0.2fr 0.3fr;
+     grid-template-areas:
+      "a b"
+      "c c";
+  }
+    .viewer {
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr 1fr 1fr;
+       grid-template-areas:
+          "d"
+          "e"
+          "f"
+          "g";
+  }
