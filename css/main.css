@@ -223,23 +223,123 @@ a {
 
 #skills {
   background-color: #F8F9FA;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#skillgrid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 0.75fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "sh1 s1 s2 s3"
+    "sh2 s4 s5 s6"
+    "sh3 s7 s8 s9";
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.skillbox {
+  padding: 5px;
+  margin: 10px;
+}
+
+.skillsheader1 {
+  grid-area: sh1;
+}
+
+.skill1 {
+  grid-area: s1;
+  background-color: yellow;
+}
+
+.skill2 {
+  grid-area: s2;
+  background-color: green;
+}
+
+.skill3 {
+  grid-area: s3;
+  background-color: yellow;
+}
+
+.skillsheader2 {
+  grid-area: sh2;
+}
+
+.skill4 {
+  grid-area: s4;
+  background-color: blue;
+}
+
+.skill5 {
+  grid-area: s5;
+  background-color: orange;
+}
+
+.skill6 {
+  grid-area: s6;
+  background-color: pink;
+}
+
+.skillsheader3 {
+  grid-area: sh3;
+}
+
+.skill7 {
+  grid-area: s7;
+  background-color: blue;
+}
+
+.skill8 {
+  grid-area: s8;
+  background-color: orange;
+}
+
+.skill9 {
+  grid-area: s9;
+  background-color: pink;
+}
+
+
+/*
+#skills {
+  background-color: #F8F9FA;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-
   grid-template-rows: 0.1fr 0.5fr 0.5fr;
   grid-template-areas:
-  "s s s"
-  "s1 s2 s3"
-  "s4 s5 s6";
-  grid-column-gap: 3vw;
-  grid-row-gap: 3vw;
+  "s s s s"
+  "sh1 s1 s2 s3"
+  "sh2 s4 s5 s6";
   padding-top: 10vh;
   padding-bottom: 10vh;
   padding-left: 6vw;
   padding-right: 6vw;
 }
 
-.skillsheader {
-  grid-area: s;
+.skillsheader1 {
+  grid-area: sh1;
+  width: 15vw;
+  padding-left: none;
+  margin-right: none;
+}
+
+.skillsheader2 {
+  grid-area: sh2;
+  width: 15vw;
+  padding-left: none;
+  margin-right: none;
+}
+
+.skillbox {
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px 20px;
+  padding: 5px;
+  text-align: center;
+  width: 20vw;
 }
 
 #skills p {
@@ -248,58 +348,28 @@ a {
 
 .skills1 {
   grid-area: s1;
-  text-align: center;
-  justify-content: center;
-  background-color: white;
-  min-height: 0px;
-  padding: 5px;
-  border-radius: 5px 20px;
 }
 
 .skills2 {
   grid-area: s2;
-  background-color: white;
-  min-height: 0px;
-  padding: 5px;
-  justify-content: center;
-  text-align: center;
 }
 
 .skills3 {
   grid-area: s3;
-  background-color: white;
-  min-height: 0px;
-  padding: 5px;
-  justify-content: center;
-  text-align: center;
 }
 
 .skills4 {
   grid-area: s4;
-  background-color: white;
-  min-height: 0px;
-  padding: 5px;
-  justify-content: center;
-  text-align: center;
 }
 
 .skills5 {
   grid-area: s5;
-  background-color: white;
-  min-height: 0px;
-  padding: 5px;
-  justify-content: center;
-  text-align: center;
 }
 
 .skills6 {
   grid-area: s6;
-  background-color: white;
-  min-height: 0px;
-  padding: 5px;
-  justify-content: center;
-  text-align: center;
 }
+*/
 
 /* PORTFOLIO STYLING */
 
