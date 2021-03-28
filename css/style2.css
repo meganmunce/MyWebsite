@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto:wght@300;500&display=swap');
+
+/* CONTAINERS */
+
+#navsection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "r1 r2 r3";
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.whoiam {
+  grid-area: r1;
+  background-color: #52528C;
+  color: #FFFFFF;
+  padding-top: 10vh;
+}
+
+.whereivebeen {
+  grid-area: r2;
+  background-color: #92C2F2;
+  color: #FFFFFF;
+  padding-top: 10vh;
+}
+
+.whereimgoing {
+  grid-area: r3;
+  background-color: #2CA58D;
+  color: #FFFFFF;
+  padding-top: 10vh;
+}
+
+.expandingdiv:hover {
+  animation: widen 800ms;
+  animation-iteration-count: 1;
+  transition-timing-function: ease-in-out;
+  width: 40vw;
+}
+
+.whoiamcontent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5vw;
+  grid-template-rows: 1fr 0.05fr;
+  grid-template-areas:
+    "who1 who2"
+    "who3 who3";
+  background-color: #52528C;
+  color: #FFFFFF;
+  text-align: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 10vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+
+.aboutmediv {
+  grid-area: who1;
+}
+
+.educationdiv {
+  grid-area: who2;
+}
+
+.aboutmebutton {
+  grid-area: who3;
+  padding-bottom: 10vh;
+  padding-top: 5vh;
+}
+
+.whereimgoingcontent {
+  background-color: #2CA58D;
+  color: #FFFFFF;
+  min-height: 100vh;
+  padding-top: 10vh;
+}
+
+.whereivebeencontent {
+  display: grid;
+  grid-template-columns: 0.25fr 1fr;
+  grid-column-gap: 5vw;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "been1 been2";
+  background-color: #92C2F2;
+  color: #FFFFFF;
+  text-align: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 10vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.beenleft {
+  grid-area: been1;
+  text-align: center;
+}
+
+.beenright {
+  grid-area: been2;
+  background-color: #F5F5F5;
+  margin: 3vw;
+  color: #091540;
+  border-radius: 5px 15px;
+  box-shadow:
+    3px 3px #52528C,
+    6px 6px #2CA58D;
+  padding: 1vw;
+}
+
+.beenrightclips {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr;
+  grid-template-areas:
+    "ch ch"
+    "c1 c2"
+    "c3 c4";
+}
+
+.beenrightheader {
+  grid-area: ch;
+}
+
+.general, .data, .political, .interactive, {
+  margin-left: 10vw;
+  width: 15vw;
+}
+
+.clip {
+  border: 1px solid #091540;
+  margin: 5px;
+  padding: none;
+  border-radius: 5px;
+}
+
+.clip p {
+  color: #091540;
+  font-size: 12px;
+  margin-left: 1vw;
+  font-weight: 300;
+  margin-right: 1vw;
+}
+
+.clip h3 {
+  color: #091540;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.clipimg {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.clip1 {
+  grid-area: c1;
+}
+
+.clip2 {
+  grid-area: c2;
+}
+
+.clip3 {
+  grid-area: c3;
+}
+
+.clip4 {
+  grid-area: c4;
+}
+
+.beenrightwork {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  grid-template-areas:
+    "wla bwc wra";
+}
+
+.workleftarrow {
+  grid-area: wla;
+}
+
+.workrightarrow {
+  grid-area: wra;
+}
+
+.beenworkcontent {
+  grid-area: bwc;
+  text-align: left;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.downarrow button {
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+}
+
+.whoiamcontent button {
+  width: 30vw;
+}
+
+.beenleft button {
+  width: 20vw;
+}
+
+.whoiamcontent button, .beenleft button, .whereimgoingcontent button {
+  background-color: #FFFFFF;
+  color: #091540;
+  padding: 5px;
+  border-radius: 5px 15px;
+  font-family: 'DM Serif Text', serif;
+  font-size: 18px;
+  border: none;
+  box-shadow: 3px 3px #091540;
+  letter-spacing: normal;
+  margin: 1vw;
+}
+
+.workrightarrow button, .workleftarrow button {
+  background-color: transparent;
+  border: none;
+}
+
+.whoiamcontent button:hover, .whereivebeencontent button:hover, .whereimgoingcontent button:hover {
+  animation: spaceout 500ms ease-in-out;
+  letter-spacing: 0.5px;
+}
+
+
+@keyframes widen {
+  0% {width: 33vw;}
+  100% {width: 40vw;}
+}
+
+@keyframes spaceout {
+  0% {letter-spacing: normal;}
+  100% {letter-spacing: 0.5px;}
+}

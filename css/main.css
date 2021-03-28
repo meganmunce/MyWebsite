@@ -20,6 +20,7 @@ header {
   position: -webkit-sticky;
   top: 0;
   z-index: 99;
+  border-bottom: double 4px #FFFFFF;
 }
 
 #introcontainer {
@@ -54,6 +55,10 @@ header h1 {
   padding-left: 30px;
   padding-right: 30px;
   font-size: 18px;
+  box-shadow:
+    3px 3px #372554,
+    6px 6px #52528C,
+    9px 9px #7C9EB2;
 }
 
 p {
@@ -190,7 +195,7 @@ a {
    "t u v";
    padding-left: 5vh;
    padding-right: 5vh;
-   min-height: 100vh;
+   min-height: 90vh;
    padding-top: 10vh;
    padding-bottom: 10vh;
 }
@@ -516,12 +521,6 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
-button {
-  background-color: transparent;
-  border: none;
-  color: white;
-}
-
 .hidethis {
   visibility: hidden;
 }
@@ -557,6 +556,32 @@ button {
 
 .goUp, .goDown, .goLeft, .goRight, .classesGoUp, .clipGoUp {
   position: relative;
+}
+
+.typewriter h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  overflow: hidden;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+.typethis {
+  animation:
+    typing 3.5s steps(50, end),
+    blink-caret .5s steps(50, end) infinite;
+  }
+
+@keyframes typing {
+  0% {width: 0;}
+  100% {width: 100%;}
+}
+
+@keyframes blink-caret {
+  0% {border-color: transparent;}
+  50% { border-color: #FFFFFF;}
+  100% {border-color: transparent;}
 }
 
 @keyframes bobbledown {

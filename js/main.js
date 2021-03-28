@@ -1,91 +1,248 @@
-/**
-* Template Name: Tempo - v4.0.1
-* Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+// HTML STORAGE
 
-// HTML CONTENT STORAGE
+whoiam = `
+<div class="whoiamcontent">
 
-jobs1 = `
-<h5 style="text-align: left; margin-bottom: 0px;">Campus Editor, The Daily Northwestern</h5>
-<p style="margin-top: 0px; margin-bottom: 1vh;">Remote, Jan. 2021 - March 2021</p>
-<ul style="font-size: 18px;">
-  <li>Lead editorial decisions related to on-campus coverage at Northwestern’s only daily student news publication</li>
-    <li>Manage team of over 30 reporters writing daily stories and breaking news</li>
-      <li>Report on top administrators, union leaders and student activists</li>
-        <li>Budget and edit 15+ stories weekly</li>
-</ul>
+  <div class="aboutmediv" style="opacity: 0;">
+  <h2>About Me</h2>
 
-<h5 style="text-align: left; margin-bottom: 0px;">Web Editor, The Daily Northwestern</h5>
-<p style="margin-top: 0px; margin-bottom: 1vh;">Remote, September 2020 - December 2020</p>
-<ul style="font-size: 18px;">
-  <li>Published stories on WordPress and promoted them through TweetDeck and Facebook</li>
-    <li>Edited all social media posts and SEO headlines</li>
-      <li>Pioneered special edition newsletters, such as a 2020 election edition</li>
-        <li>Increased newsletter subscribers by 5.7% in two months</li>
-</ul>`
+  <img src="css/images/HeadshotCircleBorder.png" style="width: 30%; height: auto;">
 
+  <p>I'm currently a junior at Northwestern University's Medill School of Journalism, Media, Integrated Marketing Communications studying journalism with a second major in political science. Next year, I'll earn a M.S. in journalism with a specialization in Media Innovation and Content Strategy through Medill's Accelerated Masters Program.</p>
 
-jobs2 = `
-<h5 style="text-align: left; margin-bottom: 0px;">Copy Editor, The Daily Northwestern</h5>
-<p style="margin-top: 0px; margin-bottom: 1vh;">Evanston, Ill., September 2019 - December 2019</p>
-<ul style="font-size: 18px;">
-  <li>Edited all stories for grammar and AP style</li>
-    <li>Fact-checked 6+ stories nightly</li>
-      <li>Updated and maintained the Daily’s stylebook</li>
-</ul>
+  <p>I'm originally from the San Francisco Bay Area, where I first learned to love local politics, entrepreneurship, innovation and the salt water taffy from Pier 39.</p>
 
-<h5 style="text-align: left; margin-bottom: 0px;">Social Media Editor, The Daily Northwestern</h5>
-<p style="margin-top: 0px; margin-bottom: 1vh;">Evanston, Ill., Jan. 2020 - March 2020</p>
-<ul style="font-size: 18px;">
-  <li>Tracked social media engagement on Twitter and Facebook</li>
-    <li>Created targeted campaigns through Twitter and Instagram for investigative and longform stories</li>
-      <li>Designed and posted original graphics for daily Instagram story newsletters</li>
-</ul>`
+  <p>I'm passionate about the intersection of journalism and technology! As a second-generation immigrant and a digital native, finding new accessible means of storytelling is close to home. I'm interested in digital communication, social media engagement and multimedia reporting.</p>
+  </div>
 
-jobs3 = `
-<h5 style="text-align: left; margin-bottom: 0px;">Business Development & Marketing Intern, New Enterprise Associates</h5>
-<p style="margin-top: 0px; margin-bottom: 1vh;">Remote, Aug. 2020 - March 2021</p>
-<ul style="font-size: 18px;">
-  <li>Track engagement metrics for internal social media channels</li>
-  <li>Ghostwrite original content to spur organic engagement</li>
-  <li>Create external marketing content for social media</li>
-  <li>Pitched and developed original corporate innovation podcast</li>
-</ul>
+  <div class="educationdiv" style="opacity: 0;">
+  <h2>Education</h2>
 
-<h5 style="text-align: left; margin-bottom: 0px;">Content Volunteer, Parity.org</h5>
-<p style="margin-top: 0px; margin-bottom: 1vh;">Remote, Aug. 2019 - Jan. 2020</p>
-<ul style="font-size: 18px;">
-  <li>Monitored news on women in business leadership</li>
-  <li>Created posts for Facebook, Twitter and Instagram advocating for women’s leadership in business and spreading the nonprofit’s message
-  </li>
-</ul>`
+  <img src="css/images/NU.png" style="width: 30%; height: auto;">
 
-jobs4 = `
-<h5 style="text-align: left; margin-bottom: 0px;"> Junior Correspondent Intern, Organization for World Peace</h5>
-<p style="margin-top: 0px; margin-bottom: 1vh;">Remote, Apr. 2019 - Aug. 2019</p>
-<ul style="font-size: 18px;">
-  <li>Aggregated stories about the military and diplomacy in the Middle East</li>
-  <li>rote 12 articles summarizing current events and their historical context</li>
-  <li>Attended remote editing and pitching meetings</li>
+  <p>Northwestern University Medill School of Journalism, Media, Integrated Marketing Communications</p>
+  <p style="margin-bottom: 0; padding-bottom: 0;">B.S. journalism and political science</p>
+  <p style="margin: 0; padding: 0;">M.S. journalism, specialization: Media Innovation and Content Strategy</p>
+  <p style="margin-top: 0; padding-top: 0;">Expected June 2022</p>
+  <p style="margin-bottom: 0; padding-bottom: 0;">GPA: 3.89</p>
+  <p style="margin-top: 0; padding-top: 0;">Dean's List 7/7 quarters eligible</p>
 
-</ul>
+  <p style="padding-bottom: 0; margin-bottom: 0;">Extracurriculars:</p>
+  <ul style="font-size: 18px; text-align: left; padding-top: 2px; margin-top: 2px;">
+    <li>The Daily Northwestern</li>
+    <li>Northwestern Mock Trial</li>
+    <li>Peer Adviser, New Student and Family Programs</li>
+  </ul>
+  </div>
 
-<h5 style="text-align: left; margin-bottom: 0px;">Contributing Writer, Victory Briefs</h5>
-<p style="margin-top: 0px; margin-bottom: 1vh;">Remote, Nov. 2018 - June 2019</p>
-<ul style="font-size: 18px;">
-  <li>Researched topics of domestic and international policy from price controls on the pharmaceutical industry to India's membership in the United Nations Security Council
-  </li>
-  <li>Wrote 2000 word briefs to educate high school debate students about necessary background information, pros and cons of each policy</li>
-</ul>`
+<div class="aboutmebutton">
+  <button class="return">Click here to return to the main menu</button>
+  </div>
+
+</div>
+`
+
+whereivebeen = `
+<div class = "whereivebeencontent">
+
+<div class="beenleft">
+<h2>Choose an option:</h2>
+<button class="showwork">See work experience</button>
+<button class="showclips">See my clips</button>
+<button class="return">Return to the main menu</button>
+</div>
+
+<div class="beenright">
+<h1 style="text-align: center; color: #EBEBEB; padding-top: 10vh;">Empty for now!</h1>
+</div>
+
+</div>
+`
+
+whereimgoing = `
+<div class="whereimgoingcontent">
+
+<h3>Skills</h3>
+
+<div id="skillgrid">
+
+<div class="skillsheader1">
+  <h5>Data Visualization</h5>
+</div>
+
+<div class="skill1 skillbox" style="box-shadow: 5px 5px #3ECCAF;">
+  <div style="float: left; height: 75%;">
+  <i class="fab fa-python fa-4x"></i></div>
+  <p>Python</p>
+</div>
+
+<div class="skill2 skillbox" style="box-shadow: 5px 5px #3ECCAF;">
+  <div style="float: left; height: 75%;">
+  <img src="css/images/tableau.png" style="height: 125%;"></div>
+  <p>Tableau</p>
+</div>
+
+<div class="skill3 skillbox" style="box-shadow: 5px 5px #3ECCAF;">
+  <div style="float: left; padding-top: 1vh;">
+  <i class="fas fa-file-excel fa-4x"></i></div><p style="margin-top: 0; padding-top: 1vh;">Excel/Google Sheets</p>
+
+</div>
+
+<div class="skillsheader2">
+  <h5>Web Development</h5>
+</div>
+
+<div class="skill4 skillbox" style="box-shadow: 5px 5px #92C2F2;">
+  <div style="float: left; height: 75%;">
+  <i class="fas fa-code fa-4x"></i></div>
+  <p>HTML</p>
+</div>
+
+<div class="skill5 skillbox" style="box-shadow: 5px 5px #92C2F2;">
+  <div style="float: left; height: 75%;">
+  <i class="fas fa-border-style fa-4x"></i></i></div>
+  <p>CSS</p>
+</div>
+
+<div class="skill6 skillbox" style="box-shadow: 5px 5px #92C2F2;">
+  <div style="float: left; height: 75%;">
+  <i class="fab fa-js-square fa-4x"></i></i></div>
+  <p>Javascript</p>
+</div>
+
+<div class="skillsheader3">
+  <h5>Language</h5>
+</div>
+
+<div class="skill7 skillbox" style="box-shadow: 5px 5px #52528C;">
+  <div style="float: left; height: 75%;">
+  <i class="fas fa-comment-alt fa-4x"></i></div>
+  <p>Spanish</p>
+</div>
+
+<div class="skill8 skillbox" style="box-shadow: 5px 5px #52528C;">
+  <div style="float: left; height: 75%;">
+  <i class="fas fa-spell-check fa-4x"></i></div>
+  <p>AP Style</p>
+</div>
+
+<div class="skill9 skillbox" style="box-shadow: 5px 5px #52528C;">
+  <div style="float: left; height: 75%;">
+  <i class="fas fa-volume-up fa-4x"></i></div>
+  <p style="margin-top: 0; padding-top: 1vh;">Public Speaking</p>
+</div>
+
+</div>
+
+<h3>Contact Me!</h3>
+
+<div style="display: flex; justify-content: space-evenly; margin-left: 25vw; margin-right: 25vw;">
+
+  <a href="https://www.linkedin.com/in/meganmunce/" target="_blank">
+    <i class="fab fa-linkedin fa-6x icon"></i>
+
+</a>
+
+<a href="https://twitter.com/meganmuncie?lang=en" target="_blank">
+<i class="fab fa-twitter-square fa-6x icon"></i>
+
+</a>
+
+<a href="mailto:meganmunce2022@u.northwestern.edu">
+<i class="fas fa-envelope-square fa-6x icon"></i>
+</a>
+
+<a href="https://github.com/meganmunce" target="_blank">
+<i class="fab fa-github-square fa-6x icon"></i> </a>
+
+<a href="https://medium.com/@meganmunce" target="_blank">
+  <i class="fab fa-medium icon fa-6x"></i></a>
+
+</div>
+
+<div style="text-align: center; padding: 10vh;">
+<button class="return" style="padding: 5px;">Click here to return to the main menu</button>
+</div>
+
+</div>
+
+`
 
 // END OF HTML CONTENT STORAGE
 
 
-  /**
-   * Easy selector helper function
-   */
+// WHO I AM FUNCTIONS
+function expandAm() {
+  $(".whoiaminfo").animate({opacity: "0"}, 'fast');
+  setTimeout(replacewhoiam, 300);
+};
+
+function replacewhoiam() {
+  document.querySelector('#abovethenavsection').innerHTML = whoiam;
+  $(".aboutmediv").animate({opacity: "100"}, 1800);
+  $(".educationdiv").animate({opacity: "100"}, 1800);
+};
+
+$(document).on('click','.whoiam', function(){
+  var fullwindow = window.innerWidth;
+  $(".whoiam").animate({width: fullwindow}, 'slow');
+  document.querySelector('.whoiam').style.width = fullwindow;
+  setTimeout(expandAm, 800);
+  $(".whereivebeen").removeClass('expandingdiv');
+  $(".whereimgoing").removeClass('expandingdiv');
+});
+
+$(document).on('click', '.return', function(){
+  location.reload();
+});
+
+// WHERE IM GOING FUNCTIONS
+
+function expandGoing() {
+  $(".goinginfo").animate({opacity: "0"}, 'fast');
+  $(".goinginfo").animate({opacity: "100"}, 'slow');
+  setTimeout(replacewhereimgoing, 300);
+};
+
+function replacewhereimgoing() {
+  document.querySelector('#abovethenavsection').innerHTML = whereimgoing;
+};
+
+$(document).on('click','.whereimgoing', function(){
+  var fullwindow = window.innerWidth;
+  $(".whereimgoing").animate({width: fullwindow}, 'slow');
+  $(".whoiam").animate({width: 0}, 'slow');
+  $(".whereivebeen").animate({width: 0}, 'slow');
+  document.querySelector('.whereimgoing').style.width = fullwindow;
+  setTimeout(expandGoing, 800);
+  $(".whoiam").removeClass('expandingdiv');
+  $(".whereivebeen").removeClass('expandingdiv');
+});
+
+// BEEN FUNCTIONS
+
+function expandBeen() {
+  $(".beeninfo").animate({opacity: "0"}, 'fast');
+  $(".beeninfo").animate({opacity: "100"}, 'slow');
+  setTimeout(replacebeen, 300);
+};
+
+function replacebeen() {
+  document.querySelector('#abovethenavsection').innerHTML = whereivebeen;
+};
+
+$(document).on('click','.whereivebeen', function(){
+  var fullwindow = window.innerWidth;
+  $(".whereivebeen").animate({width: fullwindow}, 'slow');
+  $(".whoiam").animate({width: 0}, 'slow');
+  $(".whereimgoing").animate({width: 0}, 'slow');
+  document.querySelector('.whereivebeen').style.width = fullwindow;
+  setTimeout(expandBeen, 800);
+  $(".whereimgoing").removeClass('expandingdiv');
+  $(".whoiam").removeClass('expandingdiv');
+});
+
+
   const select = (el, all = false) => {
     el = el.trim()
     if (all) {
@@ -95,329 +252,7 @@ jobs4 = `
     }
   }
 
-  /**
-   * Easy event listener function
-   */
-  const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
-    if (selectEl) {
-      if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
-      } else {
-        selectEl.addEventListener(type, listener)
-      }
-    }
-  }
-
-  /**
-   * Easy on scroll event listener
-   */
-  const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
-  }
-
-  /**
-   * Navbar links active state on scroll
-   */
-  let navbarlinks = select('#navbar .scrollto', true)
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
-      } else {
-        navbarlink.classList.remove('active')
-      }
-    })
-  }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
-
-  /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
-    let header = select('#navbar')
-    let offset = header.offsetHeight
-
-    if (!header.classList.contains('header-scrolled')) {
-      offset -= 16
-    }
-
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos - offset,
-      behavior: 'smooth'
-    })
-  }
-
-  /**
-   * Toggle .header-scrolled class to #header when page is scrolled
-   */
-  let selectHeader = select('#header')
-  if (selectHeader) {
-    const headerScrolled = () => {
-      if (window.scrollY > 100) {
-        selectHeader.classList.add('header-scrolled')
-      } else {
-        selectHeader.classList.remove('header-scrolled')
-      }
-    }
-    window.addEventListener('load', headerScrolled)
-    onscroll(document, headerScrolled)
-  }
-
-  /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
-
-  /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
-
-  /**
-   * Mobile nav dropdowns activate
-   */
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
-    }
-  }, true)
-
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
-  on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
-
-      let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
-      }
-      scrollto(this.hash)
-    }
-  }, true)
-
-
-  /**
-   * Scroll with ofset on page load with hash links in the url
-   */
-  window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
-      }
-    }
-  });
-
-/* REPLACE WORK CONTENT */
-
-jobs1shown = "true";
-jobs2shown = "false";
-jobs3shown = "false";
-jobs4shown = "false";
-
-const workGoLeft = () => {
-  if (jobs1shown == "true") {
-    document.querySelector('.workcontent').innerHTML = jobs4;
-    console.log("replaced");
-    jobs4shown = "true";
-    jobs1shown = "false";
-    return jobs4shown;
-    return jobs1shown;
-  }
-  else if (jobs2shown == "true") {
-    document.querySelector('.workcontent').innerHTML = jobs1;
-    jobs1shown = "true";
-    jobs2shown = "false";
-    return jobs2shown;
-    return jobs1shown;
-  }
-  else if (jobs3shown == "true") {
-    document.querySelector('.workcontent').innerHTML = jobs2;
-    jobs2shown = "true";
-    jobs3shown = "false";
-    return jobs2shown;
-    return jobs3shown;
-  }
-  else if (jobs4shown == "true") {
-    document.querySelector('.workcontent').innerHTML = jobs3;
-    jobs3shown = "true";
-    jobs4shown = "false";
-    return jobs3shown;
-    return jobs4shown;
-  }
-};
-
-const workGoRight = () => {
-  if (jobs1shown == "true") {
-    console.log("replaced");
-    document.querySelector('.workcontent').innerHTML = jobs2;
-    jobs2shown = "true";
-    jobs1shown = "false";
-    return jobs2shown;
-    return jobs1shown;
-  }
-  else if (jobs2shown == "true") {
-    document.querySelector('.workcontent').innerHTML = jobs3;
-    jobs3shown = "true";
-    jobs2shown = "false";
-    return jobs2shown;
-    return jobs3shown;
-  }
-  else if (jobs3shown == "true") {
-    document.querySelector('.workcontent').innerHTML = jobs4;
-    jobs4shown = "true";
-    jobs3shown = "false";
-    return jobs4shown;
-    return jobs3shown;
-  }
-  else if (jobs4shown == "true") {
-    document.querySelector('.workcontent').innerHTML = jobs1;
-    jobs1shown = "true";
-    jobs4shown = "false";
-    return jobs1shown;
-    return jobs4shown;
-  }
-};
-
-
-const addFadeOutLeft = () => {
-  $(".workcontent").animate({opacity: "0"});
-  setTimeout(workGoLeft, 500);
-  setTimeout(fadeBackIn, 500);
-};
-
-const addFadeOutRight = () => {
-  $(".workcontent").animate({opacity: "0"});
-  setTimeout(workGoRight, 500);
-  setTimeout(fadeBackIn, 500);
-};
-
-const fadeBackIn = () => {
-  console.log("you should see it now");
-  $(".workcontent").animate({opacity: "100"});
-};
-
-$(document).on('click', '.turnworkleft', addFadeOutLeft);
-$(document).on('click', '.turnworkright', addFadeOutRight);
-
-// AUTO ANIMATE WORK
-
-workAnimation = "true";
-
-//do {
-//setInterval(addFadeOutRight, 5000);
-//}
-//while (workAnimation == "true");
-
-const pauseWorkAnimation = () => {
-  workAnimation = "false";
-};
-
-const playWorkAnimation = () => {
-  workAnimation = "true";
-};
-
-$(document).on('click','.pauseWorkAnimation', pauseWorkAnimation);
-// $(document)on.('click','.playWorkAnimation', workAnimation = "false");
-
-/* FILTER CLIPS */
-
-
-var clipsarray = document.getElementsByClassName("clip");
-
-function showGenClips() {
-  var i;
-  for (i = 0; i < clipsarray.length; i++) {
-    var clip = clipsarray[i];
-    var isagenclip = clip.classList.contains('genclip');
-    var ishidden = clip.classList.contains('hidethis');
-    if (isagenclip == true && ishidden == true) {
-      clip.classList.remove('hidethis');
-    }
-    else if (isagenclip == false && ishidden == false){
-      clip.classList.add('hidethis');
-    }
-  }
-};
-
-
-function showDataClips() {
-  var i;
-  for (i = 0; i < clipsarray.length; i++) {
-    var clip = clipsarray[i];
-    var isadataclip = clip.classList.contains('dataclip');
-    var ishidden = clip.classList.contains('hidethis');
-    if (isadataclip == true && ishidden == true) {
-      clip.classList.remove('hidethis');
-    }
-    else if (isadataclip == false && ishidden == false){
-      clip.classList.add('hidethis');
-    }
-  }
-};
-
-function showDataClips() {
-  var i;
-  for (i = 0; i < clipsarray.length; i++) {
-    var clip = clipsarray[i];
-    var isadataclip = clip.classList.contains('dataclip');
-    var ishidden = clip.classList.contains('hidethis');
-    if (isadataclip == true && ishidden == true) {
-      clip.classList.remove('hidethis');
-    }
-    else if (isadataclip == false && ishidden == false){
-      clip.classList.add('hidethis');
-    }
-  }
-};
-
-function showPoliticalClips() {
-  var i;
-  for (i = 0; i < clipsarray.length; i++) {
-    var clip = clipsarray[i];
-    var isapoliticalclip = clip.classList.contains('politicalclip');
-    var ishidden = clip.classList.contains('hidethis');
-    if (isapoliticalclip == true && ishidden == true) {
-      clip.classList.remove('hidethis');
-    }
-    else if (isapoliticalclip == false && ishidden == false){
-      clip.classList.add('hidethis');
-    }
-  }
-};
-
-$(document).on('click', '.genclips', showGenClips);
-$(document).on('click', '.dataclips', showDataClips);
-$(document).on('click', '.politicalclips', showPoliticalClips);
-
-/* RESIZE HEADER */
+/* RESIZE HEADER
 
 window.onscroll = function() {resizeheader()};
 
@@ -425,7 +260,7 @@ function resizeheader() {
 
 var height = window.innerHeight;
 
-  if (document.body.scrollTop > height || document.documentElement.scrollTop > height) {
+  if (document.body.scrollTop >= height || document.documentElement.scrollTop >= height) {
     document.getElementById("navbar").style.height = "8vh";
     document.getElementById("navbar").style.padding = "5px";
     document.getElementById("headername").style.fontSize = "22px";
@@ -442,3 +277,34 @@ var height = window.innerHeight;
     document.querySelector(".navigation").style.backgroundColor = "#091540";
   }
 };
+
+ */
+
+/* ADD TYPING ANIMATION */
+
+/*
+function addTypingEffect1() {
+  document.querySelector(".typeline1").classList.remove("hidethis");
+  document.querySelector(".typeline1").classList.add("typethis");
+};
+
+function addTypingEffect2() {
+  document.querySelector(".typeline2").classList.remove("hidethis");
+  document.querySelector(".typeline2").classList.add("typethis");
+};
+
+function addTypingEffect3() {
+  document.querySelector(".typeline3").classList.remove("hidethis");
+  document.querySelector(".typeline3").classList.add("typethis");
+};
+
+function addTypingEffect4() {
+  document.querySelector(".typeline4").classList.remove("hidethis");
+  document.querySelector(".typeline4").classList.add("typethis");
+};
+
+window.onload = setTimeout(addTypingEffect1, 1000);
+window.onload = setTimeout(addTypingEffect2, 3000);
+window.onload = setTimeout(addTypingEffect3, 5000);
+window.onload = setTimeout(addTypingEffect4, 9000);
+*/
