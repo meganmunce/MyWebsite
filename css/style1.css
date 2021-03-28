@@ -60,6 +60,8 @@ header h1 {
     3px 3px #52528C,
     6px 6px #2CA58D,
     9px 9px #92C2F2;
+  margin-left: 30vw;
+  margin-right: 30vw;
 }
 
 p {
@@ -452,11 +454,14 @@ p {
 
 /* RESIZING */
 
-@media (max-width: 1024px) {
-
+@media (max-width: 1050px) {
+  .name h3 {
+    margin-left: 20vw;
+    margin-right: 20vw;
 }
 
 @media (max-width: 700px) {
-  .intro h1 {
-    font-size:30px;
+  .name h3 {
+    margin-left: 10vw;
+    margin-right: 10vw;
   }
