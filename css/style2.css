@@ -135,10 +135,21 @@
 
 .clip {
   border: 1px solid #091540;
-  margin: 5px;
+  margin: 10px;
   padding: none;
   border-radius: 5px;
   background-color: #FFFFFF;
+}
+
+.clip:hover {
+  animation: grow 600ms ease-in-out;
+  transform: scale(1.025);
+  box-shadow: 3px 3px #091540;
+}
+
+@keyframes grow {
+  0% {transform: scale(1.0); box-shadow: none;}
+  100%{transform: scale(1.025); box-shadow: 2px 2px #091540;}
 }
 
 .clip p {
@@ -243,6 +254,28 @@
   letter-spacing: 0.5px;
 }
 
+.authorlogo {
+  height: 10vh;
+  width: auto;
+}
+
+.authorlogo:hover {
+  animation: tada;
+  animation-duration: 2s;
+}
+
+#authorpagelogos {
+  padding-top: 5vh;
+  margin: 2vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr;
+  grid-template-areas:
+    "tt1 daily1 owp1 medium1"
+    "tt2 daily2 owp2 medium2";
+  text-align: center;
+  justify-content: center;
+}
 
 @keyframes widen {
   0% {width: 33vw;}

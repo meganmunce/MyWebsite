@@ -1,6 +1,15 @@
 // HTML CONTENT STORAGE
 
 jobs1 = `
+
+<h5 style="text-align: left; margin-bottom: 0px;">Reporting Fellow, The Texas Tribune</h5>
+<p style="margin-top: 0px; margin-bottom: 1vh;">Remote, Mar. 2021 - Present</p>
+<ul style="font-size: 18px;">
+  <li>Pitch and write feature stories on the Texas legislature’s bills affecting businesses, workers and LGBTQ Texans</li>
+    <li>Interview legislators, workers, business owners and activists</li>
+      <li>Write breaking news briefs on legislative action</li>
+</ul>
+
 <h5 style="text-align: left; margin-bottom: 0px;">Campus Editor, The Daily Northwestern</h5>
 <p style="margin-top: 0px; margin-bottom: 1vh;">Remote, Jan. 2021 - March 2021</p>
 <ul style="font-size: 18px;">
@@ -9,6 +18,10 @@ jobs1 = `
       <li>Report on top administrators, union leaders and student activists</li>
         <li>Budget and edit 15+ stories weekly</li>
 </ul>
+`
+
+
+jobs2 = `
 
 <h5 style="text-align: left; margin-bottom: 0px;">Web Editor, The Daily Northwestern</h5>
 <p style="margin-top: 0px; margin-bottom: 1vh;">Remote, September 2020 - December 2020</p>
@@ -17,10 +30,8 @@ jobs1 = `
     <li>Edited all social media posts and SEO headlines</li>
       <li>Pioneered special edition newsletters, such as a 2020 election edition</li>
         <li>Increased newsletter subscribers by 5.7% in two months</li>
-</ul>`
+</ul>
 
-
-jobs2 = `
 <h5 style="text-align: left; margin-bottom: 0px;">Copy Editor, The Daily Northwestern</h5>
 <p style="margin-top: 0px; margin-bottom: 1vh;">Evanston, Ill., September 2019 - December 2019</p>
 <ul style="font-size: 18px;">
@@ -28,6 +39,9 @@ jobs2 = `
     <li>Fact-checked 6+ stories nightly</li>
       <li>Updated and maintained the Daily’s stylebook</li>
 </ul>
+`
+
+jobs3 = `
 
 <h5 style="text-align: left; margin-bottom: 0px;">Social Media Editor, The Daily Northwestern</h5>
 <p style="margin-top: 0px; margin-bottom: 1vh;">Evanston, Ill., Jan. 2020 - March 2020</p>
@@ -35,9 +49,8 @@ jobs2 = `
   <li>Tracked social media engagement on Twitter and Facebook</li>
     <li>Created targeted campaigns through Twitter and Instagram for investigative and longform stories</li>
       <li>Designed and posted original graphics for daily Instagram story newsletters</li>
-</ul>`
+</ul>
 
-jobs3 = `
 <h5 style="text-align: left; margin-bottom: 0px;">Business Development & Marketing Intern, New Enterprise Associates</h5>
 <p style="margin-top: 0px; margin-bottom: 1vh;">Remote, Aug. 2020 - March 2021</p>
 <ul style="font-size: 18px;">
@@ -46,6 +59,9 @@ jobs3 = `
   <li>Create external marketing content for social media</li>
   <li>Pitched and developed original corporate innovation podcast</li>
 </ul>
+`
+
+jobs4 = `
 
 <h5 style="text-align: left; margin-bottom: 0px;">Content Volunteer, Parity.org</h5>
 <p style="margin-top: 0px; margin-bottom: 1vh;">Remote, Aug. 2019 - Jan. 2020</p>
@@ -53,18 +69,18 @@ jobs3 = `
   <li>Monitored news on women in business leadership</li>
   <li>Created posts for Facebook, Twitter and Instagram advocating for women’s leadership in business and spreading the nonprofit’s message
   </li>
-</ul>`
+</ul>
 
-jobs4 = `
 <h5 style="text-align: left; margin-bottom: 0px;"> Junior Correspondent Intern, Organization for World Peace</h5>
 <p style="margin-top: 0px; margin-bottom: 1vh;">Remote, Apr. 2019 - Aug. 2019</p>
 <ul style="font-size: 18px;">
   <li>Aggregated stories about the military and diplomacy in the Middle East</li>
   <li>rote 12 articles summarizing current events and their historical context</li>
   <li>Attended remote editing and pitching meetings</li>
-
 </ul>
+`
 
+jobs5 =`
 <h5 style="text-align: left; margin-bottom: 0px;">Contributing Writer, Victory Briefs</h5>
 <p style="margin-top: 0px; margin-bottom: 1vh;">Remote, Nov. 2018 - June 2019</p>
 <ul style="font-size: 18px;">
@@ -77,6 +93,7 @@ basicbuttons = `
 <h2>Choose an option:</h2>
 <button class="showwork">See work experience</button>
 <button class="showclips">See my clips</button>
+<button class="authorpages">See all author pages</button>
 <button class="return">Return to the main menu</button>
 `
 
@@ -88,6 +105,7 @@ extrabuttons = `
 <button class="data" style="width: 15vw;">See data clips</button>
 <button class="interactive" style="width: 15vw;">See interactive clips</button>
 <button class="political" style="width: 15vw;">See political clips</button>
+<button class="authorpages">See all author pages</button>
 <button class="return">Return to the main menu</button>
 `
 
@@ -218,7 +236,25 @@ workhtml = `
 </div>
 `
 
-// TRIGGER WORK VS CLIPS
+authorpageshtml = `
+<div class="beenrightheader">
+  <h2 style="margin-bottom: 0; padding-bottom: 5px;"><span class="beenrightheadertext">Author Pages</span></h2>
+  <em><p style="font-size: 14px; text-align: center; margin-top: 0; padding-top: 0;">Click each logo to see the entirety of my clips at that publication.</p></em>
+</div>
+
+<div id="authorpagelogos">
+<div style="grid-area: tt1;"><a href="https://www.texastribune.org/about/staff/megan-munce/" target="_blank"><img src="css/images/ttlogo.png" class="authorlogo"></a></div>
+<div style="grid-area: tt2;"><p style="text-align: center;">The Texas Tribune</p></div>
+<div style="grid-area: daily1;"><a href="https://dailynorthwestern.com/staff_name/megan-munce/" target="_blank"><img src="css/images/dailylogo.png" class="authorlogo"></a></div>
+<div style="grid-area: daily2;"><p style="text-align: center;">The Daily Northwestern</p></div>
+<div style="grid-area: owp1;"><a href="https://theowp.org/author/meganmunce/" target="_blank"><img src="css/images/owplogo.png" class="authorlogo"></a></div>
+<div style="grid-area: owp2;"><p style="text-align: center;">The Organization for World Peace</p></div>
+<div style="grid-area: medium1;"><i class="fab fa-medium fa-7x authorlogo"></i></div>
+<div style="grid-area: medium2;"><p style="text-align: center;">Medium</p></div>
+<div>
+`
+
+// TRIGGER WORK VS CLIPS VS AUTHOR PAGE
 
 $(document).on('click','.showclips', function(){
   document.querySelector('.beenleft').innerHTML = extrabuttons;
@@ -230,6 +266,11 @@ $(document).on('click','.showwork', function(){
   document.querySelector('.beenright').innerHTML = workhtml;
 });
 
+$(document).on('click','.authorpages', function(){
+  document.querySelector('.beenleft').innerHTML = basicbuttons;
+  document.querySelector('.beenright').innerHTML = authorpageshtml;
+});
+
 /* REPLACE WORK CONTENT */
 
 jobs1shown = "true";
@@ -239,11 +280,11 @@ jobs4shown = "false";
 
 const workGoLeft = () => {
   if (jobs1shown == "true") {
-    document.querySelector('.beenworkcontent').innerHTML = jobs4;
+    document.querySelector('.beenworkcontent').innerHTML = jobs5;
     console.log("replaced");
-    jobs4shown = "true";
+    jobs5shown = "true";
     jobs1shown = "false";
-    return jobs4shown;
+    return jobs5shown;
     return jobs1shown;
   }
   else if (jobs2shown == "true") {
@@ -265,6 +306,13 @@ const workGoLeft = () => {
     jobs3shown = "true";
     jobs4shown = "false";
     return jobs3shown;
+    return jobs4shown;
+  }
+  else if (jobs5shown == "true") {
+    document.querySelector('.beenworkcontent').innerHTML = jobs4;
+    jobs4shown = "true";
+    jobs5shown = "false";
+    return jobs5shown;
     return jobs4shown;
   }
 };
@@ -293,11 +341,18 @@ const workGoRight = () => {
     return jobs3shown;
   }
   else if (jobs4shown == "true") {
+    document.querySelector('.beenworkcontent').innerHTML = jobs5;
+    jobs5shown = "true";
+    jobs4shown = "false";
+    return jobs5shown;
+    return jobs4shown;
+  }
+  else if (jobs5shown == "true") {
     document.querySelector('.beenworkcontent').innerHTML = jobs1;
     jobs1shown = "true";
-    jobs4shown = "false";
+    jobs5shown = "false";
+    return jobs5shown;
     return jobs1shown;
-    return jobs4shown;
   }
 };
 

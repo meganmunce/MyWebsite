@@ -49,6 +49,7 @@ whereivebeen = `
 <h2>Choose an option:</h2>
 <button class="showwork">See work experience</button>
 <button class="showclips">See my clips</button>
+<button class="authorpages">See all author pages</button>
 <button class="return">Return to the main menu</button>
 </div>
 
