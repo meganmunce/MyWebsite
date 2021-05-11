@@ -57,9 +57,9 @@ header h1 {
   padding-right: 30px;
   font-size: 18px;
   box-shadow:
-    3px 3px #52528C,
-    6px 6px #2CA58D,
-    9px 9px #92C2F2;
+    3px 3px #9ED0E6,
+    6px 6px #046E8F,
+    9px 9px #9A7197;
   margin-left: 30vw;
   margin-right: 30vw;
 }
@@ -174,7 +174,7 @@ a {
 }
 
 .whereimgoingcontent {
-  background-color:#2CA58D;
+  background-color:#046E8F;
 }
 
 .aboutme ul, p {
@@ -465,5 +465,16 @@ p {
     margin-left: 10vw;
     margin-right: 10vw;}
   .skillbox p {
-    font-size: 15px;
+    font-size: 15px;}
+  #navsection {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "r1"
+        "r2"
+        "r3";
+      min-height: 100vh;
+      overflow: hidden;
+    }
   }

@@ -93,19 +93,19 @@ whereimgoing = `
   <h5>Web Development</h5>
 </div>
 
-<div class="skill4 skillbox" style="box-shadow: 5px 5px #92C2F2;">
+<div class="skill4 skillbox" style="box-shadow: 5px 5px #9A7197;">
   <div style="float: left; height: 75%;">
   <i class="fas fa-code fa-4x"></i></div>
   <p>HTML</p>
 </div>
 
-<div class="skill5 skillbox" style="box-shadow: 5px 5px #92C2F2;">
+<div class="skill5 skillbox" style="box-shadow: 5px 5px #9A7197;">
   <div style="float: left; height: 75%;">
   <i class="fas fa-border-style fa-4x"></i></i></div>
   <p>CSS</p>
 </div>
 
-<div class="skill6 skillbox" style="box-shadow: 5px 5px #92C2F2;">
+<div class="skill6 skillbox" style="box-shadow: 5px 5px #9A7197;">
   <div style="float: left; height: 75%;">
   <i class="fab fa-js-square fa-4x"></i></i></div>
   <p>Javascript</p>
@@ -115,19 +115,19 @@ whereimgoing = `
   <h5>Language</h5>
 </div>
 
-<div class="skill7 skillbox" style="box-shadow: 5px 5px #52528C;">
+<div class="skill7 skillbox" style="box-shadow: 5px 5px #9ED0E6;">
   <div style="float: left; height: 75%;">
   <i class="fas fa-comment-alt fa-4x"></i></div>
   <p>Spanish</p>
 </div>
 
-<div class="skill8 skillbox" style="box-shadow: 5px 5px #52528C;">
+<div class="skill8 skillbox" style="box-shadow: 5px 5px #9ED0E6;">
   <div style="float: left; height: 75%;">
   <i class="fas fa-spell-check fa-4x"></i></div>
   <p>AP Style</p>
 </div>
 
-<div class="skill9 skillbox" style="box-shadow: 5px 5px #52528C;">
+<div class="skill9 skillbox" style="box-shadow: 5px 5px #9ED0E6;">
   <div style="float: left; height: 75%;">
   <i class="fas fa-volume-up fa-4x"></i></div>
   <p style="margin-top: 0; padding-top: 1vh;">Public Speaking</p>

@@ -8,6 +8,7 @@ jobs1 = `
   <li>Pitch and write feature stories on the Texas legislature’s bills affecting businesses, workers and LGBTQ Texans</li>
     <li>Interview legislators, workers, business owners and activists</li>
       <li>Write breaking news briefs on legislative action</li>
+      <li>Republished by United Press International, the Houston Chronicle, KERA News</li>
 </ul>
 
 <h5 style="text-align: left; margin-bottom: 0px;">Campus Editor, The Daily Northwestern</h5>

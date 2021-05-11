@@ -14,21 +14,21 @@
 
 .whoiam {
   grid-area: r1;
-  background-color: #52528C;
+  background-color: #9ED0E6;
   color: #FFFFFF;
   padding-top: 10vh;
 }
 
 .whereivebeen {
   grid-area: r2;
-  background-color: #92C2F2;
+  background-color: #9A7197;
   color: #FFFFFF;
   padding-top: 10vh;
 }
 
 .whereimgoing {
   grid-area: r3;
-  background-color: #2CA58D;
+  background-color: #046E8F;
   color: #FFFFFF;
   padding-top: 10vh;
 }
@@ -48,7 +48,7 @@
   grid-template-areas:
     "who1 who2"
     "who3 who3";
-  background-color: #52528C;
+  background-color: #9ED0E6;
   color: #FFFFFF;
   text-align: center;
   justify-content: center;
@@ -74,7 +74,7 @@
 }
 
 .whereimgoingcontent {
-  background-color: #2CA58D;
+  background-color: #046E8F;
   color: #FFFFFF;
   min-height: 100vh;
   padding-top: 10vh;
@@ -87,7 +87,7 @@
   grid-template-rows: 1fr;
   grid-template-areas:
     "been1 been2";
-  background-color: #92C2F2;
+  background-color: #9A7197;
   color: #FFFFFF;
   text-align: center;
   justify-content: center;
@@ -109,8 +109,8 @@
   color: #091540;
   border-radius: 5px 15px;
   box-shadow:
-    3px 3px #52528C,
-    6px 6px #2CA58D;
+    3px 3px #9ED0E6,
+    6px 6px #046E8F;
   padding: 1vw;
 }
 
@@ -286,3 +286,22 @@
   0% {letter-spacing: normal;}
   100% {letter-spacing: 0.5px;}
 }
+
+@media (max-width: 700px) {
+  .name h3 {
+    margin-left: 10vw;
+    margin-right: 10vw;}
+  .skillbox p {
+    font-size: 15px;}
+  #navsection {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "r1"
+        "r2"
+        "r3";
+      min-height: 100vh;
+      overflow: hidden;
+    }
+  }
