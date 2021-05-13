@@ -26,10 +26,17 @@ h2 {
   font-size: 30px;
   text-align: center;
   justify-content: center;
-  transform: scale(1.0);
   animation-name: beat;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+ul {
+  list-style-position: outside;
 }
 
 p, li {
@@ -98,11 +105,12 @@ a {
   background-color: #ABE1ED;
   border: none;
   box-shadow: 3px 1px 5px #B6B6B6;
-  transform: rotate(10deg) scale(1.2);
+  transform: rotate(8deg) scale(1.2);
   margin-left: 5vw;
   margin-top: 2vw;
   margin-bottom: 1.5vw;
   margin-right: 2vw;
+  width: 15vw;
 }
 
 .postitnoteleft {
@@ -115,25 +123,44 @@ a {
   background-color: #ABE1ED;
   border: none;
   box-shadow: 3px 1px 5px #B6B6B6;
-  transform: rotate(-10deg) scale(1.2);
+  transform: rotate(-8deg) scale(1.2);
   margin-right: 5vw;
   margin-top: 3vw;
   margin-bottom: 2vw;
   margin-left: 2vw;
+  width: 15vw;
 }
 
 .postitnoteright:hover, .postitnoteleft:hover{
-  animation: growbutton 200ms;
+  animation: growright 200ms;
   transform: scale(1.4);
 }
 
-@keyframes growbutton {
-  0%{transform: rotate(-10deg) scale(1.2);}
+.postitnoteleft:hover{
+  animation: growleft 200ms;
+  transform: scale(1.4);
+}
+
+.arrow {
+  transition: 500ms ease-in-out;
+}
+
+.arrow:hover{
+  transform: translate(10px);
+}
+
+@keyframes growleft {
+  0%{transform: rotate(-8deg) scale(1.2);}
+  100%{transform: rotate(0deg) scale(1.4);}
+}
+
+@keyframes growright {
+  0%{transform: rotate(8deg) scale(1.2);}
   100%{transform: rotate(0deg) scale(1.4);}
 }
 
 @keyframes beat {
-  0% {transform: scale(1.0);}
-  50% {transform: scale(1.05);}
-  100% {transform: scale(1.0);}
+  0%{transform: scale(1.0); transform: rotate(-2deg);}
+  50% {transform: scale(1.1); transform: rotate(2deg);}
+  100% {transform: scale(1.0); transform: rotate(-2deg);}
 }
