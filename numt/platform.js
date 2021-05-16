@@ -56,21 +56,8 @@ function changenumbersHand() {
   for (i = 0; i < numarray.length; i++) {
     var num = numarray[i];
     num.style.fontFamily = "handwritingregular";
+    console.log(num);
   };
-  console.log("changed");
 };
 
 presshown = "true";
-
-$(document).on('click','.flipthis', function(){
-  if (presshown == "true") {
-    document.querySelector(".flipthis").innerHTML = vp;
-    presshown = "false";
-    return presshown;
-  }
-  else if (presshown == "false"){
-    document.querySelector(".flipthis").innerHTML = pres;
-    presshown = "true";
-    return presshown;
-  }
-});
