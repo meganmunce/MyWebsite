@@ -5,6 +5,7 @@
 body {
   background-color: #D6D6D6;
   font-family: Garamond, EB Garamond, Georgia, serif;
+  margin: 0;
 }
 
 h1 { /*section title*/
@@ -23,6 +24,14 @@ h4 { /*small story headline*/
   text-align: center;
 }
 
+.top {
+  background-image: url(https://dailynorthwestern.com/wp-content/uploads/2018/10/ENVIRONMENT-OwenStidman-WEB.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30vh;
+}
+
 .articlephoto {
   justify-content: center;
   text-align: center;
@@ -30,40 +39,46 @@ h4 { /*small story headline*/
   width: 100%;
 }
 
-.article {
-  background-color: #FFF;
+img {
+  margin: 0;
+  padding: 0;
 }
 
-.campus-a {
+.overlaycontainer {
   position: relative;
-  margin-bottom: 2vw;
+  text-align: center;
+  color: #FFF;
 }
 
 .fulloverlay {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0;
-  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: rgb(0,0,0,0.5);
-  color: #FFF;
-  padding: 20px;
-  overflow: hidden;
-  height: 80%;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
 
+.fulloverlay:hover {
+  background: rgb(78,42,132,0.5);
+}
+
+.fulloverlay h3 {
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 
 .overlaycontent {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
   margin: 0;
   z-index: 100;
   background: rgb(0,0,0,0.5);
   color: #FFF;
-  padding: 20px;
+  padding-left: 1vw;
+  padding-right: 1vw;
   overflow: hidden;
   height: 20%;
   transition: 0.5s ease;
@@ -82,6 +97,9 @@ h4 { /*small story headline*/
   color: #FFF;
   padding: 1vw;
   overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 #navigation a {
@@ -114,194 +132,6 @@ h4 { /*small story headline*/
   padding-left: 1vw;
   padding-right: 1vw;
   padding-bottom: 0.1vw;
-}
-
-/* CAMPUS SECTION */
-
-#campus {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 0.2fr 1fr 1fr;
-  grid-template-areas:
-    "campushed campushed"
-    "campus-a campus-b"
-    "campus-a campus-c";
-  grid-gap: 0.5vw;
-  margin: 0.5vw;
-}
-
-#campus2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-    "explainer needtoknow";
-  grid-gap: 0.5vw;
-}
-
-.campushed {
-  grid-area: campushed;
-}
-
-.campus-a{
-  grid-area: campus-a;
-}
-
-.campus-b {
-  grid-area: campus-b;
-}
-
-.campus-c {
-  grid-area: campus-c;
-}
-
-#explainers {
-  grid-area: explainer;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.2fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "explainerhed explainerhed"
-    "explainer1 explainer2"
-    "explainer3 explainer4"
-    "explainer5 explainer6";
-  grid-gap: 0.1vw;
-  background-color: #fff;
-  padding: 1vw;
-}
-
-.explainer1, .explainer2, .explainer3, .explainer4, .explainer5, .explainer6 {
-  padding: 1vw;
-  background-color: #D6D6D6;
-  margin: 1vw;
-}
-
-.explainerhed {
-  grid-area: explainerhed;
-}
-
-.explainer1 {
-  grid-area: explainer1;
-}
-
-.explainer2 {
-  grid-area: explainer2;
-}
-
-.explainer3 {
-  grid-area: explainer3;
-}
-
-.explainer4 {
-  grid-area: explainer4;
-}
-
-.explainer5 {
-  grid-area: explainer5;
-}
-
-.explainer6 {
-  grid-area: explainer6;
-}
-
-#needtoknow {
-  grid-area: needtoknow;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.2fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "needtoknowhed needtoknowhed"
-    "needtoknow1 needtoknow2"
-    "needtoknow3 needtoknow4"
-    "needtoknow5 EMPTY";
-  grid-gap: 0.1vw;
-  background-color: #fff;
-  padding: 1vw;
-}
-
-.needtoknowhed {
-  grid-area: needtoknowhed;
-}
-
-.needtoknow1, .needtoknow2, .needtoknow3, .needtoknow4, .needtoknow5 {
-  padding: 1vw;
-  background-color: #D6D6D6;
-  margin: 1vw;
-}
-
-.needtoknow1 {
-  grid-area: needtoknow1;
-}
-
-.needtoknow2 {
-  grid-area: needtoknow2;
-}
-
-.needtoknow3 {
-  grid-area: needtoknow3;
-}
-
-.needtoknow4 {
-  grid-area: needtoknow4;
-}
-
-.needtoknow5 {
-  grid-area: needtoknow5;
-}
-
-
-#campusending {
-  grid-area: needtoknow;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.1fr 0.5fr;
-  grid-template-areas:
-    "campusendhed campusendhed campusendhed"
-    "campus-d campus-e campus-f";
-  grid-gap: 0.1vw;
-  padding: 1vw;
-}
-
-.campusendhed {
-  grid-area: campusendhed;
-}
-
-.campus-d {
-  grid-area: campus-d;
-}
-
-.campus-e {
-  grid-area: campus-e;
-}
-
-.campus-f {
-  grid-area: campus-f;
-}
-
-footer {
-  background-color: #000;
-  color: #FFF;
-  padding: 1vw;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 0.2fr;
-  grid-template-areas:
-    "footerleft footerright"
-    "footerend footerend";
-  grid-gap: 0.1vw;
-  padding: 1vw;
-}
-
-.leftfooter {
-  grid-area: footerleft;
-}
-
-.rightfooter {
-  grid-area: footerright;
-}
-
-.footerend {
-  grid-area: footerend;
 }
 
 /* NAVIGATION DROPDOWN STYLING */
@@ -348,4 +178,102 @@ footer {
 
 .show {
   display: block;
+}
+
+/* FOOTER STYPING */
+
+footer {
+  background-color: #000;
+  color: #FFF;
+  padding: 1vw;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 0.2fr;
+  grid-template-areas:
+    "footerleft footerright"
+    "footerend footerend";
+  grid-gap: 0.1vw;
+  padding: 1vw;
+  margin-top: 2vw;
+}
+
+.leftfooter {
+  grid-area: footerleft;
+}
+
+.rightfooter {
+  grid-area: footerright;
+}
+
+.footerend {
+  grid-area: footerend;
+}
+
+/* HOMEPAGE STYLING */
+
+#home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1.25fr 1.25fr;
+  grid-template-areas:
+    "welcome lfe"
+    "campus city"
+    "sports aande";
+  grid-gap: 0.1vw;
+  padding: 1vw;
+}
+
+#home a {
+  text-decoration: none;
+  color: #000;
+}
+
+#minisection{
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas:
+    "article1 article2"
+    "article3 article4";
+  grid-gap: 0.5vw;
+  padding: 1vw;
+  border-top: double 4px #000;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.article1, .article2, .article3, .article4 {
+  background-color: #FFF;
+  padding: 1vw;
+}
+
+.article1{
+  grid-area: article1;
+}
+
+.article2 {
+  grid-area: article2;
+}
+
+.article3 {
+  grid-area: article3;
+}
+
+.article4 {
+  grid-area: article4;
+}
+
+.bump {
+  margin-bottom: 2vw;
+}
+
+.bump a{
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+
+.bump a:hover {
+  transform: translateX(2vw);
 }

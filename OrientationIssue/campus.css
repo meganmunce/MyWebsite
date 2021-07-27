@@ -1,0 +1,165 @@
+
+/* CAMPUS SECTION */
+
+#campus {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr;
+  grid-template-areas:
+    "campushed campushed"
+    "campus-a campus-b"
+    "campus-a campus-c";
+  grid-gap: 0.5vw;
+  margin: 0.5vw;
+}
+
+#campus2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "explainer needtoknow";
+  grid-gap: 0.5vw;
+}
+
+.campushed {
+  grid-area: campushed;
+}
+
+.campus-a{
+  grid-area: campus-a;
+}
+
+.campus-b {
+  grid-area: campus-b;
+}
+
+.campus-c {
+  grid-area: campus-c;
+}
+
+#explainers {
+  grid-area: explainer;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "explainerhed explainerhed"
+    "explainer1 explainer2"
+    "explainer3 explainer4"
+    "explainer5 explainer6";
+  grid-gap: 0.1vw;
+  background-color: #fff;
+  padding: 1vw;
+}
+
+.explainer1, .explainer2, .explainer3, .explainer4, .explainer5, .explainer6 {
+  padding: 1vw;
+  background-color: #D6D6D6;
+  margin: 1vw;
+}
+
+.explainerhed {
+  grid-area: explainerhed;
+}
+
+.explainer1 {
+  grid-area: explainer1;
+}
+
+.explainer2 {
+  grid-area: explainer2;
+}
+
+.explainer3 {
+  grid-area: explainer3;
+}
+
+.explainer4 {
+  grid-area: explainer4;
+}
+
+.explainer5 {
+  grid-area: explainer5;
+}
+
+.explainer6 {
+  grid-area: explainer6;
+}
+
+#needtoknow {
+  grid-area: needtoknow;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "needtoknowhed needtoknowhed"
+    "needtoknow1 needtoknow2"
+    "needtoknow3 needtoknow4"
+    "needtoknow5 EMPTY";
+  grid-gap: 0.1vw;
+  background-color: #fff;
+  padding: 1vw;
+}
+
+.needtoknowhed {
+  grid-area: needtoknowhed;
+}
+
+.needtoknow1, .needtoknow2, .needtoknow3, .needtoknow4, .needtoknow5 {
+  padding: 1vw;
+  background-color: #D6D6D6;
+  margin: 1vw;
+}
+
+.needtoknow1 {
+  grid-area: needtoknow1;
+}
+
+.needtoknow2 {
+  grid-area: needtoknow2;
+}
+
+.needtoknow3 {
+  grid-area: needtoknow3;
+}
+
+.needtoknow4 {
+  grid-area: needtoknow4;
+}
+
+.needtoknow5 {
+  grid-area: needtoknow5;
+}
+
+
+#campusending {
+  grid-area: needtoknow;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.5fr;
+  grid-template-areas:
+    "campusendhed campusendhed campusendhed"
+    "campus-d campus-e campus-f";
+  grid-gap: 0.1vw;
+  padding: 1vw;
+}
+
+.campusendhed {
+  grid-area: campusendhed;
+  border-bottom: double 4px #000;
+  padding-bottom: 0;
+  margin-bottom: 2vw;
+}
+
+.campus-d {
+  grid-area: campus-d;
+}
+
+.campus-e {
+  grid-area: campus-e;
+}
+
+.campus-f {
+  grid-area: campus-f;
+}
