@@ -1,0 +1,351 @@
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
+
+/* TEXT STYLING */
+
+body {
+  background-color: #D6D6D6;
+  font-family: Garamond, EB Garamond, Georgia, serif;
+}
+
+h1 { /*section title*/
+  text-align: center;
+}
+
+h2 { /*A1 headline*/
+  text-align: center;
+}
+
+h3 { /* mini section title*/
+  text-align: center;
+}
+
+h4 { /*small story headline*/
+  text-align: center;
+}
+
+.articlephoto {
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+
+.article {
+  background-color: #FFF;
+}
+
+.campus-a {
+  position: relative;
+  margin-bottom: 2vw;
+}
+
+.fulloverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  z-index: 100;
+  background: rgb(0,0,0,0.5);
+  color: #FFF;
+  padding: 20px;
+  overflow: hidden;
+  height: 80%;
+
+}
+
+.overlaycontent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  z-index: 100;
+  background: rgb(0,0,0,0.5);
+  color: #FFF;
+  padding: 20px;
+  overflow: hidden;
+  height: 20%;
+  transition: 0.5s ease;
+}
+
+.overlaycontent:hover {
+  animation: fadein 500ms;
+  height: 40%;
+  background: rgb(0,0,0,1);
+}
+
+/* NAVIGATION BAR*/
+
+#navigation {
+  background-color: #000;
+  color: #FFF;
+  padding: 1vw;
+  overflow: hidden;
+}
+
+#navigation a {
+  color: #FFF;
+  text-decoration: none;
+  float: left;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 2vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 0.1vw;
+}
+
+#navigation a:hover, button:hover {
+  border-bottom: solid 2px #FFF;
+}
+
+#navigation button {
+  background-color: #000;
+  border: none;
+  outline: none;
+  color: #FFF;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 2vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 0.1vw;
+}
+
+/* CAMPUS SECTION */
+
+#campus {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr;
+  grid-template-areas:
+    "campushed campushed"
+    "campus-a campus-b"
+    "campus-a campus-c";
+  grid-gap: 0.5vw;
+  margin: 0.5vw;
+}
+
+#campus2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "explainer needtoknow";
+  grid-gap: 0.5vw;
+}
+
+.campushed {
+  grid-area: campushed;
+}
+
+.campus-a{
+  grid-area: campus-a;
+}
+
+.campus-b {
+  grid-area: campus-b;
+}
+
+.campus-c {
+  grid-area: campus-c;
+}
+
+#explainers {
+  grid-area: explainer;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "explainerhed explainerhed"
+    "explainer1 explainer2"
+    "explainer3 explainer4"
+    "explainer5 explainer6";
+  grid-gap: 0.1vw;
+  background-color: #fff;
+  padding: 1vw;
+}
+
+.explainer1, .explainer2, .explainer3, .explainer4, .explainer5, .explainer6 {
+  padding: 1vw;
+  background-color: #D6D6D6;
+  margin: 1vw;
+}
+
+.explainerhed {
+  grid-area: explainerhed;
+}
+
+.explainer1 {
+  grid-area: explainer1;
+}
+
+.explainer2 {
+  grid-area: explainer2;
+}
+
+.explainer3 {
+  grid-area: explainer3;
+}
+
+.explainer4 {
+  grid-area: explainer4;
+}
+
+.explainer5 {
+  grid-area: explainer5;
+}
+
+.explainer6 {
+  grid-area: explainer6;
+}
+
+#needtoknow {
+  grid-area: needtoknow;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "needtoknowhed needtoknowhed"
+    "needtoknow1 needtoknow2"
+    "needtoknow3 needtoknow4"
+    "needtoknow5 EMPTY";
+  grid-gap: 0.1vw;
+  background-color: #fff;
+  padding: 1vw;
+}
+
+.needtoknowhed {
+  grid-area: needtoknowhed;
+}
+
+.needtoknow1, .needtoknow2, .needtoknow3, .needtoknow4, .needtoknow5 {
+  padding: 1vw;
+  background-color: #D6D6D6;
+  margin: 1vw;
+}
+
+.needtoknow1 {
+  grid-area: needtoknow1;
+}
+
+.needtoknow2 {
+  grid-area: needtoknow2;
+}
+
+.needtoknow3 {
+  grid-area: needtoknow3;
+}
+
+.needtoknow4 {
+  grid-area: needtoknow4;
+}
+
+.needtoknow5 {
+  grid-area: needtoknow5;
+}
+
+
+#campusending {
+  grid-area: needtoknow;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.5fr;
+  grid-template-areas:
+    "campusendhed campusendhed campusendhed"
+    "campus-d campus-e campus-f";
+  grid-gap: 0.1vw;
+  padding: 1vw;
+}
+
+.campusendhed {
+  grid-area: campusendhed;
+}
+
+.campus-d {
+  grid-area: campus-d;
+}
+
+.campus-e {
+  grid-area: campus-e;
+}
+
+.campus-f {
+  grid-area: campus-f;
+}
+
+footer {
+  background-color: #000;
+  color: #FFF;
+  padding: 1vw;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 0.2fr;
+  grid-template-areas:
+    "footerleft footerright"
+    "footerend footerend";
+  grid-gap: 0.1vw;
+  padding: 1vw;
+}
+
+.leftfooter {
+  grid-area: footerleft;
+}
+
+.rightfooter {
+  grid-area: footerright;
+}
+
+.footerend {
+  grid-area: footerend;
+}
+
+/* NAVIGATION DROPDOWN STYLING */
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #474747;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #FFF;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #5C5C5C;
+}
+
+.show {
+  display: block;
+}

@@ -3,7 +3,7 @@
 jobs1 = `
 
 <h5 style="text-align: left; margin-bottom: 0px;">Reporting Fellow, The Texas Tribune</h5>
-<p style="margin-top: 0px; margin-bottom: 1vh;">Remote, Mar. 2021 - Present</p>
+<p style="margin-top: 0px; margin-bottom: 1vh;">Remote, Mar. 2021 - June 2021</p>
 <ul style="font-size: 18px;">
   <li>Pitch and write feature stories on the Texas legislature’s bills affecting businesses, workers and LGBTQ Texans</li>
     <li>Interview legislators, workers, business owners and activists</li>
@@ -210,23 +210,23 @@ workhtml = `
 
   <div class="beenworkcontent">
 
-    <h5 style="text-align: left; margin-bottom: 0px;">Campus Editor, The Daily Northwestern</h5>
-    <p style="margin-top: 0px; margin-bottom: 1vh;">Remote, Jan. 2021 - March 2021</p>
-    <ul style="font-size: 18px;">
-      <li>Lead editorial decisions related to on-campus coverage at Northwestern’s only daily student news publication</li>
-        <li>Manage team of over 30 reporters writing daily stories and breaking news</li>
-          <li>Report on top administrators, union leaders and student activists</li>
-            <li>Budget and edit 15+ stories weekly</li>
-    </ul>
+  <h5 style="text-align: left; margin-bottom: 0px;">Reporting Fellow, The Texas Tribune</h5>
+  <p style="margin-top: 0px; margin-bottom: 1vh;">Remote, Mar. 2021 - June 2021</p>
+  <ul style="font-size: 18px;">
+    <li>Pitch and write feature stories on the Texas legislature’s bills affecting businesses, workers and LGBTQ Texans</li>
+      <li>Interview legislators, workers, business owners and activists</li>
+        <li>Write breaking news briefs on legislative action</li>
+        <li>Republished by United Press International, the Houston Chronicle, KERA News</li>
+  </ul>
 
-    <h5 style="text-align: left; margin-bottom: 0px;">Web Editor, The Daily Northwestern</h5>
-    <p style="margin-top: 0px; margin-bottom: 1vh;">Remote, September 2020 - December 2020</p>
-    <ul style="font-size: 18px;">
-      <li>Published stories on WordPress and promoted them through TweetDeck and Facebook</li>
-        <li>Edited all social media posts and SEO headlines</li>
-          <li>Pioneered special edition newsletters, such as a 2020 election edition</li>
-            <li>Increased newsletter subscribers by 5.7% in two months</li>
-    </ul>
+  <h5 style="text-align: left; margin-bottom: 0px;">Campus Editor, The Daily Northwestern</h5>
+  <p style="margin-top: 0px; margin-bottom: 1vh;">Remote, Jan. 2021 - March 2021</p>
+  <ul style="font-size: 18px;">
+    <li>Lead editorial decisions related to on-campus coverage at Northwestern’s only daily student news publication</li>
+      <li>Manage team of over 30 reporters writing daily stories and breaking news</li>
+        <li>Report on top administrators, union leaders and student activists</li>
+          <li>Budget and edit 15+ stories weekly</li>
+  </ul>
 
   </div>
 
