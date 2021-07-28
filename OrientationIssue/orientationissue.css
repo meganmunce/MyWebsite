@@ -74,20 +74,19 @@ img {
   position: absolute;
   bottom: 0;
   margin: 0;
-  z-index: 100;
+  z-index: 1;
   background: rgb(0,0,0,0.5);
   color: #FFF;
   padding-left: 1vw;
   padding-right: 1vw;
   overflow: hidden;
   height: 20%;
-  transition: 0.5s ease;
+  transition: 0.5s ease-in-out;
 }
 
 .overlaycontent:hover {
-  animation: fadein 500ms;
   height: 40%;
-  background: rgb(0,0,0,1);
+  background: rgb(78,42,132,1);
 }
 
 /* NAVIGATION BAR*/
@@ -97,9 +96,9 @@ img {
   color: #FFF;
   padding: 1vw;
   overflow: hidden;
-  position: sticky;
+/*  position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 2; */
 }
 
 #navigation a {
@@ -267,6 +266,7 @@ footer {
 
 .bump {
   margin-bottom: 2vw;
+  transform: translateX(2vw);
 }
 
 .bump a{
@@ -275,5 +275,5 @@ footer {
 }
 
 .bump a:hover {
-  transform: translateX(2vw);
+  transform: translateX(3vw);
 }
