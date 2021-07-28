@@ -4,11 +4,12 @@
 #campus {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 0.2fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 0.5fr;
   grid-template-areas:
     "campushed campushed"
     "campus-a campus-b"
-    "campus-a campus-c";
+    "campus-a campus-c"
+    "podcast podcast";
   grid-gap: 0.5vw;
   margin: 0.5vw;
 }
@@ -36,6 +37,11 @@
 
 .campus-c {
   grid-area: campus-c;
+}
+
+.podcast {
+  grid-area: podcast;
+  background-color: #FFF;
 }
 
 #explainers {
