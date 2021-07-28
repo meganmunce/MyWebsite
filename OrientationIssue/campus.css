@@ -25,6 +25,7 @@
 
 .campushed {
   grid-area: campushed;
+  border-bottom: double 4px #000;
 }
 
 .campus-a{
@@ -41,7 +42,8 @@
 
 .podcast {
   grid-area: podcast;
-  background-color: #FFF;
+  border-bottom: double 4px #000;
+  border-top: double 4px #000;
 }
 
 #explainers {
@@ -61,12 +63,12 @@
 
 .explainer1, .explainer2, .explainer3, .explainer4, .explainer5, .explainer6 {
   padding: 1vw;
-  background-color: #D6D6D6;
   margin: 1vw;
 }
 
 .explainerhed {
   grid-area: explainerhed;
+  border-bottom: double 4px #000;
 }
 
 .explainer1 {
@@ -110,11 +112,11 @@
 
 .needtoknowhed {
   grid-area: needtoknowhed;
+  border-bottom: double 4px #000;
 }
 
 .needtoknow1, .needtoknow2, .needtoknow3, .needtoknow4, .needtoknow5 {
   padding: 1vw;
-  background-color: #D6D6D6;
   margin: 1vw;
 }
 
