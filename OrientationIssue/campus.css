@@ -4,23 +4,15 @@
 #campus {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 0.2fr 1fr 1fr 0.5fr;
+  grid-template-rows: 0.5fr 0.5fr;
   grid-template-areas:
-    "campushed campushed"
     "campus-a campus-b"
-    "campus-a campus-c"
-    "podcast podcast";
+    "campus-a campus-c";
   grid-gap: 0.5vw;
-  margin: 0.5vw;
-}
-
-#campus2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas:
-    "explainer needtoknow";
-  grid-gap: 0.5vw;
+  margin: 2vw;
+  padding: 2vw;
+  border-radius: 2vw;
+  background-color: #E4DBA5;
 }
 
 .campushed {
@@ -30,114 +22,96 @@
 
 .campus-a{
   grid-area: campus-a;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
 }
 
 .campus-b {
   grid-area: campus-b;
+  border-top-right-radius: 2vw;
 }
 
 .campus-c {
   grid-area: campus-c;
+  border-bottom-right-radius: 2vw;
 }
 
 .podcast {
-  grid-area: podcast;
   border-bottom: double 4px #000;
   border-top: double 4px #000;
 }
 
-#explainers {
-  grid-area: explainer;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.2fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "explainerhed explainerhed"
-    "explainer1 explainer2"
-    "explainer3 explainer4"
-    "explainer5 explainer6";
-  grid-gap: 0.1vw;
-  background-color: #fff;
-  padding: 1vw;
+#explainers, #needtoknow {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left:0;
+  margin-right: 0;
 }
 
-.explainer1, .explainer2, .explainer3, .explainer4, .explainer5, .explainer6 {
-  padding: 1vw;
-  margin: 1vw;
+.explainercarousel, .needtoknowcarousel {
+  white-space: nowrap;
+  position: relative;
+  max-width: 100%;
 }
 
-.explainerhed {
-  grid-area: explainerhed;
-  border-bottom: double 4px #000;
+.explainercarousel {
+  overflow: scroll;
 }
 
-.explainer1 {
-  grid-area: explainer1;
+.needtoknowcarousel {
+  overflow: hidden;
 }
 
-.explainer2 {
-  grid-area: explainer2;
+.explainerleft, .explainerright {
+  z-index: 5;
+  position: absolute;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  color: #FFF;
 }
 
-.explainer3 {
-  grid-area: explainer3;
+.explainerright {
+  right: 2vw;
 }
 
-.explainer4 {
-  grid-area: explainer4;
+.explainerleft{
+  left: 2vw;
 }
 
-.explainer5 {
-  grid-area: explainer5;
+.slidephoto {
+  height: 50vh;
+  width: auto;
 }
 
-.explainer6 {
-  grid-area: explainer6;
+.eslide {
+  display: inline-block;
 }
 
-#needtoknow {
-  grid-area: needtoknow;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.2fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "needtoknowhed needtoknowhed"
-    "needtoknow1 needtoknow2"
-    "needtoknow3 needtoknow4"
-    "needtoknow5 EMPTY";
-  grid-gap: 0.1vw;
-  background-color: #fff;
-  padding: 1vw;
+.needtoknowleft, .needtoknowright {
+  z-index: 5;
+  position: absolute;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  color: #FFF;
 }
 
-.needtoknowhed {
-  grid-area: needtoknowhed;
-  border-bottom: double 4px #000;
+.needtoknowright {
+  right: 2vw;
 }
 
-.needtoknow1, .needtoknow2, .needtoknow3, .needtoknow4, .needtoknow5 {
-  padding: 1vw;
-  margin: 1vw;
+.needtoknowleft{
+  left: 2vw;
 }
 
-.needtoknow1 {
-  grid-area: needtoknow1;
+.shownslide {
+  display: inline-block;
 }
 
-.needtoknow2 {
-  grid-area: needtoknow2;
-}
-
-.needtoknow3 {
-  grid-area: needtoknow3;
-}
-
-.needtoknow4 {
-  grid-area: needtoknow4;
-}
-
-.needtoknow5 {
-  grid-area: needtoknow5;
+.hiddenslide {
+  display: none;
 }
 
 
@@ -170,4 +144,18 @@
 
 .campus-f {
   grid-area: campus-f;
+}
+
+i {
+  color: #000;
+}
+
+.slideleft {
+  animation: slideleft 1 500ms ease-out;
+}
+
+@keyframes slideleft {
+  0%{transform: translateX(0px);}
+  100%{transform: translateX(-30vw);}
+
 }

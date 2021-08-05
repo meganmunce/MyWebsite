@@ -1,0 +1,52 @@
+
+.typewriter {
+  opacity: 0.3;
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+}
+
+.enter {
+  z-index: 2;
+  position: absolute;
+  text-align: center;
+  background-color: #fff;
+  width: 20vw;
+  margin-left: 40vw;
+  margin-right: 40vw;
+}
+
+.typewriter p {
+  font-family: monospace;
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 5s steps(24, end);
+}
+
+.typewriter h1 {
+  font-family: monospace;
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3s steps(24, end);
+}
+
+.typewriter h2 {
+  font-family: monospace;
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 8s steps(24, end);
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
