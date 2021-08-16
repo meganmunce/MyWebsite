@@ -1,161 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=EB+Garamond:wght@400;800&display=swap');
 
 /* CAMPUS SECTION */
 
-#campus {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 0.5fr 0.5fr;
-  grid-template-areas:
-    "campus-a campus-b"
-    "campus-a campus-c";
-  grid-gap: 0.5vw;
-  margin: 2vw;
-  padding: 2vw;
-  border-radius: 2vw;
-  background-color: #E4DBA5;
-}
-
-.campushed {
-  grid-area: campushed;
-  border-bottom: double 4px #000;
-}
-
-.campus-a{
-  grid-area: campus-a;
-  border-top-left-radius: 2vw;
-  border-bottom-left-radius: 2vw;
-}
-
-.campus-b {
-  grid-area: campus-b;
-  border-top-right-radius: 2vw;
-}
-
-.campus-c {
-  grid-area: campus-c;
-  border-bottom-right-radius: 2vw;
-}
-
-.podcast {
-  border-bottom: double 4px #000;
-  border-top: double 4px #000;
-}
-
-#explainers, #needtoknow {
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  margin-left:0;
-  margin-right: 0;
-}
-
-.explainercarousel, .needtoknowcarousel {
-  white-space: nowrap;
-  position: relative;
-  max-width: 100%;
-}
-
-.explainercarousel {
-  overflow: scroll;
-}
-
-.needtoknowcarousel {
-  overflow: hidden;
-}
-
-.explainerleft, .explainerright {
-  z-index: 5;
-  position: absolute;
-  padding-top: 20vh;
-  padding-bottom: 20vh;
+#campusgrid h3 {
+  font-size: 18px;
   color: #FFF;
-}
-
-.explainerright {
-  right: 2vw;
-}
-
-.explainerleft{
-  left: 2vw;
-}
-
-.slidephoto {
-  height: 50vh;
-  width: auto;
-}
-
-.eslide {
-  display: inline-block;
-}
-
-.needtoknowleft, .needtoknowright {
-  z-index: 5;
-  position: absolute;
-  padding-top: 20vh;
-  padding-bottom: 20vh;
-  color: #FFF;
-}
-
-.needtoknowright {
-  right: 2vw;
-}
-
-.needtoknowleft{
-  left: 2vw;
-}
-
-.shownslide {
-  display: inline-block;
-}
-
-.hiddenslide {
-  display: none;
-}
-
-
-#campusending {
-  grid-area: needtoknow;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.1fr 0.5fr;
-  grid-template-areas:
-    "campusendhed campusendhed campusendhed"
-    "campus-d campus-e campus-f";
-  grid-gap: 0.1vw;
   padding: 1vw;
 }
 
-.campusendhed {
-  grid-area: campusendhed;
-  border-bottom: double 4px #000;
-  padding-bottom: 0;
-  margin-bottom: 2vw;
+#campusgrid h2 {
+  font-size: 25px;
+  color: #FFF;
+  padding: 1vw;
 }
 
-.campus-d {
-  grid-area: campus-d;
+#campusgrid p {
+  color: #FFF;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
-.campus-e {
-  grid-area: campus-e;
+#campusgrid {
+  display: grid;
+  grid-template-columns: 19.5vw 40vw 20vw 20vw;
+  grid-template-rows: 25vh 25vh 40vh 40vh;
+  grid-template-areas:
+    "campus-title campus-yir campus-one campus-three"
+    "campus-title campus-yir campus-two campus-four"
+    "campus-explainers campus-explainers campus-needtoknow campus-needtoknow"
+    "campus-explainers campus-explainers campus-needtoknow campus-needtoknow";
+  grid-gap: 0.25vw;
+  max-width: 100vw;
+  margin: 0;
 }
 
-.campus-f {
-  grid-area: campus-f;
+@media (max-width: 1024px) {
+    #campusgrid {
+      grid-template-columns: 50vw 50vw;
+      grid-template-rows: 40vh 30vh 30vh 30vh 30vh 30vh 30vh;
+      grid-template-areas:
+        "campus-title campus-yir"
+        "campus-one campus-two"
+        "campus-three campus-four"
+        "campus-explainers campus-explainers"
+        "campus-explainers campus-explainers"
+        "campus-needtoknow campus-needtoknow"
+        "campus-needtoknow campus-needtoknow";
+    }
+  }
+
+
+.campus-title {
+  grid-area: campus-title;
 }
 
-i {
-  color: #000;
+.campus-yir {
+  grid-area: campus-yir;
 }
 
-.slideleft {
-  animation: slideleft 1 500ms ease-out;
+.campus-explainers {
+  grid-area: campus-explainers;
+  background-color: #553277;
+  overflow: scroll;
+  padding: 0;
+  max-width: 100vw;
 }
 
-@keyframes slideleft {
-  0%{transform: translateX(0px);}
-  100%{transform: translateX(-30vw);}
+.campus-needtoknow {
+  grid-area: campus-needtoknow;
+  background-color: #9A60AF;
+  overflow-x: scroll;
+  padding: 0;
+}
 
+.campus-one, .campus-two, .campus-three, .campus-four, .campus-yir {
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.campus-one {
+  grid-area: campus-one;
+}
+
+.campus-two {
+  grid-area: campus-two;
+  background-image: url("https://dailynorthwestern.com/wp-content/uploads/2016/01/Admissions_by_Zack-Laurence_Web.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+}
+
+.campus-three {
+  grid-area: campus-three;
+}
+
+
+.campus-four {
+  grid-area: campus-four;
+}
+
+.explainer, .needtoknow {
+  height: 25vh;
+  width: 35vh;
+  margin: 0;
+  margin-top: 1vh;
+  display: inline-block;
+}
+
+.articleimg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+#campusslideshow {
+  position: relative;
+  min-width: 20vw;
+  min-height: 50vh;
+  overflow: hidden;
+  position: relative;
+  color: #FFF;
+  background-color: #9A60AF;
+}
+
+#campusslideshow > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#campusslideshow > img {
+  object-fit: contain;
+  bottom: 0;
+}
+
+#campusslideshow > span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(154,96,175,0.25);
+  z-index: 5;
+  text-align: center;
+}
+
+#campusslideshow > h1 {
+  left: 10%;
+  top: 40%;
 }

@@ -136,3 +136,14 @@ function moveERight () {
 $(document).on('click', '.eleftmove', moveELeft);
 $(document).on('click', '.erightmove', moveERight);
 */
+
+$("#campusslideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#campusslideshow > div:first')
+  .fadeOut(1000)
+  .next()
+  .fadeIn(1000)
+  .end()
+  .appendTo('#campusslideshow');
+}, 3000);

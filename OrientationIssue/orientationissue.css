@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=EB+Garamond:wght@400;800&display=swap');
 
 /* TEXT STYLING */
 html {
@@ -25,6 +25,7 @@ button {
 }
 
 h1 { /*section title*/
+  font-family: 'Acme', sans-serif;
   text-align: center;
 }
 
@@ -46,6 +47,7 @@ h4 { /*small story headline*/
   background-position: center;
   background-size: cover;
   height: 30vh;
+  margin-bottom: 0.5vw;
 }
 
 .articlephoto {
@@ -112,16 +114,13 @@ img {
   padding: 1vw;
   overflow: hidden;
   text-align: right;
-/*  position: sticky;
-  top: 0;
-  z-index: 2; */
 }
 
 #navigation a {
   color: #000;
   text-align: right;
   text-decoration: none;
-  float: left;
+  float: right;
   margin-top: 1vw;
   margin-bottom: 1vw;
   margin-left: 2vw;
@@ -131,10 +130,10 @@ img {
 }
 
 #navigation button {
-  background-color: #000;
+  background-color: inherit;
   border: none;
   outline: none;
-  color: #FFF;
+  color: inherit;
   font-family: inherit;
   font-size: inherit;
   padding: 0;
@@ -149,7 +148,7 @@ img {
 /* NAVIGATION DROPDOWN STYLING */
 
 .dropdown {
-  float: left;
+  float: right;
   overflow: hidden;
 }
 
@@ -191,7 +190,7 @@ img {
 /* FOOTER STYPING */
 
 footer {
-  background-color: #000;
+  background-color: #3C2456;
   color: #FFF;
   padding: 1vw;
   display: grid;
@@ -202,7 +201,7 @@ footer {
     "footerend footerend";
   grid-gap: 0.1vw;
   padding: 1vw;
-  margin-top: 2vw;
+  margin-top: 0.25vw;
 }
 
 .leftfooter {
