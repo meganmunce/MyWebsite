@@ -1,34 +1,39 @@
-$(document).on('click','.experience', function(){
+// EXPANDING SECTIONS FUNCTIONS
+
+function expandExperience(){
   var fullwindow = window.innerWidth;
-  //$(".experience").animate({height: (fullwindow*0.8)}, '750ms');
-  //$(".expanded").animate({height: (fullwindow*0.05)}, '750ms');
   $(".expanded").removeClass("expanded").addClass("collapsed");
   $(".experience").addClass("expanded").removeClass("collapsed");
-});
+};
 
-$(document).on('click','.aboutme', function(){
+function expandAbout(){
   var fullwindow = window.innerWidth;
-  //$(".aboutme").animate({height: (fullwindow*0.8)}, '750ms');
-  //$(".expanded").animate({height: (fullwindow*0.05)}, '750ms');
   $(".expanded").removeClass("expanded").addClass("collapsed");
   $(".aboutme").addClass("expanded").removeClass("collapsed");
-  //document.querySelector('.whereivebeen').style.width = fullwindow;
-});
+};
 
-$(document).on('click','.skills', function(){
+function expandSkills(){
   var fullwindow = window.innerWidth;
-  //$(".skills").animate({height: (fullwindow*0.80)}, '750ms');
-  //$(".expanded").animate({height: (fullwindow*0.05)}, '750ms');
   $(".expanded").removeClass("expanded").addClass("collapsed");
   $(".skills").addClass("expanded").removeClass("collapsed");
-  //document.querySelector('.whereivebeen').style.width = fullwindow;
-});
+};
 
-$(document).on('click','.clips', function(){
+function expandClips(){
   var fullwindow = window.innerWidth;
-  //$(".clips").animate({height: (fullwindow*0.80)}, '750ms');
-  //$(".expanded").animate({height: (fullwindow*0.05)}, '750ms');
   $(".expanded").removeClass("expanded").addClass("collapsed");
   $(".clips").addClass("expanded").removeClass("collapsed");
-  //document.querySelector('.whereivebeen').style.width = fullwindow;
-});
+};
+
+//EXPANDING SECTIONS EVENT CALLERS
+
+$(document).on('click','.experience', expandExperience);
+$(document).on('click','.experiencetab', expandExperience);
+
+$(document).on('click','.aboutme', expandAbout);
+$(document).on('click','.aboutmetab', expandAbout);
+
+$(document).on('click','.skills', expandSkills);
+$(document).on('click','.skillstab', expandSkills);
+
+$(document).on('click','.clips', expandClips);
+$(document).on('click','.clipstab', expandClips);
