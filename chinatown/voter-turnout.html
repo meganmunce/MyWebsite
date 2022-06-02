@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="turnout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
-<script  src="turnout.js"></script>
+<script src="turnout.js"></script>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -122,9 +122,15 @@
 
   <p>Chicago voters can also <a href="https://chicagoelections.gov/en/vote-by-mail.html" target="_blank" alt="Link to Chicago Board of Elections website online application to vote by mail.">apply to vote by mail</a> through the Board of Elections’ website.</p>
 
-<h3>Methodology</h3>
+<div class="methodology">
 
-  <p>All data was obtained through the Chicago Board of Elections. To find which voting locations had been closed, moved or spread across multiple precincts, we compared addresses for each precinct’s voting location in 2012, 2016 and 2022.</p>
+  <button id="methodologydisplay"><h3>Methodology</h3> <span class="material-symbols-outlined">expand_more</span></button>
+  <div id="methodologyp" class="hidden">
+    <p>All data was obtained through the Chicago Board of Elections. To find which voting locations had been closed, moved or spread across multiple precincts, we compared addresses for each precinct’s voting location in 2012, 2016 and 2022.</p>
+    <a href="#">Download the data here.</a> <p>LINK TKTK</p>
+  </div>
+
+</div>
 
 </body>
 
