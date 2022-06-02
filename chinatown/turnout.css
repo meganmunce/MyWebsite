@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
+
+body {
+  margin: 0px;
+  padding: 8vh;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*FONTS*/
+
+.byline p {
+  font-style: italic;
+  margin: 0.5vh;
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 2vh;
+}
+
+/*DATA VISUALIZATIONS */
+
+figure {
+  display: block;
+  float: left;
+  width: 30vw;
+  margin-left: 0;
+}
+
+figure img{
+  width: 100%;
+}
+
+.flourish-embed {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#chinatownmap {
+  margin-left: 0;
+  margin-right: 2vw;
+  float: left;
+  width: 30vw;
+}
+
+#precinctbargraph {
+  margin-right: 0;
+  margin-left: 2vw;
+  float: right;
+  width: 30vw;
+}
+
+#votersgraph {
+  float: left;
+  margin-right: 2vw;
+  margin-left: 0;
+  width: 30vw;
+}
