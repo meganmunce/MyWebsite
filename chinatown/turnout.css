@@ -25,11 +25,17 @@ body {
 .byline p {
   font-style: italic;
   margin: 0.5vh;
+  padding-top: 3vh;
 }
 
 h1, h2 {
   text-align: center;
-  margin: 2vh;
+  margin: 0;
+  margin-bottom: 2vh;
+}
+
+h2 {
+  font-style: italic;
 }
 
 /* METHODOLOGY */
@@ -64,6 +70,10 @@ figure {
 
 figure img{
   width: 100%;
+}
+
+figcaption {
+  font-size: 14px;
 }
 
 .flourish-embed {
