@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Lost polling locations</title>
+    <title>Chinatown’s packed polling places</title>
 
     <link rel="stylesheet" href="turnout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -30,15 +30,32 @@
 
 <body>
 
-  <h1>Lost polling locations</h1>
-  <h2>How Chicago's Chinatown is losing polling places, and what it means for future elections</h2>
-
-<div class="byline">
-  <p>Alyssa Muir, Megan Munce, Elisa Xu</p>
-  <p>June 9, 2022</p>
+<div class="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
 </div>
 
-  <p>In the past six years, 31 polling locations have been removed from Chicago’s Chinatown. Of those, only 16 were replaced with new locations, according to data by the Chicago Board of Elections.</p>
+  <h1>Chinatown’s packed polling places</h1>
+  <h2>How Chicago's Chinatown’s polling locations are changing, and what it could mean for future elections</h2>
+
+  <p class="preview">In the city of Chicago, every voting precinct in every ward has a designated polling place. But according to data from the Chicago Board of Elections, voting precicnts are increasingly sharing their polling location with other precincts.
+  Though advocates say this can create logistical issues for voter turnout, experts aren't sold on whether this will make a large impact on elections going forward.</p>
+
+<div style="text-align: center;">
+  <figure class="mainimg">
+  <img src="sign.png" alt="">
+  <figcaption>The gate marking the entrance to South Archer Avenue in Chinatown. The four characters on the gate read “the world belongs to the commonwealth,” a popular saying from the 1900s, <a href="https://www.chicagochinatown.org/chinatown-landmark" target="_blank">according to the Chicago Chinatown Chamber of Commerce</a>. (Megan Munce)</figcaption>
+</figure>
+</div>
+
+  <div class="byline">
+    <p>Alyssa Muir, Megan Munce, Elisa Xu</p>
+    <p>June 9, 2022</p>
+  </div>
+
+  <p>In the past six years, 31 polling locations have been removed from Chicago’s 11th and 25th wards — the two wards that encompass the city’s Chinatown. Of those, only 16 were replaced with new locations, according to data by the Chicago Board of Elections.
+  </p>
 
 <div id="chinatownmap" class="flourish-embed flourish-map" data-src="visualisation/10136637"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
@@ -68,7 +85,7 @@
 
 <h3>How do polling locations impact turnout?</h3>
 
-<div id="precinctbargraph" class="flourish-embed flourish-chart" data-src="visualisation/10206862"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+<div id="precinctbargraph" class="flourish-embed flourish-chart" data-src="visualisation/10258538"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
   <p>Lin Mei, a former Democracy Project 2020 fellow with the Coalition for a Better Chinese American Community, said when polling places move it can create logistical challenges for volunteers attempting to increase voter turnout.</p>
 
@@ -126,8 +143,16 @@
 
   <button id="methodologydisplay"><h3>Methodology</h3> <span class="material-symbols-outlined">expand_more</span></button>
   <div id="methodologyp" class="hidden">
-    <p>All data was obtained through the Chicago Board of Elections. To find which voting locations had been closed, moved or spread across multiple precincts, we compared addresses for each precinct’s voting location in 2012, 2016 and 2022.</p>
-    <a href="#">Download the data here.</a> <p>LINK TKTK</p>
+    <p>All data about polling places and their addresses was obtained as lists by contacting the Chicago Board of Elections.</p>
+
+    <p>To find which voting locations had been closed, moved or spread across multiple precincts for wards 11 and 25, we compared addresses for each precinct’s voting location in 2012, 2016, 2020 and 2022. After scraping the names and addresses of the polling locations from the pdfs using Tabula and importing them into a Google Sheet,  we used Google Maps to find latitude and longitude coordinates for each location.</p>
+
+    <p><a href="https://docs.google.com/spreadsheets/d/1XXXUTap8NF3c6MjUCvAs7VPtSOAE5luBBzSPlD--LB0/edit#gid=752113632" target="_blank">See the list of locations per year here</a>.</p>
+
+    <p>To find the number of registered voters per ward and precinct, we scraped data off the Chicago Board of Election Commissioners’ website. <a href="https://chicagoelections.gov/en/election-results-specifics.asp" target="_blank"> Find that data here</a>. For our third visualization, we did our calculation by dividing the number of registered voters each year by the number of unique polling locations. The number of registered voters for 2022 has not been released, so we did not include that in the data.</p>
+
+    <p>The second data visualization was created by filtering our Google Sheets database to narrow down polling places that were used by multiple precincts in both 2016 and 2022. Then, we created the bar graph to show how many of these kinds of polling places are present in 2022 compared to 2016.</p>
+
   </div>
 
 </div>

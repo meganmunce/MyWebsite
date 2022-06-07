@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Roboto:wght@300;500&display=swap');
 
+svg {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -87,6 +91,10 @@ p {
   text-align: right;
   top: 90vh;
   position: sticky;
+}
+
+#sidebar p {
+  margin: 2vh;
 }
 
 /* SKY */
