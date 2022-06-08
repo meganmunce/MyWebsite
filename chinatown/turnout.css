@@ -131,6 +131,7 @@ figcaption {
   float: left;
   margin-right: 2vw;
   margin-left: 0;
+  margin-bottom: 2vw;
   height: 60vh;
 }
 
