@@ -17,7 +17,7 @@ body {
 #sidebar {
   position: absolute;
   left: 0;
-  z-index: 2;
+  /*z-index: 2;*/
   overflow: hidden;
   background-color: #F5F5F5;
   color: #392B58;
@@ -182,7 +182,6 @@ p {
   background-color: #f5f5f5;
   border-radius: 0.5em;
   color: #392B58;
-  margin: 0.5vw;
 }
 
 #clipgrid h3 {

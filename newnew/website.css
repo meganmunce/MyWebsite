@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:wght@200;500&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+/*
+#sidebar {
+  position: fixed;
+  left: 0;
+  z-index: 2;
+  overflow: hidden;
+  /*background-color: #F5F5F5;
+  color: #392B58;*/
+  /*
+  width: 22%;
+  height: 100%;
+  background-color: #392B58;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0px -3px 20px #293A3D;
+}
+
+#main {
+  right: 0;
+  position: fixed;
+  top: 0;
+  bottom:0;
+  width: 78%;
+  margin: 0;
+  background-color: #C0E8F9;
+  background-image: url("houlong.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20%;
+  overflow: hidden;
+}
+*/
+
+/* FONTS */
+
+h1 {
+  font-family: 'DM Serif Text', serif;
+  text-align: center;
+}
+
+p {
+  font-family: 'Lora', serif;
+  font-weight: 300;
+}
+
+/* SIDEBAR STYLING */
+
+#sidebar li {
+  font-family: 'Lora', serif;
+  font-weight: 300;
+  list-style-type: "\2014   ";
+  transition: 500ms ease-in-out;
+  margin-left: 3vw;
+  margin-top: 1vw;
+}
+
+#sidebar li:hover {
+  transform: translateX(1vw);
+  color: #6C969D;
+}
+
+#sidebar a {
+  color: inherit;
+  padding: 0.5vw;
+  transition: 500ms ease-in-out;
+}
+
+#sidebar a:hover {
+  color: #6C969D;
+}
+
+#sidebar img {
+  width: 70%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #292640;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 2vw;
+  margin-top: 5vw;
+  box-shadow: -4px -4px 10px #292640;
+}
+
+.socials {
+  text-align: right;
+  position: fixed;
+  bottom: 5%;
+}
+
+#sidebar p {
+  margin: 2vh;
+}
+
+
+/* SECTIONS */
+
+/*#contactme, #readme, #aboutme {
+  margin: 0;
+  padding: 2vw;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 22%;
+  transition: 1s ease-in-out;
+  overflow-y: scroll;
+}*/
+
+
+#contactme {
+  background-color: #99D5C9;
+  box-shadow: 0px -3px 20px #23574D;
+  color: rgb(35, 87, 77, 1);
+  height: 10%;
+}
+
+#contactme:hover {
+  height: 15%;
+}
+
+#contactme a {
+  text-decoration: underline;
+  color: #645E9D;
+}
+
+#contactme p {
+  margin: 1vw;
+}
+
+#contactme ul {
+  font-family: 'Lora', serif;
+  font-weight: 300;
+  margin-left: 4vw;
+}
+
+#contactme li {
+  margin: 0.5vw;
+}
+
+.contactcontent {
+  opacity: 0;
+  transition: 1.5s ease-in-out;
+}
+
+#aboutme {
+  background-color: #645E9D;
+  box-shadow: 0px -3px 20px #292640;
+  height: 30%;
+  color: #1B192A;
+}
+
+#aboutme:hover {
+  height: 35%;
+}
+
+.aboutcontent {
+  opacity: 0;
+  transition: 1.5s ease-in-out;
+}
+
+#aboutme p {
+  margin: 1vw;
+  color: #fff;
+}
+
+#aboutme a {
+  text-decoration: underline;
+  color: #99D5C9;
+}
+
+#readme {
+  background-color: #6C969D;
+  color: #112823;
+  box-shadow: 0px -3px 20px #293A3D;
+  height: 20%;
+}
+
+#readme:hover {
+  height: 25%;
+}
+
+.readcontent {
+  opacity: 0;
+  transition: 1.5s ease-in-out;
+}
+
+.scrollreminder {
+  color: #fff;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 0.5vh;
+  opacity: 0;
+  transition: 1s ease-in-out;
+  transition-delay: 2s;
+}
+
+.collapse > button {
+  font-family: 'DM Serif Text', serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.2);
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  margin: 0;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  border-radius: 10px;
+  border: solid 0.1px rgb(75, 139, 185, 0.5);
+  box-shadow: 2px 2px 5px rgb(75, 139, 185, 0.5);
+}
+
+/* GRID */
+
+#clipgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 5fr 5fr;
+  grid-template-areas:
+   "a b c"
+   "d e f";
+   grid-row-gap: 1vh;
+   grid-column-gap: 1vh;
+}
+
+.clip {
+  background-color: #fff;
+  color: #112823;
+  border-radius: 8px;
+  transition: 500ms ease-in-out;
+  box-shadow: 3px 3px #112823;
+  border: solid 1px #112823;
+  transform: scale(0.98);
+}
+
+.clip img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.clip h3 {
+  margin: 8px;
+  color: #112823;
+  transform: translateY(-4.5vh);
+  font-family: 'DM Serif Text', serif;
+  line-height: 95%;
+}
+
+.clip p {
+  margin: 8px;
+  transform: translateY(-4.5vh);
+}
+
+.imgcap {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 700;
+  color: #fff;
+  text-align: right;
+  transform: translateY(-4.5vh);
+}
+
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+
+.d {
+  grid-area: d;
+}
+
+.e {
+  grid-area: e;
+}
+
+.f {
+  grid-area: f;
+}
+
+/* ANIMATIONS */
+
+
+
+/* RESPONSIVE */
+
+@media (min-width: 701px){
+
+  .undersidebar {
+    display: none;
+  }
+
+  .mobilesocials {
+    display: none;
+  }
+
+  #sidebar {
+    position: fixed;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+    /*background-color: #F5F5F5;
+    color: #392B58;*/
+    width: 22%;
+    height: 100%;
+    background-color: #392B58;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px -3px 20px #293A3D;
+  }
+
+  #main {
+    right: 0;
+    position: fixed;
+    top: 0;
+    bottom:0;
+    width: 78%;
+    margin: 0;
+    background-color: #C0E8F9;
+    background-image: url("houlong.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20%;
+    overflow: hidden;
+  }
+
+  #contactme, #readme, #aboutme {
+    margin: 0;
+    padding: 2vw;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 22%;
+    transition: 1s ease-in-out;
+    overflow-y: scroll;
+  }
+
+  .clip:hover {
+    transform: scale(1.01);
+    box-shadow: 4px 4px #112823;
+    border: solid 1.5px #112823;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .mobilesocials {
+    background-color: #392B58;
+    text-align: center;
+    color: #fff;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    box-shadow: 0px 5px 20px #293A3D;
+    position: sticky;
+    bottom: 0;
+  }
+
+  .mobilesocials a {
+    color: #fff;
+    text-decoration: none;
+    margin: 2vw;
+  }
+
+  #sidebar {
+    background-color: #392B58;
+    background-image: url("houston.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 5px 20px #293A3D;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+    font-size: 30px;
+    height: 16vh;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  #sidebar h1 {
+    text-shadow: 5px 2px #1B192A;
+  }
+
+  #sidebar p {
+    display: none;
+  }
+
+  #sidebar img {
+    display: none;
+    text-shadow: none;
+    padding: none;
+  }
+
+  #sidebar li {
+    list-style-type: " ";
+    display: inline;
+    margin: 2vw;
+  }
+
+  #main {
+    background-color: #C0E8F9;
+    width: 100%;
+  }
+
+  .socials {
+    display: none;
+  }
+
+  #contactme, #readme, #aboutme {
+    padding: 5vw;
+  }
+
+  .contactcontent, .aboutcontent, .readcontent {
+    opacity: 1;
+    transition: 0s;
+  }
+
+  .imgcap {
+    transform: translateY(-4.5vh);
+    font-size: 12px;
+  }
+
+  .imgcap p {
+    background-color: green;
+  }
+
+  .collapse {
+    display: none;
+  }
+
+  #clipgrid {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+     "a"
+     "b"
+     "c"
+     "d"
+     "e"
+     "f";
+     grid-row-gap: none;
+     grid-column-gap: none;
+  }
+
+  .clip {
+    background-color: #fff;
+    color: #112823;
+    border-radius: 8px;
+    transition: 500ms ease-in-out;
+    box-shadow: 3px 3px #112823;
+    border: solid 1px #112823;
+    transform: scale(0.98);
+  }
+
+  .clip img {
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
+    padding: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .imgcap {
+    color: inherit;
+  }
+
+  .clip p, .clip h3, .imgcap {
+    transform: none;
+  }
+
+  .undersidebar {
+    background-color: #392B58;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .undersidebar a {
+    color: #fff;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 18px;
+  }
+
+}
