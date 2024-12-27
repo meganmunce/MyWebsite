@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Main styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #DEEDF7;
+}
+
+
+#bigdiv {
+  background-image: url("goldengatevertical.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #DEEDF7;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+
+h1 {
+  font-family: Caprasimo;
+  font-weight: 100;
+  color: #0C1431;
+}
+
+p, h2 {
+  font-family: Lora;
+}
+
+.redhighlight {
+  text-decoration: none;
+  box-shadow: inset 0 -.65em 0 #C65761;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.bluehighlight {
+  text-decoration: none;
+  box-shadow: inset 0 -.65em 0 #599DD2;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+a {
+  text-decoration: underline;
+  text-decoration-color: #C65761;
+  color: inherit;
+}
+
+/* Divs */
+
+#aboutme {
+  padding-top: 10vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  margin: 5vh;
+  color: #0C1431;
+  height: 100vh;
+}
+
+#clips {
+  padding-top: 10vh;
+  margin: 5vh;
+  color: #0C1431;
+}
+
+#socials {
+  color: #C65761;
+  text-align: right;
+}
+
+#header {
+  color: white;
+  background-color: #0C1431;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  top: 0;
+  position: sticky;
+  margin-bottom: 2vh;
+  text-align: center;
+  border-bottom: solid 5px #C65761;
+  z-index: 1;
+}
+
+.arrow {
+  padding-top: 4vh;
+  text-align: center;
+  color: #0C1431;
+}
+
+#contact {
+  margin-top: 20vh;
+  margin-bottom: 40vh;
+}
+
+/* Images */
+
+.bridge {
+  height: 70vh;
+  width: auto;
+  float: left;
+  margin: 2vw;
+  box-shadow: -8px -8px 0px #0C1431;
+  border-radius: 3px;
+}
+
+.headshot {
+  height: auto;
+  width: 20vw;
+  float: left;
+  margin: 2vw;
+  border-bottom: solid 5px #C65761;
+  border-radius: 5px;
+}
+
+/* text */
+
+#socials a {
+  margin-left: 2vh;
+}
+
+#socials a:hover {
+  color: #599DD2;
+  transition-duration: 0.5s;
+  transition-delay: 0.05s;
+}
+
+#header a:hover {
+  color: #599DD2;
+  transition-duration: 0.5s;
+  transition-delay: 0.05s;
+}
+
+#introtext a:hover {
+  box-shadow: inset 0 -.5em 0 #C65761;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
+}
+
+#introtext p, #contact p {
+  text-shadow: 5px 0px 8px white;
+}
+
+#contact p {
+  text-align: center;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+#header h1 {
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+#header .icon {
+  margin-right: 0.5vw;
+}
+
+#clips h1 {
+  text-align: center;
+}
+
+#clips a {
+  text-decoration: none;
+}
+
+.clipbox h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px
+}
+
+.clipbox p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.credit {
+  font-style: italic;
+}
+
+#contact h1 {
+  text-align: center;
+}
+
+#contact a:hover {
+  box-shadow: inset 0 -.5em 0 #C65761;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s; }
+
+/* Clips grid*/
+
+.clipgrid {
+  display: grid;
+  grid-template-columns: 31vw 31vw 31vw;
+  grid-template-areas:
+  "a b c"
+  "d e f";
+}
+
+.clipbox {
+  background-color: #0C1431;
+  border-radius: 5px;
+  margin: 1vw;
+  box-shadow: 0px 5px 0px #C65761;
+  color: #FFF;
+  padding-bottom: 10px;
+  min-height: 80vh;
+}
+
+.clipbox img {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom: solid 3px #599DD2;
+}
+
+.clipbox:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+  transition-delay: 0.05s;
+}
+
+.arrow {
+  animation: bounce ease-in-out;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* Responsiveness */
+
+@media (max-width: 700px) {
+  .clipgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "a b"
+    "c d"
+    "e f";
+  };
+
+  .arrow {
+    display: none;
+  };
+}
