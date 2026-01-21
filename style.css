@@ -292,8 +292,8 @@ a {
     margin-top: 2vh;
   }
 
-  #frontpages {
-    display: none;
+  .clipgrid p {
+    display:hidden;
   }
 
   #contact {
